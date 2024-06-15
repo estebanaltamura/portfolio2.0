@@ -9,6 +9,24 @@ const WorkExperiences = () => {
   const [isDownloadButtonHovered, setIsDownloadButtonHovered] =
     useState<boolean>(false);
 
+  const handleDownload = () => {
+    fetch(
+      'https://drive.google.com/file/d/1X7VTxJ9HQAAyqZxnQPZNpxsI3RsJtpG7/view?usp=sharing'
+    )
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        console.log(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'CV_Andres_Altamura_Front-End_React.pdf'); // Reemplaza con el nombre de tu archivo
+        document.body.appendChild(link);
+        link.click();
+        link?.parentNode?.removeChild(link);
+      })
+      .catch((err) => console.error('Error al descargar el archivo:', err));
+  };
+
   return (
     <Box
       sx={{
@@ -53,34 +71,31 @@ const WorkExperiences = () => {
           </Typography>
         </Box>
         <Box sx={{ display: 'flex', flexGrow: 1 }}></Box>
-        <Button
-          onMouseEnter={() => setIsDownloadButtonHovered(true)}
-          onMouseLeave={() => setIsDownloadButtonHovered(false)}
-          sx={{
-            display: 'flex',
-            width: '143px',
-            height: '38px',
-            padding: '8px 16px',
-            alignItems: 'center',
-            borderRadius: '20px',
-            backgroundColor: '#6E65A7',
-            '&:hover': {
-              border: '1px solid #6E65A7',
-
-              backgroundColor: '#252525 !important',
-            },
-          }}
+        <a
+          href='https://drive.google.com/uc?export=download&id=1X7VTxJ9HQAAyqZxnQPZNpxsI3RsJtpG7
+'
         >
-          {isDownloadButtonHovered ? (
-            <img src='/icons/arrowDownloadButtonIcon.svg' alt='' />
-          ) : (
-            <a
-              href={
-                'https://drive.google.com/file/d/1X7VTxJ9HQAAyqZxnQPZNpxsI3RsJtpG7/view?usp=sharing'
-              }
-              download
-              style={{ textDecoration: 'none' }}
-            >
+          <Button
+            onMouseEnter={() => setIsDownloadButtonHovered(true)}
+            onMouseLeave={() => setIsDownloadButtonHovered(false)}
+            sx={{
+              display: 'flex',
+              width: '143px',
+              height: '38px',
+              padding: '8px 16px',
+              alignItems: 'center',
+              borderRadius: '20px',
+              backgroundColor: '#6E65A7',
+              '&:hover': {
+                border: '1px solid #6E65A7',
+
+                backgroundColor: '#252525 !important',
+              },
+            }}
+          >
+            {isDownloadButtonHovered ? (
+              <img src='/icons/arrowDownloadButtonIcon.svg' alt='' />
+            ) : (
               <Typography
                 sx={{
                   marginTop: '3px',
@@ -91,9 +106,9 @@ const WorkExperiences = () => {
               >
                 Descargar CV
               </Typography>
-            </a>
-          )}
-        </Button>
+            )}
+          </Button>
+        </a>
       </Box>
 
       {/*Experiences container*/}
