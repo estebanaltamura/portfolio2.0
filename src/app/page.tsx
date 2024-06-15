@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Profile />
-      <Projects />
+      {/* <Projects /> */}
       <Box
         sx={{
           display: 'flex',

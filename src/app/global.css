@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-openSans) !important;
+  user-select: none;
 }
 
 body {
@@ -15,4 +16,8 @@ body {
 
 .interFont {
   font-family: var(--font-interFont) !important;
+}
+
+a {
+  text-decoration: none;
 }

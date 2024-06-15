@@ -1,6 +1,24 @@
+'use client';
+
 import { Box, Typography } from '@mui/material';
 
 const Profile = () => {
+  const gitHubClickHandler = () => {
+    // TO DO
+  };
+
+  const linkedinClickHandler = () => {
+    // TO DO
+  };
+
+  const mailClickHandler = () => {
+    // TO DO
+  };
+
+  const whatsappClickHandler = () => {
+    // TO DO
+  };
+
   return (
     <Box
       sx={{
@@ -21,7 +39,7 @@ const Profile = () => {
         sx={{
           fontSize: '17px',
           lineHeight: '20px',
-          marginTop: '6  px',
+          marginTop: '6px',
           color: 'white',
         }}
       >
@@ -74,26 +92,49 @@ const Profile = () => {
             alignItems: 'center',
           }}
         >
-          <img
-            src='/icons/githubIcon.svg'
-            alt=''
-            style={{ width: '20px', height: '20px' }}
-          />
-          <img
-            src='/icons/linkedinIcon.svg'
-            alt=''
-            style={{ width: '20px', height: '20px', marginBottom: '3px' }}
-          />
-          <img
-            src='/icons/mailIcon.svg'
-            alt=''
-            style={{ width: '20px', height: '20px' }}
-          />
-          <img
-            src='/icons/whatsappIcon.svg'
-            alt=''
-            style={{ width: '20px', height: '20px' }}
-          />
+          <Box
+            sx={{ width: '20px', height: '20px', cursor: 'pointer' }}
+            onClick={gitHubClickHandler}
+          >
+            <img
+              src='/icons/githubIcon.svg'
+              alt=''
+              style={{ width: '20px', height: '20px' }}
+            />
+          </Box>
+
+          <Box
+            sx={{ width: '20px', height: '20px', cursor: 'pointer' }}
+            onClick={linkedinClickHandler}
+          >
+            <img
+              src='/icons/linkedinIcon.svg'
+              alt=''
+              style={{ width: '20px', height: '20px' }}
+            />
+          </Box>
+
+          <Box
+            sx={{ width: '20px', height: '20px', cursor: 'pointer' }}
+            onClick={mailClickHandler}
+          >
+            <img
+              src='/icons/mailIcon.svg'
+              alt=''
+              style={{ width: '20px', height: '20px' }}
+            />
+          </Box>
+
+          <Box
+            sx={{ width: '20px', height: '20px', cursor: 'pointer' }}
+            onClick={whatsappClickHandler}
+          >
+            <img
+              src='/icons/whatsappIcon.svg'
+              alt=''
+              style={{ width: '20px', height: '20px' }}
+            />
+          </Box>
         </Box>
       </Box>
     </Box>

@@ -46,9 +46,8 @@ export default function RootLayout({
             display: 'flex',
             flexDirection: 'column',
             width: '100vw',
-            minHeight: `calc(100vh - ${headerHeight + footerHeight}px)`,
             alignItems: 'center',
-            backgroundColor: '#252525',
+            backgroundColor: 'rgb(15 23 42)',
           }}
         >
           <Header />
@@ -57,7 +56,8 @@ export default function RootLayout({
               display: 'flex',
               flexDirection: 'column',
               maxWidth: '1021px',
-              height: '100%',
+              minHeight: `calc(100vh - ${headerHeight + footerHeight}px)`,
+              padding: '30px 0',
             }}
           >
             <main>{children}</main>

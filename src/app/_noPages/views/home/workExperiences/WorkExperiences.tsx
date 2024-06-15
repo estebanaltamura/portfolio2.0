@@ -74,6 +74,7 @@ const WorkExperiences = () => {
         <a
           href='https://drive.google.com/uc?export=download&id=1X7VTxJ9HQAAyqZxnQPZNpxsI3RsJtpG7
 '
+          onClick={() => setIsDownloadButtonHovered(false)}
         >
           <Button
             onMouseEnter={() => setIsDownloadButtonHovered(true)}
@@ -85,12 +86,8 @@ const WorkExperiences = () => {
               padding: '8px 16px',
               alignItems: 'center',
               borderRadius: '20px',
-              backgroundColor: '#6E65A7',
-              '&:hover': {
-                border: '1px solid #6E65A7',
-
-                backgroundColor: '#252525 !important',
-              },
+              border: isDownloadButtonHovered ? '1px solid #6E65A7' : '',
+              backgroundColor: isDownloadButtonHovered ? '#252525' : '#6E65A7',
             }}
           >
             {isDownloadButtonHovered ? (
