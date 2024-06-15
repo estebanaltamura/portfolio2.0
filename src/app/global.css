@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-openSans) !important;
+}
+
+body {
+  font-family: var(--font-openSans), sans-serif !important;
+}
+
+.russoFont {
+  font-family: var(--font-russoFont) !important;
+}
+
+.interFont {
+  font-family: var(--font-interFont) !important;
+}
