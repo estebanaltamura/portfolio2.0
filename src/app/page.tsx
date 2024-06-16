@@ -12,9 +12,15 @@ const Home = () => {
       <Box
         sx={{
           display: 'flex',
+          flexDirection: 'row',
           maxWidth: '100%',
           gap: '19px',
           marginTop: '60px',
+          '@media(max-width: 1200px)': {
+            flexDirection: 'column',
+            alignItems: 'center',
+            width: '100%',
+          },
         }}
       >
         <WorkExperiences />

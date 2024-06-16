@@ -1,9 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter, Open_Sans, Russo_One } from 'next/font/google';
-
-import { Box } from '@mui/material';
-import { headerHeight, footerHeight } from './_noPages/config/layoutConfig';
-
 import Header from './_noPages/views/header/Header';
 import Footer from './_noPages/views/footer/Footer';
 import './global.css';
@@ -41,30 +37,17 @@ export default function RootLayout({
       <body
         className={`${openSansFont.variable} ${russoFont.variable} ${interFont.variable}`}
       >
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            width: '100vw',
-            alignItems: 'center',
-            backgroundColor: 'rgb(15 23 42)',
-          }}
-        >
+        <header>
           <Header />
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              maxWidth: '1021px',
-              minHeight: `calc(100vh - ${headerHeight + footerHeight}px)`,
-              padding: '30px 0',
-            }}
-          >
-            <main>{children}</main>
-          </Box>
+        </header>
+
+        <main>{children}</main>
+        <footer>
           <Footer />
-        </Box>
+        </footer>
       </body>
     </html>
   );
 }
+
+//Usar variables css en global.css en vez de un config y styles. Body tambien

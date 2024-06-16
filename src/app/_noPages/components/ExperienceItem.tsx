@@ -1,26 +1,30 @@
 'use client';
 
+import { IExperiences } from '@/JSONs/JSONprojects';
 import { Avatar, Box, Typography } from '@mui/material';
+import { useRouter } from 'next/navigation';
 
 interface IExperienceItemProps {
-  logoImgSrc: string;
-  name: string;
-  period: string;
-  role: string;
   index: number;
   length: number;
+  id: string;
+  name: string;
+  role: string;
+  period: string;
 }
 
 const ExperienceItem: React.FC<IExperienceItemProps> = ({
-  logoImgSrc,
-  name,
-  period,
-  role,
   index,
   length,
+  id,
+  name,
+  role,
+  period,
 }) => {
+  const router = useRouter();
+
   const experienceDetailClickHandler = () => {
-    // Redirigir a pagina tipo blog
+    router.push(`/experience-detail/${id}`);
   };
 
   return (
@@ -30,7 +34,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
         display: 'flex',
         width: '100%',
         height: '48px',
-        marginTop: index > 0 ? '27px' : '0px',
+        marginTop: index > 0 ? '33px' : '0px',
         cursor: 'pointer',
         alignItems: 'center',
       }}
@@ -50,7 +54,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
           sx={{
             position: 'absolute',
             width: '1px',
-            height: '60px',
+            height: '65px',
             top: '21px',
             left: '7px',
             backgroundColor: '#BABEBE',

@@ -1,8 +1,8 @@
 'use client';
 
-import { Box, Button, Typography } from '@mui/material';
 import { experiences } from '@/JSONs/JSONprojects';
 import ExperienceItem from '@/app/_noPages/components/ExperienceItem';
+import { Box, Button, Typography } from '@mui/material';
 import { useState } from 'react';
 
 const WorkExperiences = () => {
@@ -33,7 +33,7 @@ const WorkExperiences = () => {
         display: 'flex',
         flexDirection: 'column',
         width: '572px',
-        height: '356px',
+        height: '400px',
         padding: '16px',
         alignItems: 'center',
         borderRadius: '16px',
@@ -47,7 +47,7 @@ const WorkExperiences = () => {
         sx={{
           display: 'flex',
           width: '100%',
-          height: '59px',
+          minHeight: '55px',
           padding: '2px 10px',
           alignItems: 'center',
         }}
@@ -61,8 +61,12 @@ const WorkExperiences = () => {
             alignItems: 'center',
           }}
         >
-          <Box sx={{ width: '16px', height: '16px' }}>
-            <img src='/icons/experienceIcon.svg' alt='' />
+          <Box sx={{ width: '18px', height: '18px' }}>
+            <img
+              src='/icons/experienceIcon.svg'
+              alt=''
+              style={{ width: '18px', height: '18px' }}
+            />
           </Box>
           <Typography
             sx={{ fontSize: '16px', fontWeight: '600', marginTop: '2px' }}
@@ -95,10 +99,10 @@ const WorkExperiences = () => {
             ) : (
               <Typography
                 sx={{
-                  marginTop: '3px',
                   fontSize: '12px',
                   fontWeight: '600',
                   color: 'white',
+                  textTransform: 'none',
                 }}
               >
                 Descargar CV
@@ -111,7 +115,8 @@ const WorkExperiences = () => {
       {/*Experiences container*/}
       <Box
         sx={{
-          width: '476px',
+          width: '100%',
+          maxWidth: '476px',
           height: '257px',
           marginTop: '25px',
           overflow: 'auto',
@@ -134,10 +139,10 @@ const WorkExperiences = () => {
               key={index}
               index={index}
               length={experiences.length}
-              logoImgSrc={experience.logoImgSrc}
+              id={experience.id}
               name={experience.name}
-              period={experience.period}
               role={experience.role}
+              period={experience.period}
             />
           ))}
         </Box>
