@@ -332,10 +332,10 @@ export const experiences: IExperiences[] = [
     ],
   },
   {
-    id: 'koi-ventures',
-    name: 'Koi ventures',
-    period: '2023 - Actualidad',
-    role: 'Referente tecnologico',
+    id: 'plumarii',
+    name: 'Plumarii',
+    period: '2021 - 2022',
+    role: 'Desarrollador Front-End & Co-founder',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
       'Me desempeño como referente tecnológico, desarrollador frontend y realizo algunas tareas de nexo con el cliente para la rama de software factory de la empresa.',
@@ -343,11 +343,10 @@ export const experiences: IExperiences[] = [
     ],
   },
   {
-    id: 'actas-italianas-express',
-
-    name: 'Actas Italianas Express',
-    period: '2022 - Actualidad',
-    role: 'Desarrollador Front-end',
+    id: 'lonely',
+    name: 'Lonely',
+    period: '2016 - 2022',
+    role: 'Co-founder, finanzas & marketing',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
       'Soy founder de Actas italianas express, un servicio de gestión rápida de actas italianas necesarias para la tramitación de la ciudanía italiana por parte de nuestros clientes.',
@@ -356,10 +355,10 @@ export const experiences: IExperiences[] = [
     ],
   },
   {
-    id: 'koi-ventures',
-    name: 'Koi ventures',
-    period: '2023 - Actualidad',
-    role: 'Referente tecnologico',
+    id: 'infinity-tech',
+    name: 'Infinity tech',
+    period: '2010 - 2016',
+    role: 'Owner',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
       'Me desempeño como referente tecnológico, desarrollador frontend y realizo algunas tareas de nexo con el cliente para la rama de software factory de la empresa.',
@@ -367,35 +366,10 @@ export const experiences: IExperiences[] = [
     ],
   },
   {
-    id: 'actas-italianas-express',
-
-    name: 'Actas Italianas Express',
-    period: '2022 - Actualidad',
-    role: 'Desarrollador Front-end',
-    logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
-    details: [
-      'Soy founder de Actas italianas express, un servicio de gestión rápida de actas italianas necesarias para la tramitación de la ciudanía italiana por parte de nuestros clientes.',
-      'Nuestro servicio busca y gestiona en origen la documentación, generando mayor tasa de respuesta por parte de las comunas y con una velocidad de respuesta superior.',
-      'Mi rol es principalmente el desarrollo y mantenimiento de la plataforma online, servicios back oficce para la administracion de leads y desarrollo de provedores de servicios ad-hoc en Italia.',
-    ],
-  },
-  {
-    id: 'koi-ventures',
-    name: 'Koi ventures',
-    period: '2023 - Actualidad',
-    role: 'Referente tecnologico',
-    logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
-    details: [
-      'Me desempeño como referente tecnológico, desarrollador frontend y realizo algunas tareas de nexo con el cliente para la rama de software factory de la empresa.',
-      'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
-    ],
-  },
-  {
-    id: 'actas-italianas-express',
-
-    name: 'Actas Italianas Express',
-    period: '2022 - Actualidad',
-    role: 'Desarrollador Front-end',
+    id: 'telefonica-de-argentina',
+    name: 'Telefonica',
+    period: '2008 - 2009',
+    role: 'Responsable de registros',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
       'Soy founder de Actas italianas express, un servicio de gestión rápida de actas italianas necesarias para la tramitación de la ciudanía italiana por parte de nuestros clientes.',

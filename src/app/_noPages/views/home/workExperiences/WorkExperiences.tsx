@@ -48,7 +48,6 @@ const WorkExperiences = () => {
           display: 'flex',
           width: '100%',
           minHeight: '55px',
-          padding: '2px 10px',
           alignItems: 'center',
         }}
       >
