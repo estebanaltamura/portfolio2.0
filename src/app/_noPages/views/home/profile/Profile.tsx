@@ -8,11 +8,12 @@ import {
   styled,
   tooltipClasses,
 } from '@mui/material';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const Profile = () => {
   const [isCopyingEmailHeader, setIsCopyingEmailHeader] = useState(false);
+  const [width, setWidth] = useState<number | null>(null);
 
   const copyEmailAddressHeaderClickHandler = () => {
     setIsCopyingEmailHeader(true);
@@ -59,6 +60,24 @@ const Profile = () => {
       '_blank'
     );
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    // Añade el listener de eventos
+    window.addEventListener('resize', handleResize);
+
+    // Limpia el listener de eventos al desmontar el componente
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log(width);
+  }, [width]);
 
   return (
     <Box
@@ -112,8 +131,8 @@ const Profile = () => {
             display: 'flex',
             width: 'fit-content',
             height: '30px',
-            gap: '26px',
-            marginTop: '20px',
+            gap: '15px',
+            marginTop: width && width < 600 ? '15px' : '18px',
           }}
         >
           <Box
@@ -132,7 +151,9 @@ const Profile = () => {
               sx={{ fontSize: '12px', color: 'white' }}
               className='interFont'
             >
-              Disponible para nuevos proyectos
+              {width && width < 600
+                ? 'Disponible'
+                : 'Disponible para nuevos proyectos'}
             </Typography>
           </Box>
           <Box

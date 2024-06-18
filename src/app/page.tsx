@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Profile />
       {/* <Projects /> */}
-      <Box
+      {/* <Box
         sx={{
           display: 'flex',
           flexDirection: 'row',
@@ -25,7 +25,7 @@ const Home = () => {
       >
         <WorkExperiences />
         <Stack />
-      </Box>
+      </Box> */}
     </>
   );
 };

@@ -37,14 +37,14 @@ export default function RootLayout({
       <body
         className={`${openSansFont.variable} ${russoFont.variable} ${interFont.variable}`}
       >
-        <header>
+        {/* <header>
           <Header />
-        </header>
+        </header> */}
 
         <main>{children}</main>
-        <footer>
+        {/* <footer>
           <Footer />
-        </footer>
+        </footer> */}
       </body>
     </html>
   );
