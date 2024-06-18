@@ -18,7 +18,7 @@ const WorkExperiences = () => {
     setIsDownloadingCV(true);
     const timeOut = setTimeout(() => {
       setIsDownloadingCV(false);
-      body.focus();
+      body.click();
       clearTimeout(timeOut);
     }, 3500);
   };
