@@ -68,7 +68,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
         <Typography
           sx={{
             lineHeight: '24px',
-            fontSize: '14px',
+            fontSize: '16px',
             fontWeight: '700',
             marginTop: '1px',
           }}
@@ -79,7 +79,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
         <Typography
           sx={{
             lineHeight: '24px',
-            fontSize: '14px',
+            fontSize: '13px',
             fontWeight: '400',
             marginTop: '1px',
           }}
@@ -90,7 +90,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
         <Typography
           sx={{
             lineHeight: '24px',
-            fontSize: '14px',
+            fontSize: '13px',
             fontWeight: '400',
           }}
         >
