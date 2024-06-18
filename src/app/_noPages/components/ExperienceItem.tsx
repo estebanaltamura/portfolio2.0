@@ -70,7 +70,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
             lineHeight: '18px',
             fontSize: '16px',
             fontWeight: '700',
-            marginTop: '0px',
+            marginTop: '2px',
           }}
         >
           {name}
