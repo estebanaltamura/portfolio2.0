@@ -2,10 +2,12 @@
 
 import { experiences } from '@/JSONs/JSONprojects';
 import ExperienceItem from '@/app/_noPages/components/ExperienceItem';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Typography, useMediaQuery } from '@mui/material';
 import { useState } from 'react';
 
 const WorkExperiences = () => {
+  const isDesktop = useMediaQuery('(min-width:600px)');
+
   const [isDownloadButtonHovered, setIsDownloadButtonHovered] =
     useState<boolean>(false);
   const [isDownloadingCV, setIsDownloadingCV] = useState<boolean>(false);
@@ -73,8 +75,8 @@ const WorkExperiences = () => {
           onClick={downloadCVClickHandler}
         >
           <Button
-            onMouseEnter={() => setIsDownloadButtonHovered(true)}
-            onMouseLeave={() => setIsDownloadButtonHovered(false)}
+            onMouseEnter={() => isDesktop && setIsDownloadButtonHovered(true)}
+            onMouseLeave={() => isDesktop && setIsDownloadButtonHovered(false)}
             sx={{
               display: 'flex',
               width: '122px',
