@@ -1,7 +1,7 @@
 'use client';
 
 import { IExperiences } from '@/JSONs/JSONprojects';
-import { Avatar, Box, Typography } from '@mui/material';
+import { Avatar, Box, Typography, useMediaQuery } from '@mui/material';
 import { useRouter } from 'next/navigation';
 
 interface IExperienceItemProps {
@@ -22,6 +22,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
   period,
 }) => {
   const router = useRouter();
+  const isDesktop = useMediaQuery('(min-width:600px)');
 
   const experienceDetailClickHandler = () => {
     router.push(`/experience-detail/${id}`);
@@ -69,7 +70,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
           <Typography
             sx={{
               lineHeight: '24px',
-              fontSize: '14px',
+              fontSize: isDesktop ? '14px' : '11px',
               fontWeight: '700',
               marginTop: '1px',
             }}
@@ -80,7 +81,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
           <Typography
             sx={{
               lineHeight: '24px',
-              fontSize: '14px',
+              fontSize: isDesktop ? '14px' : '11px',
               fontWeight: '700',
               margin: '0px 4px',
             }}
@@ -91,7 +92,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
           <Typography
             sx={{
               lineHeight: '24px',
-              fontSize: '14px',
+              fontSize: isDesktop ? '14px' : '11px',
               fontWeight: '400',
               marginTop: '1px',
             }}
@@ -103,7 +104,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
         <Typography
           sx={{
             lineHeight: '24px',
-            fontSize: '14px',
+            fontSize: isDesktop ? '14px' : '11px',
             fontWeight: '400',
           }}
         >
