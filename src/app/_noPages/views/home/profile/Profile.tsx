@@ -7,13 +7,14 @@ import {
   Typography,
   styled,
   tooltipClasses,
+  useMediaQuery,
 } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const Profile = () => {
   const [isCopyingEmailHeader, setIsCopyingEmailHeader] = useState(false);
-  const [width, setWidth] = useState<number | null>(null);
+  const isDesktop = useMediaQuery('(min-width:600px)');
 
   const copyEmailAddressHeaderClickHandler = () => {
     setIsCopyingEmailHeader(true);
@@ -60,24 +61,6 @@ const Profile = () => {
       '_blank'
     );
   };
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-
-    // Añade el listener de eventos
-    window.addEventListener('resize', handleResize);
-
-    // Limpia el listener de eventos al desmontar el componente
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    console.log(width);
-  }, [width]);
 
   return (
     <Box
@@ -132,7 +115,7 @@ const Profile = () => {
             width: 'fit-content',
             height: '30px',
             gap: '15px',
-            marginTop: width && width < 600 ? '15px' : '18px',
+            marginTop: isDesktop ? '18px' : '15px',
           }}
         >
           <Box
@@ -151,9 +134,7 @@ const Profile = () => {
               sx={{ fontSize: '12px', color: 'white' }}
               className='interFont'
             >
-              {width && width < 600
-                ? 'Disponible'
-                : 'Disponible para nuevos proyectos'}
+              {isDesktop ? 'Disponible para nuevos proyectos' : 'Disponible'}
             </Typography>
           </Box>
           <Box
