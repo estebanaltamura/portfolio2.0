@@ -33,6 +33,7 @@ const WorkExperiences = () => {
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
+        maxWidth: '529px',
         height: '460px',
         padding: '16px 16px 39px 16px',
         alignItems: 'center',
@@ -47,6 +48,7 @@ const WorkExperiences = () => {
         sx={{
           display: 'flex',
           width: '100%',
+          maxWidth: '476px',
           minHeight: '55px',
           alignItems: 'center',
         }}
@@ -68,7 +70,7 @@ const WorkExperiences = () => {
             />
           </Box>
           <Typography
-            sx={{ fontSize: '16px', fontWeight: '600', marginTop: '2px' }}
+            sx={{ fontSize: '18px', fontWeight: '600', marginTop: '2px' }}
           >
             Experiencia
           </Typography>
@@ -84,8 +86,8 @@ const WorkExperiences = () => {
             onMouseLeave={() => setIsDownloadButtonHovered(false)}
             sx={{
               display: 'flex',
-              width: '143px',
-              height: '38px',
+              width: '122px',
+              height: '30px',
               padding: '8px 16px',
               alignItems: 'center',
               borderRadius: '20px',
