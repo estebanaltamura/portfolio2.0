@@ -13,9 +13,12 @@ const WorkExperiences = () => {
   const [isDownloadingCV, setIsDownloadingCV] = useState<boolean>(false);
 
   const downloadCVClickHandler = () => {
+    const body = document.getElementsByTagName('body')[0];
+
     setIsDownloadingCV(true);
     const timeOut = setTimeout(() => {
       setIsDownloadingCV(false);
+      body.focus();
       clearTimeout(timeOut);
     }, 3500);
   };
