@@ -31,7 +31,7 @@ const Home = () => {
         }}
       >
         <WorkExperiences />
-        {/* <Stack /> */}
+        <Stack />
       </Box>
     </>
   );

@@ -38,7 +38,7 @@ const WorkExperiences = () => {
         padding: '16px 16px 39px 16px',
         alignItems: 'center',
         borderRadius: '16px',
-        border: '1px solid rgba(255, 255, 255, 0.1)',
+        border: '1px solid #494949',
         color: 'white',
         overflow: 'hidden',
       }}
