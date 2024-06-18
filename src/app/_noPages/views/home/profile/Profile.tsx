@@ -68,9 +68,6 @@ const Profile = () => {
         display: 'flex',
         width: '100%',
         justifyContent: 'left',
-        '@media(max-width: 1200px)': {
-          justifyContent: 'center',
-        },
       }}
     >
       <Box
