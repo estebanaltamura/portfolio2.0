@@ -17,7 +17,7 @@ const WorkExperiences = () => {
     const timeOut = setTimeout(() => {
       setIsDownloadingCV(false);
       clearTimeout(timeOut);
-    }, 2000);
+    }, 3500);
   };
 
   return (
