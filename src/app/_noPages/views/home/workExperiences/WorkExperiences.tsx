@@ -32,9 +32,9 @@ const WorkExperiences = () => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        width: '572px',
-        height: '400px',
-        padding: '16px',
+        width: '100%',
+        height: '370px',
+        padding: '16px 16px 32px 16px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid rgba(255, 255, 255, 0.1)',

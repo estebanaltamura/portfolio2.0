@@ -87,7 +87,7 @@ const Profile = () => {
         <Typography
           className='interFont'
           sx={{
-            fontSize: '17px',
+            fontSize: isDesktop ? '17px' : '16px',
             lineHeight: '20px',
             marginTop: '6px',
             color: 'white',
@@ -98,7 +98,7 @@ const Profile = () => {
         <Typography
           className='interFont'
           sx={{
-            fontSize: '17px',
+            fontSize: isDesktop ? '17px' : '16px',
             lineHeight: '20px',
             marginTop: '7px',
             color: 'white',
@@ -112,7 +112,7 @@ const Profile = () => {
             width: 'fit-content',
             height: '30px',
             gap: '15px',
-            marginTop: isDesktop ? '18px' : '15px',
+            marginTop: isDesktop ? '20px' : '20px',
           }}
         >
           <Box
