@@ -46,7 +46,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
           height: '15px',
           borderRadius: '100px',
           backgroundColor: '#6E65A7',
-          marginTop: '6px',
+          marginTop: '5px',
         }}
       ></Box>
       {index < length - 1 && (
