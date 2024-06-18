@@ -3,28 +3,29 @@
 import { experiences } from '@/JSONs/JSONprojects';
 import ExperienceItem from '@/app/_noPages/components/ExperienceItem';
 import { Box, Button, Typography, useMediaQuery } from '@mui/material';
-import { useState } from 'react';
+import { MutableRefObject, useRef, useState } from 'react';
 
 const WorkExperiences = () => {
   const isDesktop = useMediaQuery('(min-width:600px)');
+  const workExperiencesRef = useRef<HTMLDivElement | null>(null);
 
   const [isDownloadButtonHovered, setIsDownloadButtonHovered] =
     useState<boolean>(false);
   const [isDownloadingCV, setIsDownloadingCV] = useState<boolean>(false);
 
   const downloadCVClickHandler = () => {
-    const body = document.getElementsByTagName('body')[0];
-
     setIsDownloadingCV(true);
     const timeOut = setTimeout(() => {
       setIsDownloadingCV(false);
-      body.click();
+
+      workExperiencesRef?.current?.click();
       clearTimeout(timeOut);
     }, 3500);
   };
 
   return (
     <Box
+      ref={workExperiencesRef}
       sx={{
         display: 'flex',
         flexDirection: 'column',
