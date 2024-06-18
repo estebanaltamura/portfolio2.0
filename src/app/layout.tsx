@@ -6,7 +6,7 @@ import './global.css';
 
 const openSansFont = Open_Sans({
   subsets: ['latin'],
-  weight: ['400', '600'],
+  weight: ['300', '400', '600', '700'],
   variable: '--font-openSans',
 });
 

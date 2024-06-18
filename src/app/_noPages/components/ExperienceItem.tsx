@@ -46,7 +46,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
           height: '15px',
           borderRadius: '100px',
           backgroundColor: '#6E65A7',
-          marginTop: '5px',
+          marginTop: '3px',
         }}
       ></Box>
       {index < length - 1 && (
@@ -55,7 +55,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
             position: 'absolute',
             width: '1px',
             height: '133px',
-            top: '21px',
+            top: '18px',
             left: '7px',
             backgroundColor: '#BABEBE',
           }}
@@ -67,7 +67,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
       >
         <Typography
           sx={{
-            lineHeight: '24px',
+            lineHeight: '18px',
             fontSize: '16px',
             fontWeight: '700',
             marginTop: '1px',
@@ -78,10 +78,10 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
 
         <Typography
           sx={{
-            lineHeight: '24px',
+            lineHeight: '18px',
             fontSize: '13px',
-            fontWeight: '400',
-            marginTop: '1px',
+            fontWeight: '300',
+            marginTop: '2px',
           }}
         >
           {period}
@@ -89,9 +89,10 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
 
         <Typography
           sx={{
-            lineHeight: '24px',
+            lineHeight: '22px',
             fontSize: '13px',
             fontWeight: '400',
+            marginTop: '4px',
           }}
         >
           {role}
