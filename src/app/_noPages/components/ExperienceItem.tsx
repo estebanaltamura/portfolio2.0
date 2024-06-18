@@ -34,10 +34,9 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
         position: 'relative',
         display: 'flex',
         width: '100%',
-        height: '48px',
-        marginTop: index > 0 ? '33px' : '0px',
+        height: '68px',
+        marginTop: index > 0 ? '80px' : '0px',
         cursor: 'pointer',
-        alignItems: 'center',
       }}
       onClick={experienceDetailClickHandler}
     >
@@ -47,7 +46,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
           height: '15px',
           borderRadius: '100px',
           backgroundColor: '#6E65A7',
-          marginBottom: '22px',
+          marginTop: '6px',
         }}
       ></Box>
       {index < length - 1 && (
@@ -55,7 +54,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
           sx={{
             position: 'absolute',
             width: '1px',
-            height: '65px',
+            height: '133px',
             top: '21px',
             left: '7px',
             backgroundColor: '#BABEBE',
@@ -66,45 +65,32 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
       <Box
         sx={{ display: 'flex', flexDirection: 'column', marginLeft: '17px' }}
       >
-        <Box sx={{ display: 'flex' }}>
-          <Typography
-            sx={{
-              lineHeight: '24px',
-              fontSize: isDesktop ? '14px' : '11px',
-              fontWeight: '700',
-              marginTop: '1px',
-            }}
-          >
-            {name}
-          </Typography>
-
-          <Typography
-            sx={{
-              lineHeight: '24px',
-              fontSize: isDesktop ? '14px' : '11px',
-              fontWeight: '700',
-              margin: '0px 4px',
-            }}
-          >
-            |
-          </Typography>
-
-          <Typography
-            sx={{
-              lineHeight: '24px',
-              fontSize: isDesktop ? '14px' : '11px',
-              fontWeight: '400',
-              marginTop: '1px',
-            }}
-          >
-            {period}
-          </Typography>
-        </Box>
+        <Typography
+          sx={{
+            lineHeight: '24px',
+            fontSize: '14px',
+            fontWeight: '700',
+            marginTop: '1px',
+          }}
+        >
+          {name}
+        </Typography>
 
         <Typography
           sx={{
             lineHeight: '24px',
-            fontSize: isDesktop ? '14px' : '11px',
+            fontSize: '14px',
+            fontWeight: '400',
+            marginTop: '1px',
+          }}
+        >
+          {period}
+        </Typography>
+
+        <Typography
+          sx={{
+            lineHeight: '24px',
+            fontSize: '14px',
             fontWeight: '400',
           }}
         >
