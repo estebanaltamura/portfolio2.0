@@ -8,23 +8,14 @@ import { useState } from 'react';
 const WorkExperiences = () => {
   const [isDownloadButtonHovered, setIsDownloadButtonHovered] =
     useState<boolean>(false);
+  const [isDownloadingCV, setIsDownloadingCV] = useState<boolean>(false);
 
-  const handleDownload = () => {
-    fetch(
-      'https://drive.google.com/file/d/1X7VTxJ9HQAAyqZxnQPZNpxsI3RsJtpG7/view?usp=sharing'
-    )
-      .then((response) => response.blob())
-      .then((blob) => {
-        const url = window.URL.createObjectURL(new Blob([blob]));
-        console.log(blob);
-        const link = document.createElement('a');
-        link.href = url;
-        link.setAttribute('download', 'CV_Andres_Altamura_Front-End_React.pdf'); // Reemplaza con el nombre de tu archivo
-        document.body.appendChild(link);
-        link.click();
-        link?.parentNode?.removeChild(link);
-      })
-      .catch((err) => console.error('Error al descargar el archivo:', err));
+  const downloadCVClickHandler = () => {
+    setIsDownloadingCV(true);
+    const timeOut = setTimeout(() => {
+      setIsDownloadingCV(false);
+      clearTimeout(timeOut);
+    }, 2000);
   };
 
   return (
@@ -79,7 +70,7 @@ const WorkExperiences = () => {
         <a
           href='https://drive.google.com/uc?export=download&id=1X7VTxJ9HQAAyqZxnQPZNpxsI3RsJtpG7
 '
-          onClick={() => setIsDownloadButtonHovered(false)}
+          onClick={downloadCVClickHandler}
         >
           <Button
             onMouseEnter={() => setIsDownloadButtonHovered(true)}
@@ -91,11 +82,17 @@ const WorkExperiences = () => {
               padding: '8px 16px',
               alignItems: 'center',
               borderRadius: '20px',
-              border: isDownloadButtonHovered ? '1px solid #6E65A7' : '',
-              backgroundColor: isDownloadButtonHovered ? '#252525' : '#6E65A7',
+              border:
+                isDownloadButtonHovered || isDownloadingCV
+                  ? '1px solid #6E65A7'
+                  : '',
+              backgroundColor:
+                isDownloadButtonHovered || isDownloadingCV
+                  ? '#252525'
+                  : '#6E65A7',
             }}
           >
-            {isDownloadButtonHovered ? (
+            {isDownloadButtonHovered && !isDownloadingCV ? (
               <img src='/icons/arrowDownloadButtonIcon.svg' alt='' />
             ) : (
               <Typography
@@ -106,7 +103,7 @@ const WorkExperiences = () => {
                   textTransform: 'none',
                 }}
               >
-                Descargar CV
+                {isDownloadingCV ? 'Descargando...' : 'Descargar CV'}
               </Typography>
             )}
           </Button>
