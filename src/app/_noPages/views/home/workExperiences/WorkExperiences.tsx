@@ -33,7 +33,7 @@ const WorkExperiences = () => {
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        height: '370px',
+        height: '385px',
         padding: '16px 16px 32px 16px',
         alignItems: 'center',
         borderRadius: '16px',
