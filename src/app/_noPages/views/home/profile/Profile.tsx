@@ -14,6 +14,8 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const Profile = () => {
   const [isCopyingEmailHeader, setIsCopyingEmailHeader] = useState(false);
+  const [isDownloadingCV, setIsDownloadingCV] = useState<boolean>(false);
+
   const isDesktop = useMediaQuery('(min-width:600px)');
 
   const copyEmailAddressHeaderClickHandler = () => {
@@ -52,6 +54,15 @@ const Profile = () => {
       `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
       '_blank'
     );
+  };
+
+  const downloadCVClickHandler = () => {
+    setIsDownloadingCV(true);
+    const timeOut = setTimeout(() => {
+      setIsDownloadingCV(false);
+
+      clearTimeout(timeOut);
+    }, 3500);
   };
 
   return (
@@ -204,6 +215,8 @@ const Profile = () => {
                     top: '25px',
                     left: '-26px',
                     fontSize: '14px',
+                    marginTop: '9px',
+
                     borderRadius: '8px',
                     padding: '4px 8px',
                     backgroundColor: '#4E4E4E',
@@ -269,32 +282,63 @@ const Profile = () => {
               </Box>
             </CustomTooltip>
 
-            <CustomTooltip
-              title='Descargar cv'
-              classes={{ tooltip: tooltipClasses.tooltip }}
-              sx={{
-                [`& .${tooltipClasses.tooltip}`]: {
-                  fontSize: '14px',
-                  color: '#BEBABA',
-                },
-              }}
-            >
-              <Box
+            <a href='https://drive.google.com/uc?export=download&id=1X7VTxJ9HQAAyqZxnQPZNpxsI3RsJtpG7'>
+              <CustomTooltip
+                title='Descargar cv'
+                classes={{ tooltip: tooltipClasses.tooltip }}
                 sx={{
-                  position: 'relative',
-                  top: '1px',
-                  width: '24px',
-                  height: '24px',
-                  cursor: 'pointer',
+                  [`& .${tooltipClasses.tooltip}`]: {
+                    fontSize: '14px',
+                    color: '#BEBABA',
+                  },
                 }}
               >
-                <img
-                  src='/icons/profileIcons/cvIcon.svg'
-                  alt=''
-                  style={{ width: '23px', height: '23px' }}
-                />
-              </Box>
-            </CustomTooltip>
+                <Box
+                  onClick={downloadCVClickHandler}
+                  sx={{
+                    position: 'relative',
+                    top: '1px',
+                    width: '24px',
+                    height: '24px',
+                    cursor: 'pointer',
+                  }}
+                >
+                  {isDownloadingCV && (
+                    <Box
+                      sx={{
+                        position: 'absolute',
+                        marginTop: '10px',
+                        color: 'white',
+                        top: '25px',
+                        left: '-43px',
+                        fontSize: '14px',
+                        borderRadius: '8px',
+                        padding: '4px 8px',
+                        backgroundColor: '#4E4E4E',
+                        '&::before': {
+                          content: '""',
+                          position: 'absolute',
+                          top: '-8px',
+                          left: '50%',
+                          transform: 'translateX(-50%)',
+                          borderLeft: '5px solid transparent',
+                          borderRight: '5px solid transparent',
+                          borderBottom: '13px solid #4E4E4E',
+                        },
+                      }}
+                    >
+                      Descargando...
+                    </Box>
+                  )}
+
+                  <img
+                    src='/icons/profileIcons/cvIcon.svg'
+                    alt=''
+                    style={{ width: '23px', height: '23px' }}
+                  />
+                </Box>
+              </CustomTooltip>
+            </a>
           </Box>
         </Box>
       </Box>

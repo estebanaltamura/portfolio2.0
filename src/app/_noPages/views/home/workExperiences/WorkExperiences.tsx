@@ -77,8 +77,7 @@ const WorkExperiences = () => {
         </Box>
         <Box sx={{ display: 'flex', flexGrow: 1 }}></Box>
         <a
-          href='https://drive.google.com/uc?export=download&id=1X7VTxJ9HQAAyqZxnQPZNpxsI3RsJtpG7
-'
+          href='https://drive.google.com/uc?export=download&id=1X7VTxJ9HQAAyqZxnQPZNpxsI3RsJtpG7'
           onClick={downloadCVClickHandler}
         >
           <Button
