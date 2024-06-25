@@ -7,7 +7,7 @@ import { MutableRefObject, useRef, useState } from 'react';
 
 const WorkExperiences = () => {
   const isDesktop = useMediaQuery('(min-width:600px)');
-  const workExperiencesRef = useRef<HTMLDivElement | null>(null);
+  const downloadCvButtonRef = useRef<HTMLButtonElement | null>(null);
 
   const [isDownloadButtonHovered, setIsDownloadButtonHovered] =
     useState<boolean>(false);
@@ -15,17 +15,17 @@ const WorkExperiences = () => {
 
   const downloadCVClickHandler = () => {
     setIsDownloadingCV(true);
-    const timeOut = setTimeout(() => {
+    setTimeout(() => {
       setIsDownloadingCV(false);
 
-      workExperiencesRef?.current?.click();
-      clearTimeout(timeOut);
+      if (downloadCvButtonRef.current) {
+        downloadCvButtonRef.current.blur();
+      }
     }, 3500);
   };
 
   return (
     <Box
-      ref={workExperiencesRef}
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -81,6 +81,7 @@ const WorkExperiences = () => {
           onClick={downloadCVClickHandler}
         >
           <Button
+            ref={downloadCvButtonRef}
             onMouseEnter={() => isDesktop && setIsDownloadButtonHovered(true)}
             onMouseLeave={() => isDesktop && setIsDownloadButtonHovered(false)}
             sx={{
@@ -96,11 +97,8 @@ const WorkExperiences = () => {
                   : '',
               backgroundColor:
                 isDownloadButtonHovered || isDownloadingCV
-                  ? '#252525'
-                  : '#6E65A7',
-              '&:active': {
-                backgroundColor: '#6E65A7',
-              },
+                  ? '#252525 !important'
+                  : '#6E65A7 !important',
             }}
           >
             {isDownloadButtonHovered && !isDownloadingCV ? (
