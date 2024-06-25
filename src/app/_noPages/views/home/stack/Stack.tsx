@@ -10,7 +10,7 @@ const Stack = () => {
         width: '100%',
         maxWidth: '467px',
         height: 'fit-content',
-        padding: '16px 24px 40px 24px',
+        padding: '16px 20px 40px 20px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',
