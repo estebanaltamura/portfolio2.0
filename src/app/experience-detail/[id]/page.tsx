@@ -1,5 +1,6 @@
 'use client';
 import { experiences } from '@/JSONs/JSONprojects';
+import ExperienceDetailImage from '@/app/_noPages/components/ExperienceDetailImage';
 import { Box, Typography } from '@mui/material';
 import { useParams, useRouter } from 'next/navigation';
 
@@ -141,30 +142,32 @@ const ExperienceDetail = () => {
         </Typography>
         {details &&
           details.map((detail, index) => {
-            console.log(detail.slice(0, 4));
-            console.log(detail.slice(4));
-            if (detail.slice(0, 4) === 'src:')
+            if (typeof detail === 'string') {
               return (
-                <img
+                <Typography
                   key={index}
-                  src={detail.slice(4)}
-                  alt=''
-                  style={{ width: '100%', margin: '25px 0 10px 0' }}
-                />
+                  variant='body1'
+                  sx={{
+                    fontSize: '16px',
+                    color: '#bababa',
+                    lineHeight: '23px',
+                    marginTop: index === 0 ? '50px' : '20px',
+                  }}
+                >
+                  {detail}
+                </Typography>
               );
+            }
+
             return (
-              <Typography
+              <ExperienceDetailImage
                 key={index}
-                variant='body1'
-                sx={{
-                  fontSize: '16px',
-                  color: '#bababa',
-                  lineHeight: '23px',
-                  marginTop: '50px',
-                }}
-              >
-                {detail}
-              </Typography>
+                src={detail.src}
+                width={detail.width}
+                imageDescription={detail.imageDescription}
+                marginTop={detail.marginTop}
+                marginBottom={detail.marginBottom}
+              />
             );
           })}
       </Box>
