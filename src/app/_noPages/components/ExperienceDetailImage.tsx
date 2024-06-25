@@ -30,9 +30,10 @@ const ExperienceDetailImage: React.FC<IExperienceDetailImageProps> = ({
       <Typography
         sx={{
           color: 'white',
-          fontSize: '12px',
-          marginTop: '3px',
+          fontSize: '11px',
+          marginTop: '2px',
           textAlign: 'center',
+          fontStyle: 'italic',
         }}
       >
         {imageDescription}
