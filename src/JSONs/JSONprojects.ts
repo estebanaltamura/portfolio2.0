@@ -359,8 +359,22 @@ export const experiences: IExperiences[] = [
     role: 'Desarrollador Front-End & Co-founder',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
-      'Me desempeño como referente tecnológico, desarrollador frontend y realizo algunas tareas de nexo con el cliente para la rama de software factory de la empresa.',
-      'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
+      'Luego de re conectarme con el desarrollo web, co-fundé junto a una socia una startup de venta de indumentaria minorista online para Estados Unidos. Esta experiencia me proporcionó una sólida base en habilidades específicas en desarrollo web y gestión de negocios en línea.',
+
+      'Fui responsable de varias tareas claves entre las cuales destaco:',
+      '· Desarrollo web y personalización de la tienda online utilizando HTML, CSS y Javascript en la edición de nuestro sitio web dentro de la plataforma Shopify.',
+
+      '· Planificación y ejecución de estrategias de marketing digital, publicidad en redes sociales, dando mayor visibilidad a la marca y generando ventas.',
+
+      '· Monitoreo y análisis de métricas clave para identificar potenciales segmentos y mejoras en el rendimiento del sitio web y las campañas de marketing.',
+
+      '· Administración de proyectos y coordinación de tareas, asegurando el cumplimiento de los plazos y la satisfacción de los objetivos del negocio.',
+
+      '· Coordinación de envíos de las ventas y la distribución de muestras a influencers.',
+
+      '· Generación de procesos logísticos para asegurar una entrega rápida y precisa de los productos utilizando empresas de logística automatizadas.',
+
+      '· Apertura de la empresa y gestión de aspectos legales y administrativos, como la creación de cuentas bancarias y cumplimiento de regulaciones.',
     ],
   },
   {

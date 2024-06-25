@@ -99,9 +99,9 @@ const ExperienceDetail = () => {
             viewBox='0 0 24 24'
             fill='none'
             stroke='currentColor'
-            stroke-width='2'
-            stroke-linecap='round'
-            stroke-linejoin='round'
+            strokeWidth='2'
+            strokeLinecap='round'
+            strokeLinejoin='round'
           >
             <path d='m12 19-7-7 7-7'></path>
             <path d='M19 12H5'></path>
@@ -126,7 +126,7 @@ const ExperienceDetail = () => {
             fontSize: '14px',
             lineHeight: '14px',
             color: '#8C8C8C',
-            marginTop: '2px',
+            marginTop: '0px',
           }}
         >
           {period}
@@ -153,8 +153,8 @@ const ExperienceDetail = () => {
                   sx={{
                     fontSize: '16px',
                     color: '#bababa',
-                    lineHeight: '23px',
-                    marginTop: index === 0 ? '50px' : '20px',
+                    lineHeight: '25px',
+                    marginTop: index === 0 ? '40px' : '20px',
                   }}
                 >
                   {detail}
