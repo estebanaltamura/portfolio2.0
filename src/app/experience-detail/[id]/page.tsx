@@ -1,6 +1,7 @@
 'use client';
 import { experiences } from '@/JSONs/JSONprojects';
 import ExperienceDetailImage from '@/app/_noPages/components/ExperienceDetailImage';
+import ExperienceDetailVideo from '@/app/_noPages/components/ExperienceDetailVideo';
 import { Box, Typography } from '@mui/material';
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect } from 'react';
@@ -161,17 +162,31 @@ const ExperienceDetail = () => {
                 </Typography>
               );
             }
+            if (detail.type === 'image') {
+              return (
+                <ExperienceDetailImage
+                  key={index}
+                  src={detail.src}
+                  width={detail.width}
+                  imageDescription={detail.imageDescription}
+                  marginTop={detail.marginTop}
+                  marginBottom={detail.marginBottom}
+                />
+              );
+            }
 
-            return (
-              <ExperienceDetailImage
-                key={index}
-                src={detail.src}
-                width={detail.width}
-                imageDescription={detail.imageDescription}
-                marginTop={detail.marginTop}
-                marginBottom={detail.marginBottom}
-              />
-            );
+            if (detail.type === 'video') {
+              return (
+                <ExperienceDetailVideo
+                  key={index}
+                  src={detail.src}
+                  width={detail.width}
+                  imageDescription={detail.imageDescription}
+                  marginTop={detail.marginTop}
+                  marginBottom={detail.marginBottom}
+                />
+              );
+            }
           })}
       </Box>
     </Box>

@@ -306,6 +306,7 @@ export interface IExperiences {
   details: (
     | string
     | {
+        type: 'image' | 'video';
         src: string;
         width: number;
         marginBottom: number;
@@ -327,6 +328,7 @@ export const experiences: IExperiences[] = [
     details: [
       'Me desempeño como referente tecnológico, desarrollador frontend y realizo algunas tareas de nexo con el cliente para la rama de software factory de la empresa.',
       {
+        type: 'image',
         src: '/buenosNegocios.jpg',
         width: 100,
         marginBottom: 15,
@@ -336,6 +338,16 @@ export const experiences: IExperiences[] = [
       },
 
       'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
+      {
+        type: 'video',
+        src: 'https://player.vimeo.com/video/856401646',
+        width: 100,
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription:
+          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+      },
+
       'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
     ],
   },
