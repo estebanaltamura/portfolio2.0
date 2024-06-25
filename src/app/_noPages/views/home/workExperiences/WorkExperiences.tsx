@@ -31,13 +31,16 @@ const WorkExperiences = () => {
         flexDirection: 'column',
         width: '100%',
         maxWidth: '529px',
-        height: '478px',
+        height: '383px',
         padding: '16px 16px 40px 16px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',
         color: 'white',
         overflow: 'hidden',
+        '@media(min-width: 1200px)': {
+          height: '478px',
+        },
       }}
     >
       {/*Header*/}
@@ -121,9 +124,12 @@ const WorkExperiences = () => {
         sx={{
           width: '100%',
           maxWidth: '476px',
-          height: '345px',
+          height: '250px',
           marginTop: '20px',
           overflow: 'auto',
+          '@media(min-width: 1200px)': {
+            height: '345px',
+          },
           '&::-webkit-scrollbar': {
             width: '5px',
           },
