@@ -16,8 +16,11 @@ const Stack = () => {
         border: '1px solid #494949',
         color: 'white',
         overflow: 'hidden',
+        marginTop: '20px',
+
         '@media(min-width: 1200px)': {
           padding: '16px 32px 32px 32px',
+          marginTop: '0px',
         },
       }}
     >
