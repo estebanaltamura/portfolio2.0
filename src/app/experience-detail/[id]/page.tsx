@@ -136,7 +136,7 @@ const ExperienceDetail = () => {
                   key={index}
                   src={detail.slice(4)}
                   alt=''
-                  style={{ width: '100%', margin: '25px 0' }}
+                  style={{ width: '100%', margin: '25px 0 10px 0' }}
                 />
               );
             return (
