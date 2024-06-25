@@ -48,6 +48,7 @@ const ExperienceDetail = () => {
       sx={{
         display: 'flex',
         position: 'relative',
+        top: '-30px',
         width: '100%',
         height: '100%',
         justifyContent: 'center',
@@ -82,9 +83,8 @@ const ExperienceDetail = () => {
             border: '1px solid #8C8C8C',
             cursor: 'pointer',
             '@media(min-width: 1200px)': {
-              top: '-8px',
-
-              left: '-100px',
+              top: '20px',
+              left: '-160px',
             },
           }}
         >
@@ -110,7 +110,7 @@ const ExperienceDetail = () => {
             fontSize: '30px',
             color: 'white',
             fontWeight: '600',
-            marginTop: '12px',
+            marginTop: '25px',
           }}
         >
           {name}
@@ -118,12 +118,25 @@ const ExperienceDetail = () => {
 
         <Typography
           variant='body1'
-          sx={{ fontSize: '16px', lineHeight: '16px', color: '#8C8C8C' }}
+          sx={{
+            fontSize: '14px',
+            lineHeight: '14px',
+            color: '#8C8C8C',
+            marginTop: '2px',
+          }}
         >
           {period}
         </Typography>
 
-        <Typography variant='body1' sx={{ fontSize: '17px', color: 'white' }}>
+        <Typography
+          variant='body1'
+          sx={{
+            fontSize: '17px',
+            color: 'white',
+            marginTop: '8px',
+            fontWeight: '600',
+          }}
+        >
           {role}
         </Typography>
         {details &&
@@ -145,9 +158,9 @@ const ExperienceDetail = () => {
                 variant='body1'
                 sx={{
                   fontSize: '16px',
-                  color: '#8C8C8C',
-                  lineHeight: '28px',
-                  marginTop: '15px',
+                  color: '#bababa',
+                  lineHeight: '23px',
+                  marginTop: '50px',
                 }}
               >
                 {detail}

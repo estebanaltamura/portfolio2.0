@@ -306,6 +306,8 @@ export interface IExperiences {
   details: string[];
 }
 
+// implementar que sea string o un objeto que tiene el src de la imagen, marginTop, marginBottom, comentario de la foto
+
 export const experiences: IExperiences[] = [
   {
     id: 'koi-ventures',
