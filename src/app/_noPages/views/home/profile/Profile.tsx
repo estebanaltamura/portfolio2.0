@@ -195,7 +195,34 @@ const Profile = () => {
               </CustomTooltip>
             </a>
 
-            <Box onClick={mailClickHandler}>
+            <Box sx={{ position: 'relative' }} onClick={mailClickHandler}>
+              {isCopyingEmailHeader && !isDesktop && (
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    color: 'white',
+                    top: '25px',
+                    left: '-26px',
+                    fontSize: '14px',
+                    borderRadius: '8px',
+                    padding: '4px 8px',
+                    backgroundColor: '#4E4E4E',
+                    '&::before': {
+                      content: '""',
+                      position: 'absolute',
+                      top: '-8px',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      borderLeft: '5px solid transparent',
+                      borderRight: '5px solid transparent',
+                      borderBottom: '13px solid #4E4E4E',
+                    },
+                  }}
+                >
+                  Copiado!
+                </Box>
+              )}
+
               <CopyToClipboard text='esteban.altamura@gmail.com'>
                 <CustomTooltip
                   title={isCopyingEmailHeader ? 'Mail copiado!' : 'Copiar mail'}
