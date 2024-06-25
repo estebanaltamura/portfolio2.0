@@ -16,14 +16,14 @@ const Projects = () => {
         width: '100%',
         height: '500px',
         marginTop: '50px',
-        padding: '16px 20px 32px 20px',
+        padding: '16px 20px 24px 20px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',
         color: 'white',
         overflow: 'hidden',
         '@media(min-width: 1200px)': {
-          padding: '16px 32px 40px 32px',
+          padding: '16px 32px 32px 32px',
         },
       }}
     >
@@ -57,7 +57,7 @@ const Projects = () => {
           display: 'block',
           width: '100%',
           height: 'fit-content',
-          marginTop: '20px',
+          marginTop: '10px',
           paddingRight: '10px',
           overflowY: 'auto',
           '&::-webkit-scrollbar': {

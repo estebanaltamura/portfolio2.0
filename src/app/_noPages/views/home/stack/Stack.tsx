@@ -10,14 +10,14 @@ const Stack = () => {
         width: '100%',
         maxWidth: '467px',
         height: 'fit-content',
-        padding: '16px 20px 32px 20px',
+        padding: '16px 20px 24px 20px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',
         color: 'white',
         overflow: 'hidden',
         '@media(min-width: 1200px)': {
-          padding: '16px 32px 40px 32px',
+          padding: '16px 32px 32px 32px',
         },
       }}
     >

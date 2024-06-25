@@ -32,14 +32,15 @@ const WorkExperiences = () => {
         width: '100%',
         maxWidth: '529px',
         height: '383px',
-        padding: '16px 16px 32px 16px',
+        padding: '16px 16px 24px 16px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',
         color: 'white',
         overflow: 'hidden',
         '@media(min-width: 1200px)': {
-          height: '478px',
+          height: '470px',
+          padding: '16px 16px 32px 16px',
         },
       }}
     >
@@ -124,7 +125,6 @@ const WorkExperiences = () => {
         sx={{
           width: '100%',
           maxWidth: '476px',
-          height: '250px',
           marginTop: '20px',
           overflow: 'auto',
           '@media(min-width: 1200px)': {
