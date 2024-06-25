@@ -67,7 +67,7 @@ const Stack = () => {
                   : 'calc((100% - 20px) * 0.27)',
                 padding: '10px',
                 borderRadius: '8px',
-                boxShadow: '0px 0px 8px 0px #6E65A7',
+                boxShadow: '0px 0px 6px 0px #6E65A7',
                 position: 'relative',
                 overflow: 'hidden',
                 border: '1px solid rgba(255, 255, 255, 0.3)',
