@@ -386,36 +386,45 @@ interface IStack {
 
 export const stack: IStack[] = [
   {
-    iconSrc: 'https://i.postimg.cc/NFQ4z1X5/vercel-logo.png', // next
+    iconSrc: '/icons/stackIcons/nextIcon.svg',
     doubleWidth: true,
   },
   {
-    iconSrc: 'https://i.postimg.cc/MZ11m06Y/react-Icon.png',
+    iconSrc: '/icons/stackIcons/reactIcon.svg',
   },
   {
-    iconSrc: 'https://i.postimg.cc/QCJtF7Mr/ts-icon.png',
+    iconSrc: '/icons/stackIcons/tsIcon.svg',
   },
   {
-    iconSrc: 'https://i.postimg.cc/7LHby70S/javascript-Icon.png',
-  },
-
-  {
-    iconSrc: 'https://i.postimg.cc/kGPKdGc8/HtmlIcon.png',
-  },
-  {
-    iconSrc: 'https://i.postimg.cc/3Rvm6mgY/cssIcon.png',
-  },
-  {
-    iconSrc: 'https://i.postimg.cc/TP6KXTGL/node.png',
-  },
-  {
-    iconSrc: 'https://i.postimg.cc/YSsQS6mL/material-icon.png',
-  },
-  {
-    iconSrc: 'https://i.postimg.cc/Kj7LcbqW/firebase-Icon.png',
+    iconSrc: '/icons/stackIcons/jsIcon.svg',
   },
 
   {
-    iconSrc: 'https://i.postimg.cc/sxpps1pb/aws-icon.png',
+    iconSrc: '/icons/stackIcons/htmlIcon.svg',
+    doubleWidth: true,
+  },
+  {
+    iconSrc: '/icons/stackIcons/cssIcon.svg',
+  },
+  {
+    iconSrc: '/icons/stackIcons/nodeIcon.svg',
+  },
+  {
+    iconSrc: '/icons/stackIcons/githubIcon.svg',
+  },
+  {
+    iconSrc: '/icons/stackIcons/muiIcon.svg',
+    doubleWidth: true,
+  },
+
+  {
+    iconSrc: '/icons/stackIcons/firebaseIcon.svg',
+  },
+  {
+    iconSrc: '/icons/stackIcons/awsIcon.svg',
+    doubleWidth: true,
+  },
+  {
+    iconSrc: '/icons/stackIcons/jestIcon.svg',
   },
 ];

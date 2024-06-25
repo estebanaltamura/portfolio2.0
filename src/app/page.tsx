@@ -20,7 +20,7 @@ const Home = () => {
           flexDirection: 'row',
           width: '100%',
           height: 'fit-content',
-          gap: '19px',
+          gap: '35px',
           marginTop: '60px',
 
           '@media(max-width: 1200px)': {

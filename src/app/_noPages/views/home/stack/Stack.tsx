@@ -7,12 +7,18 @@ const Stack = () => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
-        width: '421px',
+        width: '100%',
+        maxWidth: '467px',
         height: 'fit-content',
-        padding: '16px 16px 35px 16px',
+        padding: '16px 24px 40px 24px',
+        alignItems: 'center',
+        borderRadius: '16px',
         border: '1px solid #494949',
-        borderRadius: '20px',
+        color: 'white',
+        overflow: 'hidden',
+        '@media(min-width: 1200px)': {
+          padding: '16px 32px 40px 32px',
+        },
       }}
     >
       {/*Header*/}
@@ -23,7 +29,6 @@ const Stack = () => {
           minHeight: '55px',
           gap: '11px',
           alignItems: 'center',
-          paddingLeft: '10px',
         }}
       >
         <Box sx={{ width: '20px', height: '20px' }}>
@@ -31,7 +36,7 @@ const Stack = () => {
         </Box>
         <Typography
           sx={{
-            fontSize: '16px',
+            fontSize: '18px',
             fontWeight: '600',
             color: 'white',
             marginTop: '2px',
@@ -45,10 +50,10 @@ const Stack = () => {
         sx={{
           display: 'flex',
           flexWrap: 'wrap',
-          maxWidth: '342px',
+          maxWidth: '401px',
           height: 'fit-content',
           gap: '10px',
-          marginTop: '25px',
+          marginTop: '12px',
         }}
       >
         {stack.map((stackItem, index) => {
@@ -56,16 +61,20 @@ const Stack = () => {
             <Box
               key={index}
               sx={{
-                width: stackItem.doubleWidth
-                  ? 'calc(50% - 6px)'
-                  : 'calc(25% - 8px)', // Ajusta el ancho para 4 iconos por fila
-                padding: '10px',
+                height: '81px',
+                width: stackItem.doubleWidth ? '40.7%' : '26%',
+                padding: '11px',
                 borderRadius: '8px',
                 boxShadow: '0px 0px 4px 0px rgba(255, 255, 255, 0.3)',
                 position: 'relative',
                 overflow: 'hidden',
-                border: '1px solid rgba(255, 255, 255, 0.3)', // Borde con color fijo
-
+                border: '1px solid rgba(255, 255, 255, 0.3)',
+                '@media(min-width: 380px)': {
+                  padding: '13px',
+                },
+                '@media(min-width: 1200px)': {
+                  width: stackItem.doubleWidth ? '165px' : '108px',
+                },
                 '&:hover': {
                   animation: 'pulse 0.65s',
                   boxShadow: '0 0 0 0.3em transparent',

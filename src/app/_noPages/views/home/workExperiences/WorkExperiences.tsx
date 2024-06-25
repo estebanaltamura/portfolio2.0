@@ -31,8 +31,8 @@ const WorkExperiences = () => {
         flexDirection: 'column',
         width: '100%',
         maxWidth: '529px',
-        height: '460px',
-        padding: '16px 16px 39px 16px',
+        height: '478px',
+        padding: '16px 16px 40px 16px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',
@@ -121,7 +121,7 @@ const WorkExperiences = () => {
         sx={{
           width: '100%',
           maxWidth: '476px',
-          height: '328px',
+          height: '345px',
           marginTop: '20px',
           overflow: 'auto',
           '&::-webkit-scrollbar': {

@@ -35,7 +35,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
         display: 'flex',
         width: '100%',
         height: '68px',
-        marginTop: index > 0 ? '80px' : '0px',
+        marginTop: index > 0 ? '35px' : '0px',
         cursor: 'pointer',
       }}
       onClick={experienceDetailClickHandler}
@@ -54,7 +54,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
           sx={{
             position: 'absolute',
             width: '1px',
-            height: '133px',
+            height: '88px',
             top: '18px',
             left: '7px',
             backgroundColor: '#BABEBE',
