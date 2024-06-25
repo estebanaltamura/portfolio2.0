@@ -32,7 +32,7 @@ const WorkExperiences = () => {
         width: '100%',
         maxWidth: '529px',
         height: '383px',
-        padding: '16px 16px 40px 16px',
+        padding: '16px 16px 32px 16px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',

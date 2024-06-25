@@ -10,7 +10,7 @@ const Stack = () => {
         width: '100%',
         maxWidth: '467px',
         height: 'fit-content',
-        padding: '16px 20px 40px 20px',
+        padding: '16px 20px 32px 20px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',
@@ -61,18 +61,21 @@ const Stack = () => {
             <Box
               key={index}
               sx={{
-                height: '81px',
-                width: stackItem.doubleWidth ? '40.7%' : '26%',
-                padding: '11px',
+                height: '60px',
+                width: stackItem.doubleWidth
+                  ? 'calc((100% - 20px) * 0.46)'
+                  : 'calc((100% - 20px) * 0.27)',
+                padding: '10px',
                 borderRadius: '8px',
                 boxShadow: '0px 0px 4px 0px rgba(255, 255, 255, 0.3)',
                 position: 'relative',
                 overflow: 'hidden',
                 border: '1px solid rgba(255, 255, 255, 0.3)',
-                '@media(min-width: 380px)': {
-                  padding: '13px',
+                '@media(min-width: 450px)': {
+                  height: '70px',
                 },
                 '@media(min-width: 1200px)': {
+                  height: '81px',
                   width: stackItem.doubleWidth ? '165px' : '108px',
                 },
                 '&:hover': {
