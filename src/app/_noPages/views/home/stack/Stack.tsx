@@ -75,6 +75,8 @@ const Stack = () => {
                   height: '70px',
                 },
                 '@media(min-width: 1200px)': {
+                  padding: '15px',
+
                   height: '81px',
                   width: stackItem.doubleWidth ? '165px' : '108px',
                 },

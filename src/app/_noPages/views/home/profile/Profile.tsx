@@ -39,14 +39,6 @@ const Profile = () => {
     },
   });
 
-  const gitHubClickHandler = () => {
-    // TO DO
-  };
-
-  const linkedinClickHandler = () => {
-    // TO DO
-  };
-
   const mailClickHandler = () => {
     copyEmailAddressHeaderClickHandler();
   };
@@ -136,6 +128,8 @@ const Profile = () => {
           </Box>
           <Box
             sx={{
+              position: 'relative',
+              top: '0px',
               display: 'flex',
               width: 'fit-content',
               gap: '17px',
@@ -143,39 +137,13 @@ const Profile = () => {
             }}
           >
             <a
-              href='https://github.com/estebanaltamura/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <CustomTooltip
-                title='Ir a Git hub'
-                classes={{ tooltip: tooltipClasses.tooltip }}
-                sx={{
-                  [`& .${tooltipClasses.tooltip}`]: {
-                    fontSize: '14px',
-                    color: '#BEBABA',
-                  },
-                }}
-              >
-                <Box
-                  sx={{ width: '20px', height: '20px', cursor: 'pointer' }}
-                  onClick={gitHubClickHandler}
-                >
-                  <img
-                    src='/icons/githubIcon.svg'
-                    alt=''
-                    style={{ width: '20px', height: '20px' }}
-                  />
-                </Box>
-              </CustomTooltip>
-            </a>
-            <a
+              style={{ position: 'relative', bottom: '1px' }}
               href='https://www.linkedin.com/in/andres-altamura/'
               target='_blank'
               rel='noopener noreferrer'
             >
               <CustomTooltip
-                title='Ir a Linkedin'
+                title='Ir a LinkedIn'
                 classes={{ tooltip: tooltipClasses.tooltip }}
                 sx={{
                   [`& .${tooltipClasses.tooltip}`]: {
@@ -184,12 +152,9 @@ const Profile = () => {
                   },
                 }}
               >
-                <Box
-                  sx={{ width: '20px', height: '20px', cursor: 'pointer' }}
-                  onClick={linkedinClickHandler}
-                >
+                <Box sx={{ width: '20px', height: '20px', cursor: 'pointer' }}>
                   <img
-                    src='/icons/linkedinIcon.svg'
+                    src='/icons/profileIcons/linkedinIcon.svg'
                     alt=''
                     style={{
                       width: '20px',
@@ -199,15 +164,35 @@ const Profile = () => {
                 </Box>
               </CustomTooltip>
             </a>
+            <a
+              href='https://github.com/estebanaltamura/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <CustomTooltip
+                title='Ir a Github'
+                classes={{ tooltip: tooltipClasses.tooltip }}
+                sx={{
+                  [`& .${tooltipClasses.tooltip}`]: {
+                    fontSize: '14px',
+                    color: '#BEBABA',
+                  },
+                }}
+              >
+                <Box sx={{ width: '19px', height: '19px', cursor: 'pointer' }}>
+                  <img
+                    src='/icons/profileIcons/githubIcon.svg'
+                    alt=''
+                    style={{ width: '19px', height: '19px' }}
+                  />
+                </Box>
+              </CustomTooltip>
+            </a>
 
             <Box onClick={mailClickHandler}>
               <CopyToClipboard text='esteban.altamura@gmail.com'>
                 <CustomTooltip
-                  title={
-                    isCopyingEmailHeader
-                      ? 'Correo copiado!'
-                      : 'Clickea para copiar mi mail en el portapapeles'
-                  }
+                  title={isCopyingEmailHeader ? 'Mail copiado!' : 'Copiar mail'}
                   classes={{ tooltip: tooltipClasses.tooltip }}
                   sx={{
                     [`& .${tooltipClasses.tooltip}`]: {
@@ -220,7 +205,7 @@ const Profile = () => {
                     sx={{ width: '20px', height: '20px', cursor: 'pointer' }}
                   >
                     <img
-                      src='/icons/mailIcon.svg'
+                      src='/icons/profileIcons/mailIcon.svg'
                       alt=''
                       style={{ width: '20px', height: '20px' }}
                     />
@@ -230,7 +215,7 @@ const Profile = () => {
             </Box>
 
             <CustomTooltip
-              title='Contactar por Whatsapp'
+              title='Ir a Whatsapp'
               classes={{ tooltip: tooltipClasses.tooltip }}
               sx={{
                 [`& .${tooltipClasses.tooltip}`]: {
@@ -240,13 +225,40 @@ const Profile = () => {
               }}
             >
               <Box
-                sx={{ width: '20px', height: '20px', cursor: 'pointer' }}
+                sx={{ width: '19px', height: '19px', cursor: 'pointer' }}
                 onClick={whatsappClickHandler}
               >
                 <img
-                  src='/icons/whatsappIcon.svg'
+                  src='/icons/profileIcons/whatsappIcon.svg'
                   alt=''
-                  style={{ width: '20px', height: '20px' }}
+                  style={{ width: '19px', height: '19px' }}
+                />
+              </Box>
+            </CustomTooltip>
+
+            <CustomTooltip
+              title='Descargar cv'
+              classes={{ tooltip: tooltipClasses.tooltip }}
+              sx={{
+                [`& .${tooltipClasses.tooltip}`]: {
+                  fontSize: '14px',
+                  color: '#BEBABA',
+                },
+              }}
+            >
+              <Box
+                sx={{
+                  position: 'relative',
+                  top: '1px',
+                  width: '24px',
+                  height: '24px',
+                  cursor: 'pointer',
+                }}
+              >
+                <img
+                  src='/icons/profileIcons/cvIcon.svg'
+                  alt=''
+                  style={{ width: '23px', height: '23px' }}
                 />
               </Box>
             </CustomTooltip>
