@@ -3,6 +3,7 @@ import { experiences } from '@/JSONs/JSONprojects';
 import ExperienceDetailImage from '@/app/_noPages/components/ExperienceDetailImage';
 import { Box, Typography } from '@mui/material';
 import { useParams, useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 const ExperienceDetail = () => {
   const router = useRouter();
@@ -12,6 +13,10 @@ const ExperienceDetail = () => {
   const backToHomeButtonHandler = () => {
     router.push('/');
   };
+
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, []);
 
   if (!id || typeof id !== 'string') {
     router.push('/not-found');
@@ -30,8 +35,6 @@ const ExperienceDetail = () => {
   const experience = experiences.find((experience) => {
     return experience.id === id;
   });
-
-  console.log(experience);
 
   if (!experience) {
     router.push('/error');
