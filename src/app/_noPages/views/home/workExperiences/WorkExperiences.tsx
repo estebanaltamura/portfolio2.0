@@ -98,6 +98,9 @@ const WorkExperiences = () => {
                 isDownloadButtonHovered || isDownloadingCV
                   ? '#252525'
                   : '#6E65A7',
+              '&:active': {
+                backgroundColor: '#6E65A7',
+              },
             }}
           >
             {isDownloadButtonHovered && !isDownloadingCV ? (
