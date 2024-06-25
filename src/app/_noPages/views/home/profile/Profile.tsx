@@ -103,8 +103,11 @@ const Profile = () => {
             display: 'flex',
             width: 'fit-content',
             height: '30px',
-            gap: '15px',
+            gap: '22px',
             marginTop: isDesktop ? '20px' : '20px',
+            '@media(min-width: 1200px)': {
+              gap: '17px',
+            },
           }}
         >
           <Box
