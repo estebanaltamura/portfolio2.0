@@ -21,12 +21,13 @@ const Home = () => {
           width: '100%',
           height: 'fit-content',
           gap: '35px',
-          marginTop: '60px',
+          marginTop: '35px',
 
           '@media(max-width: 1200px)': {
             flexDirection: 'column',
             alignItems: 'center',
             width: '100%',
+            marginTop: '35px',
           },
         }}
       >
