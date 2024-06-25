@@ -5,15 +5,15 @@ import { useState } from 'react';
 import Profile from './_noPages/views/home/profile/Profile';
 import Stack from './_noPages/views/home/stack/Stack';
 import WorkExperiences from './_noPages/views/home/workExperiences/WorkExperiences';
+import Projects from './_noPages/views/home/projects/Projects';
 
 const Home = () => {
   const [isLoading, setIsloading] = useState<boolean>(true);
-  const isDesktop = useMediaQuery('(min-width:600px)');
 
   return (
     <>
       <Profile />
-      {/* <Projects /> */}
+      <Projects />
       <Box
         sx={{
           display: 'flex',

@@ -213,18 +213,17 @@ const Profile = () => {
                     position: 'absolute',
                     color: 'white',
                     top: '25px',
-                    left: '-26px',
+                    left: '-4px',
                     fontSize: '14px',
-                    marginTop: '9px',
-
-                    borderRadius: '8px',
+                    marginTop: '6px',
+                    borderRadius: '4px',
                     padding: '4px 8px',
                     backgroundColor: '#4E4E4E',
                     '&::before': {
                       content: '""',
                       position: 'absolute',
                       top: '-8px',
-                      left: '50%',
+                      left: '20%',
                       transform: 'translateX(-50%)',
                       borderLeft: '5px solid transparent',
                       borderRight: '5px solid transparent',
@@ -303,23 +302,23 @@ const Profile = () => {
                     cursor: 'pointer',
                   }}
                 >
-                  {isDownloadingCV && (
+                  {isDownloadingCV && !isDesktop && (
                     <Box
                       sx={{
                         position: 'absolute',
-                        marginTop: '10px',
+                        marginTop: '8px',
                         color: 'white',
                         top: '25px',
-                        left: '-43px',
+                        left: '-78px',
                         fontSize: '14px',
-                        borderRadius: '8px',
+                        borderRadius: '4px',
                         padding: '4px 8px',
                         backgroundColor: '#4E4E4E',
                         '&::before': {
                           content: '""',
                           position: 'absolute',
                           top: '-8px',
-                          left: '50%',
+                          left: '80%',
                           transform: 'translateX(-50%)',
                           borderLeft: '5px solid transparent',
                           borderRight: '5px solid transparent',
