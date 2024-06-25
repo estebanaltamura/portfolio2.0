@@ -16,7 +16,7 @@ const Projects = () => {
         width: '100%',
         height: '500px',
         marginTop: '50px',
-        padding: '16px 20px 24px 20px',
+        padding: '4px 20px 24px 20px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',
