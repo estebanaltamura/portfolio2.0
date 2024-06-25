@@ -132,8 +132,11 @@ const Profile = () => {
               top: '0px',
               display: 'flex',
               width: 'fit-content',
-              gap: '17px',
+              gap: '22px',
               alignItems: 'center',
+              '@media(min-width: 1200px)': {
+                gap: '17px',
+              },
             }}
           >
             <a
