@@ -53,43 +53,57 @@ const ExperienceDetail = () => {
         justifyContent: 'center',
       }}
     >
-      {/*Back button*/}
+      {/*Details*/}
       <Box
-        onClick={backToHomeButtonHandler}
         sx={{
+          position: 'relative',
           display: 'flex',
-          position: 'absolute',
-          width: '40px',
-          height: '40px',
-          justifyContent: 'center',
-          alignItems: 'center',
-          top: '0px',
-          left: '0px',
-          borderRadius: '100px',
-          border: '1px solid #8C8C8C',
-          cursor: 'pointer',
+          flexDirection: 'column',
+          maxWidth: '672px',
+          marginTop: '60px',
+          '@media(min-width: 1200px)': {
+            marginTop: '0px',
+          },
         }}
       >
-        <svg
-          width='17'
-          height='17'
-          color='white'
-          viewBox='0 0 24 24'
-          fill='none'
-          stroke='currentColor'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+        {/*Back button*/}
+        <Box
+          onClick={backToHomeButtonHandler}
+          sx={{
+            display: 'flex',
+            position: 'absolute',
+            width: '40px',
+            height: '40px',
+            justifyContent: 'center',
+            alignItems: 'center',
+            top: '-50px',
+            left: '0px',
+            borderRadius: '100px',
+            border: '1px solid #8C8C8C',
+            cursor: 'pointer',
+            '@media(min-width: 1200px)': {
+              top: '-8px',
+
+              left: '-100px',
+            },
+          }}
         >
-          <path d='m12 19-7-7 7-7'></path>
-          <path d='M19 12H5'></path>
-        </svg>
-      </Box>
-      {/*Details*/}
-      <Box sx={{ display: 'flex', flexDirection: 'column', maxWidth: '672px' }}>
-        <Typography variant='body1' sx={{ fontSize: '20px', color: '#8C8C8C' }}>
-          {period}
-        </Typography>
+          <svg
+            width='17'
+            height='17'
+            color='white'
+            viewBox='0 0 24 24'
+            fill='none'
+            stroke='currentColor'
+            stroke-width='2'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+          >
+            <path d='m12 19-7-7 7-7'></path>
+            <path d='M19 12H5'></path>
+          </svg>
+        </Box>
+
         <Typography
           variant='h1'
           sx={{
@@ -102,11 +116,29 @@ const ExperienceDetail = () => {
           {name}
         </Typography>
 
-        <Typography variant='body1' sx={{ fontSize: '20px', color: 'white' }}>
+        <Typography
+          variant='body1'
+          sx={{ fontSize: '16px', lineHeight: '16px', color: '#8C8C8C' }}
+        >
+          {period}
+        </Typography>
+
+        <Typography variant='body1' sx={{ fontSize: '17px', color: 'white' }}>
           {role}
         </Typography>
         {details &&
           details.map((detail, index) => {
+            console.log(detail.slice(0, 4));
+            console.log(detail.slice(4));
+            if (detail.slice(0, 4) === 'src:')
+              return (
+                <img
+                  key={index}
+                  src={detail.slice(4)}
+                  alt=''
+                  style={{ width: '100%', margin: '15px 0' }}
+                />
+              );
             return (
               <Typography
                 key={index}

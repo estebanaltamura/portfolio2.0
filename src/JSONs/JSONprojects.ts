@@ -315,6 +315,8 @@ export const experiences: IExperiences[] = [
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
       'Me desempeño como referente tecnológico, desarrollador frontend y realizo algunas tareas de nexo con el cliente para la rama de software factory de la empresa.',
+      'src:/buenosNegocios.jpg',
+
       'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
     ],
   },
