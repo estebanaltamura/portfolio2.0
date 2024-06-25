@@ -52,8 +52,11 @@ footer p {
   font-family: var(--font-openSans), sans-serif !important;
 }
 
-a {
+a,
+a:visited,
+a:active {
   text-decoration: none;
+  color: white;
 }
 
 .russoFont {
