@@ -34,7 +34,7 @@ const ExperienceDetailImage: React.FC<IExperienceDetailImageProps> = ({
           marginTop: '2px',
           textAlign: 'center',
           fontStyle: 'italic',
-          padding: '0 20px',
+          padding: '0 10px',
         }}
       >
         {imageDescription}
