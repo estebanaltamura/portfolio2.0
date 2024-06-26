@@ -308,10 +308,23 @@ export interface IExperiences {
     | {
         type: 'image' | 'video';
         src: string;
-        width: number;
+        width?: string;
+        height?: string;
         marginBottom: number;
         marginTop: number;
         imageDescription: string;
+        widthImageDescription?: string;
+      }
+    | {
+        type: 'carousel';
+        srcImages: string[];
+        width?: string;
+        height?: string;
+        marginBottom?: number;
+        marginTop?: number;
+        imageDescription?: string[];
+        widthImageDescription?: string;
+        interval?: number;
       }
   )[];
 }
@@ -330,7 +343,7 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/buenosNegocios.jpg',
-        width: 100,
+        width: '100%',
         marginBottom: 15,
         marginTop: 40,
         imageDescription:
@@ -341,11 +354,22 @@ export const experiences: IExperiences[] = [
       {
         type: 'video',
         src: 'https://player.vimeo.com/video/856401646',
-        width: 100,
+        height: '400px',
         marginBottom: 15,
         marginTop: 40,
         imageDescription:
           'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+        widthImageDescription: '200px',
+      },
+      {
+        type: 'carousel',
+        srcImages: ['/buenosNegocios.jpg', '/favicon.png'],
+        width: '400px',
+        marginBottom: 20,
+        marginTop: 20,
+        imageDescription: ['imagen 1', 'imagen 2'],
+        widthImageDescription: '80%',
+        interval: 2500,
       },
 
       'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
