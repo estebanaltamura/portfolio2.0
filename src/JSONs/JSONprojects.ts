@@ -425,7 +425,7 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/lonelyGrid.jpg',
-        width: '400px',
+        width: '450px',
         marginBottom: 15,
         marginTop: 40,
         imageDescription:
