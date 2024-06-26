@@ -31,12 +31,18 @@ const ExperienceDetailImage: React.FC<IExperienceDetailImageProps> = ({
         height: 'fit-content',
         marginTop: `${marginTop}px`,
         marginBottom: `${marginBottom}px`,
+        borderRadius: '8px',
       }}
     >
       <img
         src={src}
         alt={imageDescription ? imageDescription : 'An image'}
-        style={{ height: height, width: width, maxWidth: '100%' }}
+        style={{
+          height: height,
+          width: width,
+          maxWidth: '100%',
+          borderRadius: '8px',
+        }}
       />
       {imageDescription && (
         <Typography
