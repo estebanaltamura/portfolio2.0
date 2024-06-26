@@ -44,7 +44,7 @@ const ExperienceDetailCarousel: React.FC<IExperienceDetailImageProps> = ({
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              borderRadius: '8px',
+              borderRadius: '4px',
             }}
           >
             <img

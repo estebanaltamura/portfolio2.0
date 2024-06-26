@@ -31,7 +31,7 @@ const ExperienceDetailImage: React.FC<IExperienceDetailImageProps> = ({
         height: 'fit-content',
         marginTop: `${marginTop}px`,
         marginBottom: `${marginBottom}px`,
-        borderRadius: '8px',
+        borderRadius: '4px',
       }}
     >
       <img
@@ -41,7 +41,7 @@ const ExperienceDetailImage: React.FC<IExperienceDetailImageProps> = ({
           height: height,
           width: width,
           maxWidth: '100%',
-          borderRadius: '8px',
+          borderRadius: '4px',
         }}
       />
       {imageDescription && (
