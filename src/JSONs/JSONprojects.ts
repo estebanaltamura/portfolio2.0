@@ -444,9 +444,12 @@ export const experiences: IExperiences[] = [
     role: 'Responsable de registros',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
-      'Soy founder de Actas italianas express, un servicio de gestión rápida de actas italianas necesarias para la tramitación de la ciudanía italiana por parte de nuestros clientes.',
-      'Nuestro servicio busca y gestiona en origen la documentación, generando mayor tasa de respuesta por parte de las comunas y con una velocidad de respuesta superior.',
-      'Mi rol es principalmente el desarrollo y mantenimiento de la plataforma online, servicios back oficce para la administracion de leads y desarrollo de provedores de servicios ad-hoc en Italia.',
+      'Como responsable de registros en Telefónica Argentina, me dediqué a:',
+      '· Ingreso de órdenes de trabajo en la base de datos de la empresa.',
+      '· Revisión de las órdenes de trabajo recibidas y asignación a los técnicos instaladores correspondientes.',
+      '· Seguimiento del progreso de las instalaciones y comunicación con los técnicos y otros departamentos para garantizar la satisfacción del cliente y la eficiencia en el proceso.',
+      '· Negociacion en casa central acerca de ordenes a considerar para el pago del periodo y plazo de pago',
+      'Esta experiencia me proporcionó habilidades clave en resolución de problemas, gestión de información y atención al detalle.',
     ],
   },
 ];
