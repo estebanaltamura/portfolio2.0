@@ -365,6 +365,7 @@ export const experiences: IExperiences[] = [
         type: 'carousel',
         srcImages: ['/buenosNegocios.jpg', '/favicon.png'],
         width: '400px',
+        height: '300px',
         marginBottom: 20,
         marginTop: 20,
         imageDescription: ['imagen 1', 'imagen 2'],

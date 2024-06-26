@@ -27,6 +27,7 @@ const ExperienceDetailVideo: React.FC<IExperienceDetailVideoProps> = ({
         margin: '0 auto',
         alignItems: 'center',
         width: 'fit-content',
+        maxWidth: '100%',
         height: 'fit-content',
         marginTop: `${marginTop}px`,
         marginBottom: `${marginBottom}px`,
@@ -34,7 +35,12 @@ const ExperienceDetailVideo: React.FC<IExperienceDetailVideoProps> = ({
     >
       <iframe
         src={src}
-        style={{ width: width, height: height, border: 'none' }}
+        style={{
+          width: width,
+          maxWidth: '100%',
+          height: height,
+          border: 'none',
+        }}
       ></iframe>
       {widthImageDescription && (
         <Typography

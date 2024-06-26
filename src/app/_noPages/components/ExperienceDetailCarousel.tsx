@@ -36,8 +36,9 @@ const ExperienceDetailCarousel: React.FC<IExperienceDetailImageProps> = ({
           <Paper
             key={index}
             sx={{
-              width: '400px',
-              height: '300px',
+              width: width,
+              maxWidth: '100%',
+              height: height,
               margin: '0 auto',
               overflow: 'hidden',
               display: 'flex',
