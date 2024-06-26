@@ -16,7 +16,6 @@ const Stack = () => {
         border: '1px solid #494949',
         color: 'white',
         overflow: 'hidden',
-
         '@media(min-width: 1200px)': {
           padding: '16px 32px 32px 32px',
           marginTop: '0px',
@@ -82,9 +81,9 @@ const Stack = () => {
                   height: '81px',
                   width: stackItem.doubleWidth ? '165px' : '108px',
                 },
-                '&:hover': {
+                '&:hover, &:active': {
                   animation: 'pulse 0.65s',
-                  boxShadow: '0 0 0 0.3em transparent',
+                  boxShadow: '0px 0px 10px 0px #6E65A7',
                 },
               }}
             >
