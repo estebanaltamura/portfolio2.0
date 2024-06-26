@@ -421,9 +421,17 @@ export const experiences: IExperiences[] = [
     role: 'Co-founder, finanzas & marketing',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
-      'Soy founder de Actas italianas express, un servicio de gestión rápida de actas italianas necesarias para la tramitación de la ciudanía italiana por parte de nuestros clientes.',
-      'Nuestro servicio busca y gestiona en origen la documentación, generando mayor tasa de respuesta por parte de las comunas y con una velocidad de respuesta superior.',
-      'Mi rol es principalmente el desarrollo y mantenimiento de la plataforma online, servicios back oficce para la administracion de leads y desarrollo de provedores de servicios ad-hoc en Italia.',
+      'Junto a una socia desarrollamos Lonely indumentaria. Un emprendimiento que supo tener 350.000 seguidores en Instagram, ventas sólidas durante años y un posicionamiento de mercado único.',
+      {
+        type: 'image',
+        src: '/lonelyGrid.jpg',
+        width: '400px',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription:
+          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+      },
+      'Sobre todo en los comienzos fue un desafío importante, pero a base de marketing y una imagen de marca consistente, se logró un posicionamiento en el mercado de indumentaria de mujer muy valioso.',
     ],
   },
   {
@@ -433,8 +441,12 @@ export const experiences: IExperiences[] = [
     role: 'Owner',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
-      'Me desempeño como referente tecnológico, desarrollador frontend y realizo algunas tareas de nexo con el cliente para la rama de software factory de la empresa.',
-      'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
+      'Como importador de productos electrónicos y vendedor independiente en MercadoLibre, manejé diversos aspectos del negocio, incluyendo:',
+      '-Investigación y selección de productos electrónicos de alta demanda para importar y vender en MercadoLibre.',
+      '-Creación y gestión de listados de productos en MercadoLibre, incluyendo fotografías, descripciones detalladas y optimización de palabras clave.',
+      '-Atención al cliente, resolución de consultas y problemas relacionados con los productos y envíos.',
+      '-Análisis de ventas y tendencias del mercado para adaptar y mejorar constantemente la estrategia comercial.',
+      'A través de esta experiencia adquirí conocimientos autodidactas en múltiples áreas, dado que fue un emprendimiento autogestionado. Este proyecto me convirtió en un profesional más versátil y adaptable, ya que me enfrenté a desafíos permanentemente.',
     ],
   },
   {
