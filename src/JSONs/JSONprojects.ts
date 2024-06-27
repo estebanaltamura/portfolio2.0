@@ -418,6 +418,14 @@ export const experiences: IExperiences[] = [
       '<b>2018 Expansión. El año del salto cuantitativo y cualitativo.',
       'Los principales puntos fueron:',
       '· Diseñe e implementé un ecommerce programado en React con Mercado Pago y Mercado Envíos integrados (ambos productos de MercadoLibre, la principal plataforma de ecommerce y cobros de Argentina). ',
+      {
+        type: 'image',
+        src: '/lonelyEcommerce.jpg',
+        width: '450px',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Screen del instagram de lonely hoy dia (2024)',
+      },
       '· Integré nuestro Instagram con la cuenta de empresa de Facebook, para poder publicitar mediante Facebook Ads en Instagram. ',
       {
         type: 'video',
