@@ -424,7 +424,7 @@ export const experiences: IExperiences[] = [
         width: '450px',
         marginBottom: 30,
         marginTop: 50,
-        imageDescription: 'Screen del instagram de lonely hoy dia (2024)',
+        imageDescription: 'Screen de la tienda online',
       },
       '· Integré nuestro Instagram con la cuenta de empresa de Facebook, para poder publicitar mediante Facebook Ads en Instagram. ',
       {
