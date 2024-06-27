@@ -89,17 +89,18 @@ const ExperienceDetailVideo: React.FC<IExperienceDetailVideoProps> = ({
         margin: '0 auto',
         alignItems: 'center',
         width: '100%',
-        height: 'fit-content',
+        height: height,
         marginTop: `${marginTop}px`,
         marginBottom: `${marginBottom}px`,
       }}
     >
       <iframe
+        sandbox='allow-scripts allow-same-origin allow-presentation'
         src={src}
         style={{
-          width: width,
+          width: '100%',
           maxWidth: '100%',
-          height: height,
+          height: '100%',
           border: 'none',
         }}
       ></iframe>
