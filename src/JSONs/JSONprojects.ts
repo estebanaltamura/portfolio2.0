@@ -439,9 +439,18 @@ export const experiences: IExperiences[] = [
         marginTop: 40,
         imageDescription: 'Screen del instagram de lonely hoy dia (2024)',
       },
+      {
+        type: 'video',
+        src: 'https://player.vimeo.com/video/969525574?title=0&byline=0&portrait=0&badge=0',
+        height: '650px',
+        marginBottom: 30,
+        marginTop: 55,
+        imageDescription: 'Campaña publicitaria vestidos',
+        widthImageDescription: '300px',
+      },
 
       '<b>2019 Cambio de estrategia de redes sociales ',
-      'Desarrollamos e implementamos una estrategia diferente de redes sociales, que fue muy exitosa en ventas, posicionamiento y seguidores, llevando la cuenta de 250 mil seguidores a 350 mil seguidores. La decisión para ese cambio de estrategia se basó en una colección de pruebas A/B y sus conclusiones.',
+      'Desarrollamos e implementamos una estrategia diferente en redes sociales, que fue muy exitosa en ventas, posicionamiento y seguidores, llevando la cuenta de 250 mil seguidores a 350 mil seguidores. La decisión para ese cambio de estrategia se basó en una colección de pruebas A/B y sus conclusiones.',
       {
         type: 'video',
         src: 'https://player.vimeo.com/video/969517674?title=0&byline=0&portrait=0&badge=0',
@@ -453,23 +462,7 @@ export const experiences: IExperiences[] = [
       },
 
       '<b>2020 Pandemia',
-      'A comienzos de 2020, el consumo en Argentina estaba cayendo. En marzo, la pandemia nos sorprendió como a todo el mundo. Teníamos tres showrooms abiertos y empleados a los que responder, pero para sorpresa de todos, las ventas se dispararon. Pudimos cerrar los showrooms físicos, re absorber al personal centralizando todo en nuestra ubicación de despacho centralizada. A partir de ese año, toda nuestra operación fue centralizada, a excepción de un showroom (el original).',
-      '<b>2022 Cierre',
-      'Después de muchos años trabajando juntos y varios emprendimientos, mi socia se fue a vivir a Barcelona. Decidimos juntos que no era lógico seguirlo a distancia o que yo continuara solo por mi cuenta. Lonely fue una gran experiencia de aprendizaje. Hasta ese momento, no había hecho un emprendimiento tan exitoso, tan complejo y trabajando tanto en equipo.',
-
-      'Sobre todo en los comienzos fue un desafío importante, pero a base de marketing y una imagen de marca consistente, se logró un posicionamiento en el mercado de indumentaria de mujer muy valioso.',
-
-      'Sobre todo en los comienzos fue un desafío importante, pero a base de marketing y una imagen de marca consistente, se logró un posicionamiento en el mercado de indumentaria de mujer muy valioso.',
-      {
-        type: 'video',
-        src: 'https://player.vimeo.com/video/969525574?title=0&byline=0&portrait=0&badge=0',
-        height: '650px',
-        marginBottom: 40,
-        marginTop: 55,
-        imageDescription: 'Campaña publicitaria vestidos',
-        widthImageDescription: '300px',
-      },
-      'Sobre todo en los comienzos fue un desafío importante, pero a base de marketing y una imagen de marca consistente, se logró un posicionamiento en el mercado de indumentaria de mujer muy valioso.',
+      'A comienzos de 2020, el consumo en Argentina estaba cayendo. En marzo, la pandemia nos sorprendió como a todo el mundo. Teníamos tres showrooms abiertos y empleados a los que responder, pero para sorpresa de todos, las ventas se dispararon. Pudimos cerrar los showrooms físicos, re absorber al personal centralizando todo en nuestra ubicación de despacho centralizada.',
       {
         type: 'image',
         src: '/lonelyImage.jpg',
@@ -478,6 +471,10 @@ export const experiences: IExperiences[] = [
         marginTop: 55,
         imageDescription: 'Campaña publicitaria básicos',
       },
+
+      'A partir de ese año, toda nuestra operación fue centralizada, a excepción de un showroom (el original).',
+      '<b>2022 Cierre',
+      'Después de muchos años trabajando juntos y varios emprendimientos, mi socia se fue a vivir a Barcelona. Decidimos juntos que no era lógico seguirlo a distancia o que yo continuara solo por mi cuenta. Lonely fue una gran experiencia de aprendizaje. Hasta ese momento, no había hecho un emprendimiento tan exitoso, tan complejo y trabajando tanto en equipo.',
     ],
   },
   {
