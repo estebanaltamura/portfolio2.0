@@ -89,7 +89,7 @@ const ExperienceDetail = () => {
             border: '1px solid #8C8C8C',
             cursor: 'pointer',
             '@media(min-width: 1200px)': {
-              top: '20px',
+              top: '25px',
               left: '-160px',
             },
           }}

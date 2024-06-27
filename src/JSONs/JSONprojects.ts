@@ -351,16 +351,7 @@ export const experiences: IExperiences[] = [
       },
 
       'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
-      {
-        type: 'video',
-        src: 'https://player.vimeo.com/video/856401646',
-        height: '400px',
-        marginBottom: 15,
-        marginTop: 40,
-        imageDescription:
-          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
-        widthImageDescription: '200px',
-      },
+
       {
         type: 'carousel',
         srcImages: ['/buenosNegocios.jpg', '/favicon.png'],
@@ -432,6 +423,35 @@ export const experiences: IExperiences[] = [
           'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
       },
       'Sobre todo en los comienzos fue un desafío importante, pero a base de marketing y una imagen de marca consistente, se logró un posicionamiento en el mercado de indumentaria de mujer muy valioso.',
+      {
+        type: 'video',
+        src: 'https://player.vimeo.com/video/969517674?title=0&byline=0&portrait=0&badge=0',
+        height: '500px',
+        marginBottom: 40,
+        marginTop: 40,
+        imageDescription:
+          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+        widthImageDescription: '300px',
+      },
+      {
+        type: 'video',
+        src: 'https://player.vimeo.com/video/969525574?title=0&byline=0&portrait=0&badge=0',
+        height: '500px',
+        marginBottom: 40,
+        marginTop: 40,
+        imageDescription:
+          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+        widthImageDescription: '300px',
+      },
+      {
+        type: 'image',
+        src: '/lonelyImage.jpg',
+        width: '450px',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription:
+          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+      },
     ],
   },
   {
@@ -460,7 +480,7 @@ export const experiences: IExperiences[] = [
       '· Ingreso de órdenes de trabajo en la base de datos de la empresa.',
       '· Revisión de las órdenes de trabajo recibidas y asignación a los técnicos instaladores correspondientes.',
       '· Seguimiento del progreso de las instalaciones y comunicación con los técnicos y otros departamentos para garantizar la satisfacción del cliente y la eficiencia en el proceso.',
-      '· Negociacion en casa central acerca de ordenes a considerar para el pago del periodo y plazo de pago',
+      '· Negociación en casa central acerca de ordenes a considerar para el pago del periodo y plazo de pago',
       'Esta experiencia me proporcionó habilidades clave en resolución de problemas, gestión de información y atención al detalle.',
     ],
   },

@@ -34,6 +34,8 @@ const ExperienceDetailVideo: React.FC<IExperienceDetailVideoProps> = ({
       }}
     >
       <iframe
+        allow='autoplay'
+        picture-in-picture
         src={src}
         style={{
           width: width,
