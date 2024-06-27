@@ -429,8 +429,7 @@ export const experiences: IExperiences[] = [
         height: '500px',
         marginBottom: 40,
         marginTop: 40,
-        imageDescription:
-          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+        imageDescription: 'Lanzamiento temporada de invierno',
         widthImageDescription: '300px',
       },
       {
@@ -439,8 +438,7 @@ export const experiences: IExperiences[] = [
         height: '500px',
         marginBottom: 40,
         marginTop: 40,
-        imageDescription:
-          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+        imageDescription: 'Campaña publicitaria vestidos',
         widthImageDescription: '300px',
       },
       {
@@ -449,8 +447,7 @@ export const experiences: IExperiences[] = [
         width: '450px',
         marginBottom: 15,
         marginTop: 40,
-        imageDescription:
-          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+        imageDescription: 'Campaña publicitaria básicos',
       },
     ],
   },
