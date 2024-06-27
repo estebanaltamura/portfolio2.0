@@ -424,7 +424,7 @@ export const experiences: IExperiences[] = [
         src: 'https://player.vimeo.com/video/969525574?title=0&byline=0&portrait=0&badge=0',
         height: '650px',
         marginBottom: 30,
-        marginTop: 55,
+        marginTop: 50,
         imageDescription: 'Campaña publicitaria vestidos',
         widthImageDescription: '300px',
       },
@@ -434,7 +434,7 @@ export const experiences: IExperiences[] = [
         type: 'image',
         src: '/instagramsTags.jpg',
         width: '450px',
-        marginBottom: 30,
+        marginBottom: 35,
         marginTop: 50,
         imageDescription:
           'Ejemplo del uso de plug ins para taguear productos usando el catalogo de Facebook',
@@ -468,7 +468,7 @@ export const experiences: IExperiences[] = [
         src: '/lonelyImage.jpg',
         width: '450px',
         marginBottom: 35,
-        marginTop: 55,
+        marginTop: 50,
         imageDescription: 'Campaña publicitaria básicos',
       },
 
