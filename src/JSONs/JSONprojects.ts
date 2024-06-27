@@ -432,15 +432,17 @@ export const experiences: IExperiences[] = [
         imageDescription: 'Lanzamiento temporada de invierno',
         widthImageDescription: '300px',
       },
+      'Sobre todo en los comienzos fue un desafío importante, pero a base de marketing y una imagen de marca consistente, se logró un posicionamiento en el mercado de indumentaria de mujer muy valioso.',
       {
         type: 'video',
         src: 'https://player.vimeo.com/video/969525574?title=0&byline=0&portrait=0&badge=0',
-        height: '500px',
+        height: '650px',
         marginBottom: 40,
         marginTop: 40,
         imageDescription: 'Campaña publicitaria vestidos',
         widthImageDescription: '300px',
       },
+      'Sobre todo en los comienzos fue un desafío importante, pero a base de marketing y una imagen de marca consistente, se logró un posicionamiento en el mercado de indumentaria de mujer muy valioso.',
       {
         type: 'image',
         src: '/lonelyImage.jpg',
