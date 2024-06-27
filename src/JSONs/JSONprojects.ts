@@ -455,7 +455,7 @@ export const experiences: IExperiences[] = [
         type: 'video',
         src: 'https://player.vimeo.com/video/969517674?title=0&byline=0&portrait=0&badge=0',
         height: '650px',
-        marginBottom: 30,
+        marginBottom: 20,
         marginTop: 55,
         imageDescription: 'Lanzamiento temporada de invierno',
         widthImageDescription: '300px',
