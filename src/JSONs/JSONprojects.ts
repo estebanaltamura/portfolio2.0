@@ -419,6 +419,15 @@ export const experiences: IExperiences[] = [
       'Los principales puntos fueron:',
       '· Diseñe e implementé un ecommerce programado en React con Mercado Pago y Mercado Envíos integrados (ambos productos de MercadoLibre, la principal plataforma de ecommerce y cobros de Argentina). ',
       '· Integré nuestro Instagram con la cuenta de empresa de Facebook, para poder publicitar mediante Facebook Ads en Instagram. ',
+      {
+        type: 'video',
+        src: 'https://player.vimeo.com/video/969525574?title=0&byline=0&portrait=0&badge=0',
+        height: '650px',
+        marginBottom: 30,
+        marginTop: 55,
+        imageDescription: 'Campaña publicitaria vestidos',
+        widthImageDescription: '300px',
+      },
       '· Otro beneficio de la integración con Facebook fue poder usar el sistema de catálogo de Facebook. A partir de esa integración, en cada publicación de Instagram podíamos etiquetar cada prenda y el outfit completo, llevando cada etiqueta a un artículo específico en nuestra tienda. ',
 
       {
@@ -438,15 +447,6 @@ export const experiences: IExperiences[] = [
         marginBottom: 15,
         marginTop: 40,
         imageDescription: 'Screen del instagram de lonely hoy dia (2024)',
-      },
-      {
-        type: 'video',
-        src: 'https://player.vimeo.com/video/969525574?title=0&byline=0&portrait=0&badge=0',
-        height: '650px',
-        marginBottom: 30,
-        marginTop: 55,
-        imageDescription: 'Campaña publicitaria vestidos',
-        widthImageDescription: '300px',
       },
 
       '<b>2019 Cambio de estrategia de redes sociales ',
