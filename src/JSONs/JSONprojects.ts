@@ -412,17 +412,36 @@ export const experiences: IExperiences[] = [
     role: 'Co-founder, finanzas & marketing',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
-      'Junto a una socia desarrollamos Lonely indumentaria. Un emprendimiento que supo tener 350.000 seguidores en Instagram, ventas sólidas durante años y un posicionamiento de mercado único.',
+      '<b>2016 Comienzos',
+      'junto con mi socia, una amiga de toda la vida, fundamos nuestro primer emprendimiento, Lonely. Comenzamos como un emprendimiento de garaje, impulsado por una página de Facebook recién iniciada y un Instagram, que en ese momento era una red incipiente. Al principio, publicamos outfits y recibimos clientas en el piso de mi socia. No teníamos un ecommerce, ni showrooms aún.',
+
+      '<b>2018 Expansión. El año del salto cuantitativo y cualitativo.',
+      'Los principales puntos fueron:',
+      '· Diseñe e implementé un ecommerce programado en React con Mercado Pago y Mercado Envíos integrados (ambos productos de MercadoLibre, la principal plataforma de ecommerce y cobros de Argentina). ',
+      '· Integré nuestro Instagram con la cuenta de empresa de Facebook, para poder publicitar mediante Facebook Ads en Instagram. ',
+      '· Otro beneficio de la integración con Facebook fue poder usar el sistema de catálogo de Facebook. A partir de esa integración, en cada publicación de Instagram podíamos etiquetar cada prenda y el outfit completo, llevando cada etiqueta a un artículo específico en nuestra tienda. ',
+
+      {
+        type: 'image',
+        src: '/instagramsTags.jpg',
+        width: '450px',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription:
+          'Ejemplo del uso de plug ins para taguear productos usando el catalogo de Facebook',
+      },
+      '· Abrimos tres showrooms en Buenos Aires y nuestro Instagram pasó de alrededor de 50 mil seguidores a más de 250 mil seguidores.',
       {
         type: 'image',
         src: '/lonelyGrid.jpg',
         width: '450px',
         marginBottom: 15,
         marginTop: 40,
-        imageDescription:
-          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+        imageDescription: 'Screen del instagram de lonely hoy dia (2024)',
       },
-      'Sobre todo en los comienzos fue un desafío importante, pero a base de marketing y una imagen de marca consistente, se logró un posicionamiento en el mercado de indumentaria de mujer muy valioso.',
+
+      '<b>2019 Cambio de estrategia de redes sociales ',
+      'Desarrollamos e implementamos una estrategia diferente de redes sociales, que fue muy exitosa en ventas, posicionamiento y seguidores, llevando la cuenta de 250 mil seguidores a 350 mil seguidores. La decisión para ese cambio de estrategia se basó en una colección de pruebas A/B y sus conclusiones.',
       {
         type: 'video',
         src: 'https://player.vimeo.com/video/969517674?title=0&byline=0&portrait=0&badge=0',
@@ -432,6 +451,14 @@ export const experiences: IExperiences[] = [
         imageDescription: 'Lanzamiento temporada de invierno',
         widthImageDescription: '300px',
       },
+
+      '<b>2020 Pandemia',
+      'A comienzos de 2020, el consumo en Argentina estaba cayendo. En marzo, la pandemia nos sorprendió como a todo el mundo. Teníamos tres showrooms abiertos y empleados a los que responder, pero para sorpresa de todos, las ventas se dispararon. Pudimos cerrar los showrooms físicos, re absorber al personal centralizando todo en nuestra ubicación de despacho centralizada. A partir de ese año, toda nuestra operación fue centralizada, a excepción de un showroom (el original).',
+      '<b>2022 Cierre',
+      'Después de muchos años trabajando juntos y varios emprendimientos, mi socia se fue a vivir a Barcelona. Decidimos juntos que no era lógico seguirlo a distancia o que yo continuara solo por mi cuenta. Lonely fue una gran experiencia de aprendizaje. Hasta ese momento, no había hecho un emprendimiento tan exitoso, tan complejo y trabajando tanto en equipo.',
+
+      'Sobre todo en los comienzos fue un desafío importante, pero a base de marketing y una imagen de marca consistente, se logró un posicionamiento en el mercado de indumentaria de mujer muy valioso.',
+
       'Sobre todo en los comienzos fue un desafío importante, pero a base de marketing y una imagen de marca consistente, se logró un posicionamiento en el mercado de indumentaria de mujer muy valioso.',
       {
         type: 'video',

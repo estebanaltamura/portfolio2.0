@@ -154,12 +154,18 @@ const ExperienceDetail = () => {
                   variant='body1'
                   sx={{
                     fontSize: '16px',
-                    color: '#bababa',
+                    fontWeight: detail.slice(0, 3) === '<b>' ? '700' : '400',
+                    color: detail.slice(0, 3) === '<b>' ? 'white' : '#bababa',
                     lineHeight: '25px',
-                    marginTop: index === 0 ? '40px' : '20px',
+                    marginTop:
+                      index === 0
+                        ? '40px'
+                        : detail.slice(0, 3) === '<b>'
+                        ? '25px'
+                        : '10px',
                   }}
                 >
-                  {detail}
+                  {detail.slice(0, 3) === '<b>' ? detail.slice(3) : detail}
                 </Typography>
               );
             }
