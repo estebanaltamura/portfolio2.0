@@ -77,7 +77,7 @@ const ExperienceDetailVideo: React.FC<IExperienceDetailVideoProps> = ({
         margin: '0 auto',
         alignItems: 'center',
         width: '100%',
-        height: height,
+        maxHeight: height,
         marginTop: `${marginTop}px`,
         marginBottom: `${marginBottom}px`,
       }}
