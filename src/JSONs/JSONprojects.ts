@@ -400,7 +400,6 @@ export const experiences: IExperiences[] = [
       '<b>2020',
       '<b>Comienzos',
       'Junto con mi socia de Lonely (nuestro proyecto de indumentaria en Argentina de 2016 a 2022), pensamos en la posibilidad de hacer un emprendimiento de indumentaria en un mercado más sólido que el argentino.',
-      'Por el tamaño del mercado, los tipos de sociedades disponibles que permiten la apertura simple y a distancia, y por las características de la logística (tecnologizada, integrada a nivel nacional y económica), elegimos Estados Unidos.',
       {
         type: 'image',
         src: '/images/plumariiLabel.jpg',
@@ -409,6 +408,8 @@ export const experiences: IExperiences[] = [
         marginTop: 50,
         imageDescription: 'Etiqueta de Plumarii',
       },
+      'Por el tamaño del mercado, los tipos de sociedades disponibles que permiten la apertura simple y a distancia, y por las características de la logística (tecnologizada, integrada a nivel nacional y económica), elegimos Estados Unidos.',
+
       'En esta etapa generamos un plan sobre cómo, por etapas, íbamos a validar y desarrollar cada instancia hasta el lanzamiento, sin descuidar nuestro emprendimiento local.',
       'Nuestra idea inicial como producto principal de nuestra futura cartera de productos fue fabricar camisetas bordadas con diseños muy bien trabajados. A pesar de los tiempos particulares debido a la pandemia, pudimos avanzar mucho más de lo que esperábamos.',
       '<b>Diseño y fabricación del stock inicial',
