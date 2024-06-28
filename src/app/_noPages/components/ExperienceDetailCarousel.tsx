@@ -30,15 +30,19 @@ const ExperienceDetailCarousel: React.FC<IExperienceDetailImageProps> = ({
       interval={interval}
       indicators={false}
       navButtonsAlwaysInvisible={true}
+      sx={{
+        marginTop: `${marginTop}px`,
+        marginBottom: `${marginBottom}px`,
+        maxWidth: width,
+      }}
     >
       {srcImages.map((item, index) => (
         <>
           <Paper
             key={index}
             sx={{
-              width: width,
-              maxWidth: '100%',
-              height: height,
+              width: '100%',
+              height: '100%',
               margin: '0 auto',
               overflow: 'hidden',
               display: 'flex',
