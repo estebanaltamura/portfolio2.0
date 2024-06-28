@@ -67,7 +67,7 @@ const ExperienceDetailCarousel: React.FC<IExperienceDetailImageProps> = ({
               sx={{
                 width: widthImageDescription ? widthImageDescription : 'auto',
                 color: 'white',
-                fontSize: '11px',
+                fontSize: '13px',
                 margin: '4px auto 0 auto',
                 textAlign: 'center',
                 fontStyle: 'italic',

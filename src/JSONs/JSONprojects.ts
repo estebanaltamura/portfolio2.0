@@ -407,10 +407,10 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/images/embroideryProccess.jpg',
-        width: '450px',
+        width: '100%',
         marginBottom: 30,
         marginTop: 50,
-        imageDescription: 'Screen de la tienda online',
+        imageDescription: 'Proceso de bordado',
       },
       'Tambien diseñamos un empaque biodegradable, fabricado a partir del maiz',
       {
@@ -419,7 +419,7 @@ export const experiences: IExperiences[] = [
         height: '650px',
         marginBottom: 30,
         marginTop: 50,
-        imageDescription: 'Campaña publicitaria vestidos',
+        imageDescription: 'Packaging biodegradable a base de maiz',
         widthImageDescription: '300px',
       },
       '<b>2021',
@@ -428,10 +428,10 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/images/content1.jpg',
-        width: '450px',
+        width: '100%',
         marginBottom: 30,
         marginTop: 50,
-        imageDescription: 'Screen de la tienda online',
+        imageDescription: 'Grilla outfits Plumarii',
       },
 
       {
@@ -440,7 +440,7 @@ export const experiences: IExperiences[] = [
         height: '650px',
         marginBottom: 30,
         marginTop: 50,
-        imageDescription: 'Campaña publicitaria vestidos',
+        imageDescription: 'Reel Plumarii',
         widthImageDescription: '300px',
       },
 
@@ -456,7 +456,7 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/images/instagram.jpg',
-        width: '450px',
+        width: '100%',
         marginBottom: 30,
         marginTop: 10,
         imageDescription: 'Screen de la tienda online',
