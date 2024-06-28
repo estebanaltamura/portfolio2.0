@@ -317,6 +317,7 @@ export interface IExperiences {
     | {
         type: 'image' | 'video';
         src: string;
+        mobileVersionSrc?: string;
         width?: string;
         height?: string;
         marginBottom: number;
@@ -456,6 +457,7 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/images/instagram.jpg',
+        mobileVersionSrc: '/images/instagramMobile.jpg',
         width: '100%',
         marginBottom: 30,
         marginTop: 10,
@@ -470,7 +472,8 @@ export const experiences: IExperiences[] = [
         width: '450px',
         marginBottom: 30,
         marginTop: 50,
-        imageDescription: 'Screen de la tienda online',
+        imageDescription:
+          'Empresas con las que trabajamos para el cumplimiento de entregas automatizadas',
       },
       '<b>Viaje',
 
@@ -478,10 +481,10 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/images/travelByMiami.jpg',
-        width: '450px',
+        width: '100%',
         marginBottom: 30,
         marginTop: 50,
-        imageDescription: 'Screen de la tienda online',
+        imageDescription: 'Viaje lleno de aprendizaje y multiples compromisos',
       },
       '<b>Tienda',
       'Luego de regresar del viaje, abrimos una tienda en Shopify. Nuestra empresa, siendo nosotros socios extranjeros, estaba imposibilitada de tener varios medios de pago americanos. La elección de Shopify fue porque ofrecían los principales medios de pago americanos integrados y la posibilidad de agregar el plugin necesario para la integración con el depósito.',

@@ -194,6 +194,7 @@ const ExperienceDetail = () => {
                 <ExperienceDetailImage
                   key={index}
                   src={detail.src}
+                  srcMobile={detail.mobileVersionSrc}
                   width={detail.width}
                   height={detail.height}
                   marginTop={detail.marginTop}

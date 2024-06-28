@@ -1,7 +1,8 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useMediaQuery } from '@mui/material';
 
 interface IExperienceDetailImageProps {
   src: string;
+  srcMobile?: string;
   width?: string;
   height?: string;
   marginBottom?: number;
@@ -12,6 +13,7 @@ interface IExperienceDetailImageProps {
 
 const ExperienceDetailImage: React.FC<IExperienceDetailImageProps> = ({
   src,
+  srcMobile,
   width = 'auto',
   height = 'auto',
   marginBottom = 10,
@@ -19,6 +21,7 @@ const ExperienceDetailImage: React.FC<IExperienceDetailImageProps> = ({
   imageDescription,
   widthImageDescription,
 }) => {
+  const isDesktop = useMediaQuery('(min-width:600px)');
   return (
     <Box
       sx={{
@@ -35,7 +38,7 @@ const ExperienceDetailImage: React.FC<IExperienceDetailImageProps> = ({
       }}
     >
       <img
-        src={src}
+        src={!isDesktop && srcMobile ? srcMobile : src}
         alt={imageDescription ? imageDescription : 'An image'}
         style={{
           height: height,
