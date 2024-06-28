@@ -401,6 +401,14 @@ export const experiences: IExperiences[] = [
       '<b>Comienzos',
       'Junto con mi socia de Lonely (nuestro proyecto de indumentaria en Argentina de 2016 a 2022), pensamos en la posibilidad de hacer un emprendimiento de indumentaria en un mercado más sólido que el argentino.',
       'Por el tamaño del mercado, los tipos de sociedades disponibles que permiten la apertura simple y a distancia, y por las características de la logística (tecnologizada, integrada a nivel nacional y económica), elegimos Estados Unidos.',
+      {
+        type: 'image',
+        src: '/images/plumariiLabel.jpg',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Etiqueta de Plumarii',
+      },
       'En esta etapa generamos un plan sobre cómo, por etapas, íbamos a validar y desarrollar cada instancia hasta el lanzamiento, sin descuidar nuestro emprendimiento local.',
       'Nuestra idea inicial como producto principal de nuestra futura cartera de productos fue fabricar camisetas bordadas con diseños muy bien trabajados. A pesar de los tiempos particulares debido a la pandemia, pudimos avanzar mucho más de lo que esperábamos.',
       '<b>Diseño y fabricación del stock inicial',
@@ -438,7 +446,7 @@ export const experiences: IExperiences[] = [
 
       {
         type: 'video',
-        src: '/videos/content2.mov',
+        src: '/videos/content2.mp4',
         height: '650px',
         marginBottom: 30,
         marginTop: 50,
@@ -493,7 +501,7 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/images/carouselPlumarii1.jpg',
-        width: '100%',
+        width: '300px',
         marginBottom: 30,
         marginTop: 50,
         imageDescription: 'Grilla outfits Plumarii',
@@ -501,7 +509,7 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/images/carouselPlumarii4.jpg',
-        width: '100%',
+        width: '300px',
         marginBottom: 30,
         marginTop: 50,
         imageDescription: 'Grilla outfits Plumarii',
@@ -509,7 +517,7 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/images/carouselPlumarii2.jpg',
-        width: '100%',
+        width: '300px',
         marginBottom: 30,
         marginTop: 50,
         imageDescription: 'Grilla outfits Plumarii',
@@ -517,6 +525,24 @@ export const experiences: IExperiences[] = [
       '<b>2022',
       '<b>Marketing digital',
       'A partir del dos de enero de 2022, comenzamos a hacer pruebas de marketing digital. Utilizando Business Manager de Facebook, realizamos publicidades en la red Instagram. Probamos todo tipo de contenido, como fotos y videos de modelos posando con nuestra ropa de diversas formas.',
+      {
+        type: 'image',
+        src: '/images/vibeAd.jpg',
+        width: '300px',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Grilla outfits Plumarii',
+      },
+      {
+        type: 'video',
+        src: '/videos/camiAd.mp4',
+        height: '650px',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Reel Plumarii',
+        widthImageDescription: '300px',
+      },
+
       'Uno de nuestros logros fue haber encontrado un tipo de contenido cuyo resultado medido en métricas de la publicidad nos hizo alcanzar los estándares de precio por clic, CTR y costo de adquisición promedio en Estados Unidos.',
       'El mercado americano es súper competitivo, por lo que es muy complicado estar a la altura. Nosotros lo logramos y, a nivel profesional, fue uno de nuestros mayores logros. También probamos colaboraciones con influencers americanas, enviándoles productos nuestros a cambio de posteos o stories.',
       '<b>Cierre',
