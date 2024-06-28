@@ -169,6 +169,26 @@ const ExperienceDetail = () => {
                 </Typography>
               );
             }
+            if (detail.type === 'link') {
+              return (
+                <a
+                  key={index}
+                  href={detail.href}
+                  style={{
+                    width: '100%',
+                    height: detail.height,
+                    textAlign: 'center',
+                    marginTop: detail.marginTop,
+                    marginBottom: detail.marginBottom,
+
+                    fontSize: '14px',
+                  }}
+                >
+                  {detail.text}
+                </a>
+              );
+            }
+
             if (detail.type === 'image') {
               return (
                 <ExperienceDetailImage

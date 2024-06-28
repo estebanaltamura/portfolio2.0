@@ -306,6 +306,15 @@ export interface IExperiences {
   details: (
     | string
     | {
+        type: 'link';
+        href: string;
+        text: string;
+        width?: string;
+        height?: string;
+        marginBottom: number;
+        marginTop: number;
+      }
+    | {
         type: 'image' | 'video';
         src: string;
         width?: string;
@@ -387,22 +396,125 @@ export const experiences: IExperiences[] = [
     role: 'Desarrollador Front-End & Co-founder',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
-      'Luego de re conectarme con el desarrollo web, co-fundé junto a una socia una startup de venta de indumentaria minorista online para Estados Unidos. Esta experiencia me proporcionó una sólida base en habilidades específicas en desarrollo web y gestión de negocios en línea.',
+      '<b>2020',
+      '<b>Comienzos',
+      'Junto con mi socia de Lonely (nuestro proyecto de indumentaria en Argentina de 2016 a 2022), pensamos en la posibilidad de hacer un emprendimiento de indumentaria en un mercado más sólido que el argentino.',
+      'Por el tamaño del mercado, los tipos de sociedades disponibles que permiten la apertura simple y a distancia, y por las características de la logística (tecnologizada, integrada a nivel nacional y económica), elegimos Estados Unidos.',
+      'En esta etapa generamos un plan sobre cómo, por etapas, íbamos a validar y desarrollar cada instancia hasta el lanzamiento, sin descuidar nuestro emprendimiento local.',
+      'Nuestra idea inicial como producto principal de nuestra futura cartera de productos fue fabricar camisetas bordadas con diseños muy bien trabajados. A pesar de los tiempos particulares debido a la pandemia, pudimos avanzar mucho más de lo que esperábamos.',
+      '<b>Diseño y fabricación del stock inicial',
+      'A partir de la red de proveedores de Lonely, logramos encontrar los proveedores correctos para la fabricación de camisetas y su posterior bordado. Ese año se completó un stock inicial de veintidós modelos de camisetas bordadas.',
+      {
+        type: 'image',
+        src: '/images/embroideryProccess.jpg',
+        width: '450px',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Screen de la tienda online',
+      },
+      'Tambien diseñamos un empaque biodegradable, fabricado a partir del maiz',
+      {
+        type: 'video',
+        src: '/videos/plumariiPackages.mp4',
+        height: '650px',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Campaña publicitaria vestidos',
+        widthImageDescription: '300px',
+      },
+      '<b>2021',
+      '<b>Contenido',
+      'Con las restricciones para la circulación y la actividad impuestas por la pandemia más liberadas, nos propusimos generar contenido que alimentara nuestras futuras redes y tienda. Hicimos cuatro sesiones de fotos (estudio, exteriores, piso uno y piso dos).',
+      {
+        type: 'image',
+        src: '/images/content1.jpg',
+        width: '450px',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Screen de la tienda online',
+      },
+      'Tambien diseñamos un empaque biodegradable, fabricado a partir del maiz',
+      {
+        type: 'video',
+        src: '/videos/content2.mov',
+        height: '650px',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Campaña publicitaria vestidos',
+        widthImageDescription: '300px',
+      },
 
-      'Fui responsable de varias tareas claves entre las cuales destaco:',
-      '· Desarrollo web y personalización de la tienda online utilizando HTML, CSS y Javascript en la edición de nuestro sitio web dentro de la plataforma Shopify.',
+      '<b>Redes Sociales',
+      'Ya con contenido y decisiones sobre la imagen de marca, empezamos a armar un Instagram de la marca.',
+      {
+        type: 'link',
+        href: 'https://www.instagram.com/plumariiok/',
+        text: 'Link al instagram de Plumarii',
+        marginBottom: 0,
+        marginTop: 40,
+      },
+      {
+        type: 'image',
+        src: '/images/instagram.jpg',
+        width: '450px',
+        marginBottom: 30,
+        marginTop: 10,
+        imageDescription: 'Screen de la tienda online',
+      },
+      '<b>Deposito automatizado',
+      'Como condición previa para que nuestro emprendimiento fuera factible, necesitábamos un depósito automatizado que despachara paquetes a precios competitivos a todo el país. Mediante un plugin, integramos su sistema con nuestra tienda online.',
+      'Con configuraciones previas, cada vez que se realizara una venta, el depósito despacharía de forma automática la venta en un máximo de veinticuatro horas sin requerir autorización adicional por cada venta.',
+      {
+        type: 'image',
+        src: '/images/fulfillmentServices.jpg',
+        width: '450px',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Screen de la tienda online',
+      },
+      '<b>Viaje',
 
-      '· Planificación y ejecución de estrategias de marketing digital, publicidad en redes sociales, dando mayor visibilidad a la marca y generando ventas.',
-
-      '· Monitoreo y análisis de métricas clave para identificar potenciales segmentos y mejoras en el rendimiento del sitio web y las campañas de marketing.',
-
-      '· Administración de proyectos y coordinación de tareas, asegurando el cumplimiento de los plazos y la satisfacción de los objetivos del negocio.',
-
-      '· Coordinación de envíos de las ventas y la distribución de muestras a influencers.',
-
-      '· Generación de procesos logísticos para asegurar una entrega rápida y precisa de los productos utilizando empresas de logística automatizadas.',
-
-      '· Apertura de la empresa y gestión de aspectos legales y administrativos, como la creación de cuentas bancarias y cumplimiento de regulaciones.',
+      'En septiembre de 2021 realizamos un viaje de veinte días a Miami. En ese viaje, pudimos visitar el depósito, abrir cuentas bancarias corporativas, solucionar temas de la estructura jurídica y conseguir proveedores de hoodies, camisetas, leggings, beanies, medias, y también servicios de bordado, customización de prendas y etiquetas.',
+      {
+        type: 'image',
+        src: '/images/travelByMiami.jpg',
+        width: '450px',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Screen de la tienda online',
+      },
+      '<b>Tienda',
+      'Luego de regresar del viaje, abrimos una tienda en Shopify. Nuestra empresa, siendo nosotros socios extranjeros, estaba imposibilitada de tener varios medios de pago americanos. La elección de Shopify fue porque ofrecían los principales medios de pago americanos integrados y la posibilidad de agregar el plugin necesario para la integración con el depósito.',
+      'Shopify tiene sus propios templates, los cuales usamos. El problema es que ninguno nos servía realmente por completo. Por eso customicé muchísimo nuestra tienda con HTML, CSS y JavaScript, incluyendo diseño de checkout, botones, hovers, distancias no estéticas en los templates, tamaños de fuentes y muchas cosas más.',
+      '<b>2022',
+      '<b>Marketing digital',
+      'A partir del dos de enero de 2022, comenzamos a hacer pruebas de marketing digital. Utilizando Business Manager de Facebook, realizamos publicidades en la red Instagram. Probamos todo tipo de contenido, como fotos y videos de modelos posando con nuestra ropa de diversas formas.',
+      'Uno de nuestros logros fue haber encontrado un tipo de contenido cuyo resultado medido en métricas de la publicidad nos hizo alcanzar los estándares de precio por clic, CTR y costo de adquisición promedio en Estados Unidos.',
+      'El mercado americano es súper competitivo, por lo que es muy complicado estar a la altura. Nosotros lo logramos y, a nivel profesional, fue uno de nuestros mayores logros. También probamos colaboraciones con influencers americanas, enviándoles productos nuestros a cambio de posteos o stories.',
+      '<b>Cierre',
+      'A pesar de haber logrado un costo por adquisición al nivel del mercado, necesitábamos refinar aún más la propuesta y el marketing digital. Para que el negocio hubiese llegado a buen puerto, necesitábamos un año más y financiación.',
+      'Necesitábamos incrementar el valor del carrito promedio y bajar el costo de adquisición pagado en publicidad. A esto se sumó que mi socia de Lonely y este proyecto decidió en ese momento que en los próximos meses se mudaría a Barcelona, por lo que decidimos dejar el proyecto en ese punto.',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
     ],
   },
   {

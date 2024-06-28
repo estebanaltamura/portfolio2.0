@@ -24,26 +24,24 @@ const ExperienceDetailVideo: React.FC<IExperienceDetailVideoProps> = ({
   widthImageDescription,
 }) => {
   const [isWindowLoaded, setIsWindowLoaded] = useState(false);
-  const [playingIframe, setPlayingIframe] = useState<HTMLIFrameElement | null>(
+  const [playingVideo, setPlayingVideo] = useState<HTMLVideoElement | null>(
     null
   );
 
-  const updateViewportCenter = (iframes: HTMLIFrameElement[]) => {
+  const updateViewportCenter = (videos: HTMLVideoElement[]) => {
     const y = window.innerHeight / 2 + window.scrollY;
 
-    iframes.forEach((iframe) => {
-      const rect = iframe.getBoundingClientRect();
-      const iframeY = rect.top + window.scrollY;
+    videos.forEach((video) => {
+      const rect = video.getBoundingClientRect();
+      const videoY = rect.top + window.scrollY;
 
-      if (Math.abs(iframeY - y) < 50) {
-        if (playingIframe !== iframe) {
-          if (playingIframe) {
-            const prevPlayer = new Vimeo(playingIframe);
-            prevPlayer.pause();
+      if (Math.abs(videoY - y) < 50) {
+        if (playingVideo !== video) {
+          if (playingVideo) {
+            playingVideo.pause();
           }
-          const newPlayer = new Vimeo(iframe);
-          newPlayer.play();
-          setPlayingIframe(iframe);
+          video.play();
+          setPlayingVideo(video);
         }
       }
     });
@@ -55,21 +53,11 @@ const ExperienceDetailVideo: React.FC<IExperienceDetailVideoProps> = ({
 
   useEffect(() => {
     if (isWindowLoaded) {
-      const iframes = Array.from(document.getElementsByTagName('iframe'));
+      const videos = Array.from(document.getElementsByTagName('video'));
 
-      iframes.forEach((iframe) => {
-        if (iframe.src.includes('player.vimeo.com')) {
-          const player = new Vimeo(iframe);
+      const handleScrollOrResize = () => updateViewportCenter(videos);
 
-          player.setVolume(0);
-          player.setLoop(true);
-        }
-      });
-
-      const handleScrollOrResize = () => updateViewportCenter(iframes);
-
-      updateViewportCenter(iframes);
-      console.log(iframes);
+      updateViewportCenter(videos);
       window.addEventListener('scroll', handleScrollOrResize);
       window.addEventListener('resize', handleScrollOrResize);
       return () => {
@@ -94,8 +82,10 @@ const ExperienceDetailVideo: React.FC<IExperienceDetailVideoProps> = ({
         marginBottom: `${marginBottom}px`,
       }}
     >
-      <iframe
-        sandbox='allow-scripts allow-same-origin allow-presentation'
+      <video
+        autoPlay
+        controls
+        muted
         src={src}
         style={{
           width: '100%',
@@ -103,7 +93,7 @@ const ExperienceDetailVideo: React.FC<IExperienceDetailVideoProps> = ({
           height: '100%',
           border: 'none',
         }}
-      ></iframe>
+      ></video>
       {widthImageDescription && (
         <Typography
           sx={{
