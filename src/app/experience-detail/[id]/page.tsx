@@ -148,32 +148,47 @@ const ExperienceDetail = () => {
         {details &&
           details.map((detail, index) => {
             if (typeof detail === 'string') {
-              console.log(
-                details[index - 1],
-                typeof details[index - 1],
+              const fisrtString = index === 0;
+              const isaRegularText = detail.slice(0, 3) !== '<b>';
+              const isaYearTitle =
                 detail.slice(0, 3) === '<b>' &&
-                  typeof details[index - 1] === 'string' &&
-                  (details[index - 1] as string).slice(0, 3) === '<b>'
-              );
+                typeof details[index + 1] === 'string' &&
+                (details[index + 1] as string).slice(0, 3) === '<b>';
+
+              const isaRegularTitle =
+                detail.slice(0, 3) === '<b>' && !isaYearTitle;
+
               return (
                 <Typography
                   key={index}
                   variant='body1'
                   sx={{
-                    fontSize: '16px',
-                    fontWeight: detail.slice(0, 3) === '<b>' ? '700' : '400',
-                    color: detail.slice(0, 3) === '<b>' ? 'white' : '#bababa',
+                    fontSize: isaRegularText
+                      ? '16px'
+                      : isaYearTitle
+                      ? '24px'
+                      : isaRegularTitle
+                      ? '18px'
+                      : '',
+                    fontWeight: isaRegularText
+                      ? '400'
+                      : isaYearTitle
+                      ? '700'
+                      : isaRegularTitle
+                      ? '600'
+                      : '',
+                    color:
+                      isaYearTitle || isaRegularTitle ? 'white' : '#bababa',
                     lineHeight: '25px',
-                    marginTop:
-                      index === 0
-                        ? '40px'
-                        : detail.slice(0, 3) !== '<b>'
-                        ? '10px'
-                        : detail.slice(0, 3) === '<b>' &&
-                          typeof details[index - 1] === 'string' &&
-                          (details[index - 1] as string).slice(0, 3) === '<b>'
-                        ? '5px'
-                        : '40px',
+                    marginTop: fisrtString
+                      ? '40px'
+                      : isaRegularText
+                      ? '10px'
+                      : isaRegularTitle
+                      ? '5px'
+                      : isaYearTitle
+                      ? '40px'
+                      : '',
                   }}
                 >
                   {detail.slice(0, 3) === '<b>' ? detail.slice(3) : detail}
