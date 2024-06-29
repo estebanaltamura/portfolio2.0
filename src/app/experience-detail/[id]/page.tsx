@@ -173,7 +173,7 @@ const ExperienceDetail = () => {
                           typeof details[index - 1] === 'string' &&
                           (details[index - 1] as string).slice(0, 3) === '<b>'
                         ? '5px'
-                        : '50px',
+                        : '65px',
                   }}
                 >
                   {detail.slice(0, 3) === '<b>' ? detail.slice(3) : detail}
