@@ -492,9 +492,8 @@ export const experiences: IExperiences[] = [
         width: '100%',
         marginBottom: 10,
         marginTop: 50,
-        imageDescription:
-          'Empresas con las que trabajamos para el cumplimiento de entregas automatizadas',
-        widthImageDescription: '90%',
+        imageDescription: 'Empresas de logística automatizada',
+        widthImageDescription: '100%',
       },
       '<b>Viaje',
 
