@@ -490,8 +490,8 @@ export const experiences: IExperiences[] = [
         type: 'image',
         src: '/images/fulfillmentServices.jpg',
         width: '450px',
-        marginBottom: 20,
-        marginTop: 40,
+        marginBottom: 10,
+        marginTop: 50,
         imageDescription:
           'Empresas con las que trabajamos para el cumplimiento de entregas automatizadas',
         widthImageDescription: '90%',
