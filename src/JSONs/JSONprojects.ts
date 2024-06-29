@@ -568,11 +568,13 @@ export const experiences: IExperiences[] = [
     role: 'Co-founder, finanzas & marketing',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
-      '<b>2016 Comienzos',
+      '<b>2016',
+      '<b>Comienzos',
       'junto con mi socia, una amiga de toda la vida, fundamos nuestro primer emprendimiento, Lonely. Comenzamos como un emprendimiento de garaje, impulsado por una página de Facebook recién iniciada y un Instagram, que en ese momento era una red incipiente. Al principio, publicamos outfits y recibimos clientas en el piso de mi socia. No teníamos un ecommerce, ni showrooms aún.',
-      '<b>2018 Expansión. El año del salto cuantitativo y cualitativo.',
+      '<b>2018',
+      '<b>Expansión El año del salto cuantitativo y cualitativo',
       'Los principales puntos fueron:',
-      '· Diseñe e implementé un ecommerce programado en React con Mercado Pago y Mercado Envíos integrados (ambos productos de MercadoLibre, la principal plataforma de ecommerce y cobros de Argentina). ',
+      'Diseñe e implementé un ecommerce programado en React con Mercado Pago y Mercado Envíos integrados (ambos productos de MercadoLibre, la principal plataforma de ecommerce y cobros de Argentina). ',
       {
         type: 'image',
         src: '/images/lonely/lonelyEcommerce.jpg',
@@ -581,7 +583,7 @@ export const experiences: IExperiences[] = [
         marginTop: 50,
         imageDescription: 'Screen de la tienda online',
       },
-      '· Integré nuestro Instagram con la cuenta de empresa de Facebook, para poder publicitar mediante Facebook Ads en Instagram. ',
+      'Integré nuestro Instagram con la cuenta de empresa de Facebook, para poder publicitar mediante Facebook Ads en Instagram. ',
       {
         type: 'video',
         src: '/videos/lonely/campanaVestidos.mp4',
@@ -591,7 +593,7 @@ export const experiences: IExperiences[] = [
         imageDescription: 'Campaña publicitaria vestidos',
         widthImageDescription: '300px',
       },
-      '· Otro beneficio de la integración con Facebook fue poder usar el sistema de catálogo de Facebook. A partir de esa integración, en cada publicación de Instagram podíamos etiquetar cada prenda y el outfit completo, llevando cada etiqueta a un artículo específico en nuestra tienda. ',
+      'Otro beneficio de la integración con Facebook fue poder usar el sistema de catálogo de Facebook. A partir de esa integración, en cada publicación de Instagram podíamos etiquetar cada prenda y el outfit completo, llevando cada etiqueta a un artículo específico en nuestra tienda. ',
 
       {
         type: 'image',
@@ -603,7 +605,7 @@ export const experiences: IExperiences[] = [
           'Ejemplo del uso de plug ins para taguear productos usando el catalogo de Facebook',
         widthImageDescription: '340px',
       },
-      '· Abrimos tres showrooms en Buenos Aires y nuestro Instagram pasó de alrededor de 50 mil seguidores a más de 250 mil seguidores.',
+      'Abrimos tres showrooms en Buenos Aires y nuestro Instagram pasó de alrededor de 50 mil seguidores a más de 250 mil seguidores.',
       {
         type: 'image',
         src: '/images/lonely/lonelyGrid.jpg',
@@ -614,7 +616,8 @@ export const experiences: IExperiences[] = [
         imageDescription: 'Screen del instagram de lonely hoy dia (2024)',
       },
 
-      '<b>2019 Cambio de estrategia de redes sociales ',
+      '<b>2019',
+      '<b>Cambio de estrategia de redes sociales ',
       'Desarrollamos e implementamos una estrategia diferente en redes sociales, que fue muy exitosa en ventas, posicionamiento y seguidores, llevando la cuenta de 250 mil seguidores a 350 mil seguidores. La decisión para ese cambio de estrategia se basó en una colección de pruebas A/B y sus conclusiones.',
       {
         type: 'video',
