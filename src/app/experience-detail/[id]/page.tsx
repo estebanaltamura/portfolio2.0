@@ -155,6 +155,11 @@ const ExperienceDetail = () => {
                 typeof details[index + 1] === 'string' &&
                 (details[index + 1] as string).slice(0, 3) === '<b>';
 
+              const isaTitleAfterYear =
+                detail.slice(0, 3) === '<b>' &&
+                typeof details[index - 1] === 'string' &&
+                (details[index - 1] as string).slice(0, 3) === '<b>';
+
               const isaRegularTitle =
                 detail.slice(0, 3) === '<b>' && !isaYearTitle;
 
@@ -181,11 +186,13 @@ const ExperienceDetail = () => {
                       isaYearTitle || isaRegularTitle ? 'white' : '#bababa',
                     lineHeight: '25px',
                     marginTop: fisrtString
-                      ? '40px'
+                      ? '50px'
                       : isaRegularText
                       ? '10px'
-                      : isaRegularTitle
+                      : isaTitleAfterYear
                       ? '5px'
+                      : isaRegularTitle
+                      ? '40px'
                       : isaYearTitle
                       ? '40px'
                       : '',
