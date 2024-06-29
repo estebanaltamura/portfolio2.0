@@ -73,8 +73,15 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
             {role}
           </Typography>
         </Box>
-        <Box sx={{ display: 'flex', flexGrow: 1 }}></Box>
-        <Box sx={{ display: 'flex', paddingRight: '17px', marginTop: '3px' }}>
+        <Box
+          sx={{
+            display: 'flex',
+            position: 'absolute',
+
+            top: '34px',
+            right: '15px',
+          }}
+        >
           <Typography
             sx={{
               lineHeight: '15px',

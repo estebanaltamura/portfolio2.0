@@ -32,7 +32,7 @@ const WorkExperiences = () => {
         width: '100%',
         maxWidth: '467px',
         height: '383px',
-        padding: '10px 32px 24px 32px',
+        padding: '10px 16px 24px 16px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',
@@ -40,6 +40,7 @@ const WorkExperiences = () => {
         overflow: 'hidden',
         '@media(min-width: 1200px)': {
           maxWidth: '529px',
+          padding: '10px 32px 24px 32px',
 
           height: '470px',
         },
@@ -128,12 +129,13 @@ const WorkExperiences = () => {
           width: '100%',
 
           height: 'fit-content',
-          paddingRight: '32px',
+          paddingRight: '8px',
           marginTop: '20px',
           justifyContent: 'center',
           overflow: 'auto',
           '@media(min-width: 1200px)': {
             height: '345px',
+            paddingRight: '32px',
           },
           '&::-webkit-scrollbar': {
             width: '5px',
