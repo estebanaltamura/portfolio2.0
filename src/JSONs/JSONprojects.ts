@@ -393,13 +393,13 @@ export const experiences: IExperiences[] = [
   {
     id: 'plumarii',
     name: 'Plumarii',
-    period: '2021 - 2022',
+    period: '2020 - 2022',
     role: 'Desarrollador Front-End & Co-founder',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
     details: [
       '<b>2020',
       '<b>Comienzos',
-      'Junto con mi socia de Lonely (nuestro proyecto de indumentaria en Argentina de 2016 a 2022), pensamos en la posibilidad de hacer un emprendimiento de indumentaria en un mercado más sólido que el argentino.',
+      'Junto con mi socia de Lonely (un proyecto de indumentaria en Argentina de 2016 a 2022), pensamos en la posibilidad de hacer un emprendimiento de indumentaria en un mercado más sólido que el argentino.',
       {
         type: 'image',
         src: '/images/logo_plumarii.png',
@@ -422,7 +422,7 @@ export const experiences: IExperiences[] = [
       },
       'Nuestra idea inicial como producto principal de nuestra futura cartera de productos fue fabricar camisetas bordadas con diseños muy bien trabajados. A pesar de los tiempos particulares debido a la pandemia, pudimos avanzar mucho más de lo que esperábamos.',
       '<b>Diseño y fabricación del stock inicial',
-      'A partir de la red de proveedores de Lonely, logramos encontrar los proveedores correctos para la fabricación de camisetas y su posterior bordado.',
+      'A partir de la red de proveedores de Lonely (un proyecto de indumentaria en Argentina de 2016 a 2022), logramos encontrar los proveedores correctos para la fabricación de camisetas y su posterior bordado.',
       {
         type: 'image',
         src: '/images/embroideryProccess.jpg',
@@ -432,7 +432,7 @@ export const experiences: IExperiences[] = [
         imageDescription: 'Proceso de bordado',
       },
       'Ese año conseguimos fabricar un stock inicial de 22 modelos de camisetas bordadas. Cada diseño fue muy trabajado por que quisimos diferenciarnos de cualquier propuesta que pudiese parecer acartonada.',
-      'Quisimos trabajar un pocisionamiento moderno y sustentable. Diseñamos un hermoso empaque completamente biodegradable y fabricado a partir del maiz',
+      'Quisimos trabajar un posicionamiento moderno y sustentable. Diseñamos un hermoso empaque completamente biodegradable y fabricado a partir del maiz.',
 
       {
         type: 'video',
@@ -445,7 +445,7 @@ export const experiences: IExperiences[] = [
       },
       '<b>2021',
       '<b>Contenido',
-      'Con las restricciones para la circulación y la actividad impuestas por la pandemia más liberadas, nos propusimos generar contenido que alimentara nuestras futuras redes y tienda. Hicimos cuatro sesiones de fotos (estudio, exteriores, piso uno y piso dos).',
+      'Con las restricciones para la circulación y la actividad impuestas por la pandemia más liberadas, nos propusimos generar contenido que alimentara nuestras futuras redes y tienda. Hicimos cuatro sesiones de fotos (estudio, exteriores y dos pisos diferentes).',
       {
         type: 'image',
         src: '/images/content1.jpg',
@@ -466,7 +466,7 @@ export const experiences: IExperiences[] = [
       },
 
       '<b>Redes Sociales',
-      'Ya con contenido y decisiones sobre la imagen de marca, empezamos a armar un Instagram de la marca.',
+      'Ya con contenido y decisiones sobre la imagen de marca, empezamos a armar el Instagram.',
       {
         type: 'link',
         href: 'https://www.instagram.com/plumariiok/',
@@ -483,7 +483,7 @@ export const experiences: IExperiences[] = [
         marginTop: 10,
         imageDescription: 'Instagram de Plumarii',
       },
-      '<b>Deposito automatizado',
+      '<b>Depósito automatizado',
       'Como condición previa para que nuestro emprendimiento fuera factible, necesitábamos un depósito automatizado que despachara paquetes a precios competitivos a todo el país. Mediante un plugin, integramos su sistema con nuestra tienda online.',
       'Con configuraciones previas, cada vez que se realizara una venta, el depósito despacharía de forma automática la venta en un máximo de veinticuatro horas sin requerir autorización adicional por cada venta.',
       {

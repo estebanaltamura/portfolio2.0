@@ -205,6 +205,7 @@ const ExperienceDetail = () => {
             if (detail.type === 'link') {
               return (
                 <a
+                  target='_blank'
                   key={index}
                   href={detail.href}
                   style={{
