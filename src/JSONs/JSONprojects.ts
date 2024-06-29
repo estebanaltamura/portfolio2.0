@@ -477,7 +477,7 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/images/plumarii/instagram.jpg',
-        mobileVersionSrc: '/images/instagramMobile.jpg',
+        mobileVersionSrc: '/images/plumarii/instagramMobile.jpg',
         width: '100%',
         marginBottom: 10,
         marginTop: 10,
@@ -575,7 +575,7 @@ export const experiences: IExperiences[] = [
       '· Diseñe e implementé un ecommerce programado en React con Mercado Pago y Mercado Envíos integrados (ambos productos de MercadoLibre, la principal plataforma de ecommerce y cobros de Argentina). ',
       {
         type: 'image',
-        src: '/lonelyEcommerce.jpg',
+        src: '/images/lonely/lonelyEcommerce.jpg',
         width: '365px',
         marginBottom: 30,
         marginTop: 50,
@@ -595,7 +595,7 @@ export const experiences: IExperiences[] = [
 
       {
         type: 'image',
-        src: '/instagramsTags.jpg',
+        src: '/images/lonely/instagramsTags.jpg',
         width: '365px',
         marginBottom: 35,
         marginTop: 50,
@@ -606,7 +606,7 @@ export const experiences: IExperiences[] = [
       '· Abrimos tres showrooms en Buenos Aires y nuestro Instagram pasó de alrededor de 50 mil seguidores a más de 250 mil seguidores.',
       {
         type: 'image',
-        src: '/lonelyGrid.jpg',
+        src: '/images/lonely/lonelyGrid.jpg',
         width: '450px',
         marginBottom: 20,
         marginTop: 50,
@@ -629,7 +629,7 @@ export const experiences: IExperiences[] = [
       'A comienzos de 2020, el consumo en Argentina estaba cayendo. En marzo, la pandemia nos sorprendió como a todo el mundo. Teníamos tres showrooms abiertos y empleados a los que responder, pero para sorpresa de todos, las ventas se dispararon. Pudimos cerrar los showrooms físicos, re absorber al personal centralizando todo en nuestra ubicación de despacho centralizada.',
       {
         type: 'image',
-        src: '/lonelyImage.jpg',
+        src: '/images/lonely/lonelyImage.jpg',
         width: '450px',
         marginBottom: 35,
         marginTop: 50,
