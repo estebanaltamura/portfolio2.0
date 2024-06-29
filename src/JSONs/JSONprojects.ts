@@ -539,10 +539,10 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/images/vibeAd.jpg',
-        width: '300px',
+        width: '365px',
         marginBottom: 30,
         marginTop: 50,
-        imageDescription: 'Grilla outfits Plumarii',
+        imageDescription: 'Facebook ads',
       },
       {
         type: 'video',
