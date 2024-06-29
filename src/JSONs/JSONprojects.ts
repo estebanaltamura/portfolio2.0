@@ -548,7 +548,7 @@ export const experiences: IExperiences[] = [
         type: 'video',
         src: '/videos/camiAd.mp4',
         height: '650px',
-        marginBottom: 30,
+        marginBottom: 80,
         marginTop: 40,
         imageDescription: 'Reel Plumarii',
         widthImageDescription: '300px',
