@@ -186,7 +186,7 @@ const ExperienceDetail = () => {
                       isaYearTitle || isaRegularTitle ? 'white' : '#bababa',
                     lineHeight: '25px',
                     marginTop: fisrtString
-                      ? '50px'
+                      ? '60px'
                       : isaRegularText
                       ? '10px'
                       : isaTitleAfterYear

@@ -494,6 +494,7 @@ export const experiences: IExperiences[] = [
         marginTop: 40,
         imageDescription:
           'Empresas con las que trabajamos para el cumplimiento de entregas automatizadas',
+        widthImageDescription: '90%',
       },
       '<b>Viaje',
 
@@ -502,7 +503,7 @@ export const experiences: IExperiences[] = [
         type: 'image',
         src: '/images/travelByMiami.jpg',
         width: '100%',
-        marginBottom: 20,
+        marginBottom: 10,
         marginTop: 50,
         imageDescription: 'Viaje lleno de aprendizaje y multiples compromisos',
       },
@@ -548,7 +549,7 @@ export const experiences: IExperiences[] = [
         type: 'video',
         src: '/videos/camiAd.mp4',
         height: '650px',
-        marginBottom: 50,
+        marginBottom: 40,
         marginTop: 40,
         imageDescription: 'Reel Plumarii',
         widthImageDescription: '300px',
