@@ -30,17 +30,18 @@ const WorkExperiences = () => {
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        maxWidth: '529px',
+        maxWidth: '467px',
         height: '383px',
-        padding: '10px 16px 24px 16px',
+        padding: '10px 32px 24px 32px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',
         color: 'white',
         overflow: 'hidden',
         '@media(min-width: 1200px)': {
+          maxWidth: '529px',
+
           height: '470px',
-          padding: '16px 16px 32px 16px',
         },
       }}
     >
@@ -90,6 +91,7 @@ const WorkExperiences = () => {
               width: '122px',
               height: '30px',
               padding: '8px 16px',
+              marginRight: '3px',
               alignItems: 'center',
               borderRadius: '20px',
               border:
@@ -124,8 +126,11 @@ const WorkExperiences = () => {
       <Box
         sx={{
           width: '100%',
-          maxWidth: '476px',
+
+          height: 'fit-content',
+          paddingRight: '32px',
           marginTop: '20px',
+          justifyContent: 'center',
           overflow: 'auto',
           '@media(min-width: 1200px)': {
             height: '345px',

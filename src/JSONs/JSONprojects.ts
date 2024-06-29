@@ -573,7 +573,6 @@ export const experiences: IExperiences[] = [
       'junto con mi socia, una amiga de toda la vida, fundamos nuestro primer emprendimiento, Lonely. Comenzamos como un emprendimiento de garaje, impulsado por una página de Facebook recién iniciada y un Instagram, que en ese momento era una red incipiente. Al principio, publicamos outfits y recibimos clientas en el piso de mi socia. No teníamos un ecommerce, ni showrooms aún.',
       '<b>2018',
       '<b>Expansión El año del salto cuantitativo y cualitativo',
-      'Los principales puntos fueron:',
       'Diseñe e implementé un ecommerce programado en React con Mercado Pago y Mercado Envíos integrados (ambos productos de MercadoLibre, la principal plataforma de ecommerce y cobros de Argentina). ',
       {
         type: 'image',
@@ -588,7 +587,7 @@ export const experiences: IExperiences[] = [
         type: 'video',
         src: '/videos/lonely/campanaVestidos.mp4',
         height: '650px',
-        marginBottom: 30,
+        marginBottom: 40,
         marginTop: 50,
         imageDescription: 'Campaña publicitaria vestidos',
         widthImageDescription: '300px',

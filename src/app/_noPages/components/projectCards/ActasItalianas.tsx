@@ -1,25 +1,31 @@
-import { Box } from '@mui/material';
-import Link from 'next/link';
+import { Box, useMediaQuery } from '@mui/material';
+import { useRouter } from 'next/navigation';
 
 const ActasItalianas = () => {
+  const isDesktop = useMediaQuery('(min-width:1200px)');
+  const router = useRouter();
+
+  const clickHandler = () => {
+    router.push('/');
+  };
+
   return (
-    <Link href='project-detail/actas'>
-      <Box
-        sx={{
-          width: '100%',
-          maxHeight: '175px',
-          borderRadius: '10px',
-          backgroundColor: '#494949',
-          marginBottom: '10px',
-        }}
-      >
-        <img
-          src='/cardCovers/actasCover.svg'
-          alt=''
-          style={{ width: '100%' }}
-        />
-      </Box>
-    </Link>
+    <img
+      onClick={clickHandler}
+      src={
+        isDesktop
+          ? '/cardCovers/actasItalianasExpress/actasItalianasExpressCoverDesktop.png'
+          : '/cardCovers/actasItalianasExpress/actasItalianasExpressCoverMobile.png'
+      }
+      alt=''
+      style={{
+        height: isDesktop ? '234px' : '183px',
+        width: isDesktop ? '457px' : '342px',
+        margin: '0',
+        borderRadius: '10px',
+        cursor: 'pointer',
+      }}
+    />
   );
 };
 

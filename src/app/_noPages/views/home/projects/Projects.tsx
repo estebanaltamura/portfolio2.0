@@ -13,8 +13,9 @@ const Projects = () => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        width: '100%',
-        height: '500px',
+        width: 'fit-content',
+        height: 'fit-content',
+        maxHeight: isDesktop ? 'fit-content' : '580px',
         marginTop: '70px',
         padding: '4px 16px 24px 20px',
         alignItems: 'center',
@@ -38,7 +39,7 @@ const Projects = () => {
         }}
       >
         <Box sx={{ width: '20px', height: '20px' }}>
-          <img src='/icons/stackIcon.svg' alt='' />
+          <img src='/icons/projectIcon.svg' alt='' />
         </Box>
         <Typography
           sx={{
@@ -57,8 +58,6 @@ const Projects = () => {
           display: 'block',
           width: '100%',
           height: 'fit-content',
-          marginTop: '10px',
-          paddingRight: '12px',
           overflowY: 'auto',
           '&::-webkit-scrollbar': {
             width: '5px',
@@ -70,9 +69,6 @@ const Projects = () => {
           '&::-webkit-scrollbar-thumb': {
             backgroundColor: '#8C8C8C',
             borderRadius: '20px',
-          },
-          '@media(min-width: 1200px)': {
-            paddingRight: '27px',
           },
         }}
       >
@@ -93,23 +89,24 @@ const Projects = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   width: '457px',
-                  marginRight: '5px',
+                  marginRight: '20px',
+                  gap: '7px',
                 }}
               >
-                <Plumarii />
-                <BuenosNegocios />
                 <ActasItalianas />
+                <Plumarii />
+                <Chat />
               </Box>
               <Box
                 sx={{
                   display: 'flex',
                   flexDirection: 'column',
                   width: '457px',
-                  marginLeft: '5px',
+                  marginLeft: '20px',
+                  gap: '7px',
                 }}
               >
-                <CryptoCard />
-                <Chat />
+                <BuenosNegocios />
               </Box>
             </>
           )}
@@ -120,13 +117,12 @@ const Projects = () => {
                 flexDirection: 'column',
                 width: '100%',
                 marginRight: '5px',
+                gap: '10px',
               }}
             >
-              <Plumarii />
               <BuenosNegocios />
               <ActasItalianas />
-
-              <CryptoCard />
+              <Plumarii />
               <Chat />
             </Box>
           )}

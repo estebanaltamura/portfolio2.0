@@ -26,34 +26,18 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
         sx={{
           position: 'relative',
           display: 'flex',
-          width: '100%',
-          height: '68px',
-          marginTop: index > 0 ? '35px' : '0px',
+          alignItems: 'center',
+          maxWidth: '100%',
+          height: '82px',
+          marginTop: index > 0 ? '22px' : '0px',
           cursor: 'pointer',
+          borderRadius: '10px',
+          border: '1px solid #6E65A7',
+          '&:hover': {
+            backgroundColor: '#333238',
+          },
         }}
       >
-        <Box
-          sx={{
-            width: '15px',
-            height: '15px',
-            borderRadius: '100px',
-            backgroundColor: '#6E65A7',
-            marginTop: '3px',
-          }}
-        ></Box>
-        {index < length - 1 && (
-          <Box
-            sx={{
-              position: 'absolute',
-              width: '1px',
-              height: '88px',
-              top: '18px',
-              left: '7px',
-              backgroundColor: '#BABEBE',
-            }}
-          ></Box>
-        )}
-
         <Box
           sx={{ display: 'flex', flexDirection: 'column', marginLeft: '17px' }}
         >
@@ -62,7 +46,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
               lineHeight: '18px',
               fontSize: '16px',
               fontWeight: '700',
-              marginTop: '2px',
+              marginTop: '3px',
             }}
           >
             {name}
@@ -71,9 +55,9 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
           <Typography
             sx={{
               lineHeight: '18px',
-              fontSize: '13px',
+              fontSize: '12px',
               fontWeight: '300',
-              marginTop: '2px',
+              marginTop: '3px',
             }}
           >
             {period}
@@ -84,11 +68,24 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
               lineHeight: '22px',
               fontSize: '13px',
               fontWeight: '400',
-              marginTop: '4px',
             }}
           >
             {role}
           </Typography>
+        </Box>
+        <Box sx={{ display: 'flex', flexGrow: 1 }}></Box>
+        <Box sx={{ display: 'flex', paddingRight: '17px', marginTop: '3px' }}>
+          <Typography
+            sx={{
+              lineHeight: '15px',
+              fontSize: '11px',
+              fontWeight: '400',
+              marginRight: '10px',
+            }}
+          >
+            Ver detalle
+          </Typography>
+          <img src='/icons/experienceItemIcon.svg' alt='' />
         </Box>
       </Box>
     </Link>
