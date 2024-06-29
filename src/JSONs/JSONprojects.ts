@@ -402,7 +402,7 @@ export const experiences: IExperiences[] = [
       'Junto con mi socia de Lonely (un proyecto de indumentaria en Argentina de 2016 a 2022), pensamos en la posibilidad de hacer un emprendimiento de indumentaria en un mercado más sólido que el argentino.',
       {
         type: 'image',
-        src: '/images/logo_plumarii.png',
+        src: '/images/plumarii/logo_plumarii.png',
         width: '100%',
         marginBottom: 30,
         marginTop: 30,
@@ -414,7 +414,7 @@ export const experiences: IExperiences[] = [
       'En esta etapa generamos un plan sobre cómo, por etapas, íbamos a validar y desarrollar cada instancia hasta el lanzamiento, sin descuidar nuestro emprendimiento local.',
       {
         type: 'image',
-        src: '/images/plumariiLabel.jpg',
+        src: '/images/plumarii/plumariiLabel.jpg',
         width: '100%',
         marginBottom: 30,
         marginTop: 50,
@@ -425,7 +425,7 @@ export const experiences: IExperiences[] = [
       'A partir de la red de proveedores de Lonely (un proyecto de indumentaria en Argentina de 2016 a 2022), logramos encontrar los proveedores correctos para la fabricación de camisetas y su posterior bordado.',
       {
         type: 'image',
-        src: '/images/embroideryProccess.jpg',
+        src: '/images/plumarii/embroideryProccess.jpg',
         width: '100%',
         marginBottom: 30,
         marginTop: 50,
@@ -436,7 +436,7 @@ export const experiences: IExperiences[] = [
 
       {
         type: 'video',
-        src: '/videos/plumariiPackages.mp4',
+        src: '/videos/plumarii/plumariiPackages.mp4',
         height: '650px',
         marginBottom: 40,
         marginTop: 50,
@@ -448,7 +448,7 @@ export const experiences: IExperiences[] = [
       'Con las restricciones para la circulación y la actividad impuestas por la pandemia más liberadas, nos propusimos generar contenido que alimentara nuestras futuras redes y tienda. Hicimos cuatro sesiones de fotos (estudio, exteriores y dos pisos diferentes).',
       {
         type: 'image',
-        src: '/images/content1.jpg',
+        src: '/images/plumarii/gridContent.jpg',
         width: '100%',
         marginBottom: 20,
         marginTop: 50,
@@ -457,7 +457,7 @@ export const experiences: IExperiences[] = [
 
       {
         type: 'video',
-        src: '/videos/content2.mp4',
+        src: '/videos/plumarii/content.mp4',
         height: '650px',
         marginBottom: 20,
         marginTop: 50,
@@ -476,7 +476,7 @@ export const experiences: IExperiences[] = [
       },
       {
         type: 'image',
-        src: '/images/instagram.jpg',
+        src: '/images/plumarii/instagram.jpg',
         mobileVersionSrc: '/images/instagramMobile.jpg',
         width: '100%',
         marginBottom: 10,
@@ -488,8 +488,8 @@ export const experiences: IExperiences[] = [
       'Con configuraciones previas, cada vez que se realizara una venta, el depósito despacharía de forma automática la venta en un máximo de veinticuatro horas sin requerir autorización adicional por cada venta.',
       {
         type: 'image',
-        src: '/images/fulfillmentServices.jpg',
-        width: '450px',
+        src: '/images/plumarii/fulfillmentServices.png',
+        width: '100%',
         marginBottom: 10,
         marginTop: 50,
         imageDescription:
@@ -501,7 +501,7 @@ export const experiences: IExperiences[] = [
       'En septiembre de 2021 realizamos un viaje de veinte días a Miami. En ese viaje, pudimos visitar el depósito, abrir cuentas bancarias corporativas, solucionar temas de la estructura jurídica y conseguir proveedores de hoodies, camisetas, leggings, beanies, medias, y también servicios de bordado, customización de prendas y etiquetas.',
       {
         type: 'image',
-        src: '/images/travelByMiami.jpg',
+        src: '/images/plumarii/travelByMiami.jpg',
         width: '100%',
         marginBottom: 10,
         marginTop: 50,
@@ -512,7 +512,7 @@ export const experiences: IExperiences[] = [
       'Shopify tiene sus propios templates, los cuales usamos. El problema es que ninguno nos servía realmente por completo. Por eso customicé muchísimo nuestra tienda con HTML, CSS y JavaScript, incluyendo diseño de checkout, botones, hovers, distancias no estéticas en los templates, tamaños de fuentes y muchas cosas más.',
       {
         type: 'image',
-        src: '/images/carouselPlumarii1.jpg',
+        src: '/images/plumarii/ecommerce1.jpg',
         width: '300px',
         marginBottom: 30,
         marginTop: 50,
@@ -520,7 +520,7 @@ export const experiences: IExperiences[] = [
       },
       {
         type: 'image',
-        src: '/images/carouselPlumarii4.jpg',
+        src: '/images/plumarii/ecommerce2.jpg',
         width: '300px',
         marginBottom: 30,
         marginTop: 40,
@@ -528,7 +528,7 @@ export const experiences: IExperiences[] = [
       },
       {
         type: 'image',
-        src: '/images/carouselPlumarii2.jpg',
+        src: '/images/plumarii/ecommerce3.jpg',
         width: '300px',
         marginBottom: 30,
         marginTop: 40,
@@ -539,7 +539,7 @@ export const experiences: IExperiences[] = [
       'A partir del dos de enero de 2022, comenzamos a hacer pruebas de marketing digital. Utilizando Business Manager de Facebook, realizamos publicidades en la red Instagram. Probamos todo tipo de contenido, como fotos y videos de modelos posando con nuestra ropa de diversas formas.',
       {
         type: 'image',
-        src: '/images/vibeAd.jpg',
+        src: '/images/plumarii/vibeAd.jpg',
         width: '365px',
         marginBottom: 20,
         marginTop: 50,
@@ -547,7 +547,7 @@ export const experiences: IExperiences[] = [
       },
       {
         type: 'video',
-        src: '/videos/camiAd.mp4',
+        src: '/videos/plumarii/camiAd.mp4',
         height: '650px',
         marginBottom: 40,
         marginTop: 40,
@@ -571,14 +571,13 @@ export const experiences: IExperiences[] = [
     details: [
       '<b>2016 Comienzos',
       'junto con mi socia, una amiga de toda la vida, fundamos nuestro primer emprendimiento, Lonely. Comenzamos como un emprendimiento de garaje, impulsado por una página de Facebook recién iniciada y un Instagram, que en ese momento era una red incipiente. Al principio, publicamos outfits y recibimos clientas en el piso de mi socia. No teníamos un ecommerce, ni showrooms aún.',
-
       '<b>2018 Expansión. El año del salto cuantitativo y cualitativo.',
       'Los principales puntos fueron:',
       '· Diseñe e implementé un ecommerce programado en React con Mercado Pago y Mercado Envíos integrados (ambos productos de MercadoLibre, la principal plataforma de ecommerce y cobros de Argentina). ',
       {
         type: 'image',
         src: '/lonelyEcommerce.jpg',
-        width: '450px',
+        width: '365px',
         marginBottom: 30,
         marginTop: 50,
         imageDescription: 'Screen de la tienda online',
@@ -586,7 +585,7 @@ export const experiences: IExperiences[] = [
       '· Integré nuestro Instagram con la cuenta de empresa de Facebook, para poder publicitar mediante Facebook Ads en Instagram. ',
       {
         type: 'video',
-        src: 'https://player.vimeo.com/video/969525574?title=0&byline=0&portrait=0&badge=0',
+        src: '/videos/lonely/campanaVestidos.mp4',
         height: '650px',
         marginBottom: 30,
         marginTop: 50,
@@ -598,11 +597,12 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/instagramsTags.jpg',
-        width: '450px',
+        width: '365px',
         marginBottom: 35,
         marginTop: 50,
         imageDescription:
           'Ejemplo del uso de plug ins para taguear productos usando el catalogo de Facebook',
+        widthImageDescription: '340px',
       },
       '· Abrimos tres showrooms en Buenos Aires y nuestro Instagram pasó de alrededor de 50 mil seguidores a más de 250 mil seguidores.',
       {

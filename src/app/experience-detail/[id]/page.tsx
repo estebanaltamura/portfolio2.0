@@ -209,6 +209,7 @@ const ExperienceDetail = () => {
                   key={index}
                   href={detail.href}
                   style={{
+                    textDecoration: 'underline',
                     width: '100%',
                     height: detail.height,
                     textAlign: 'center',
