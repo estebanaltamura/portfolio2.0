@@ -438,7 +438,7 @@ export const experiences: IExperiences[] = [
         type: 'video',
         src: '/videos/plumariiPackages.mp4',
         height: '650px',
-        marginBottom: 40,
+        marginBottom: 30,
         marginTop: 50,
         imageDescription: 'Packaging biodegradable a base de maiz',
         widthImageDescription: '300px',
