@@ -402,15 +402,24 @@ export const experiences: IExperiences[] = [
       'Junto con mi socia de Lonely (nuestro proyecto de indumentaria en Argentina de 2016 a 2022), pensamos en la posibilidad de hacer un emprendimiento de indumentaria en un mercado más sólido que el argentino.',
       {
         type: 'image',
+        src: '/images/logo_plumarii.png',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 30,
+        imageDescription: '',
+      },
+
+      'Por el tamaño del mercado, los tipos de sociedades disponibles que permiten la apertura simple y a distancia, y por las características de la logística (tecnologizada, integrada a nivel nacional y económica), elegimos Estados Unidos.',
+
+      'En esta etapa generamos un plan sobre cómo, por etapas, íbamos a validar y desarrollar cada instancia hasta el lanzamiento, sin descuidar nuestro emprendimiento local.',
+      {
+        type: 'image',
         src: '/images/plumariiLabel.jpg',
         width: '100%',
         marginBottom: 30,
         marginTop: 50,
         imageDescription: 'Etiqueta de Plumarii',
       },
-      'Por el tamaño del mercado, los tipos de sociedades disponibles que permiten la apertura simple y a distancia, y por las características de la logística (tecnologizada, integrada a nivel nacional y económica), elegimos Estados Unidos.',
-
-      'En esta etapa generamos un plan sobre cómo, por etapas, íbamos a validar y desarrollar cada instancia hasta el lanzamiento, sin descuidar nuestro emprendimiento local.',
       'Nuestra idea inicial como producto principal de nuestra futura cartera de productos fue fabricar camisetas bordadas con diseños muy bien trabajados. A pesar de los tiempos particulares debido a la pandemia, pudimos avanzar mucho más de lo que esperábamos.',
       '<b>Diseño y fabricación del stock inicial',
       'A partir de la red de proveedores de Lonely, logramos encontrar los proveedores correctos para la fabricación de camisetas y su posterior bordado.',
@@ -422,7 +431,8 @@ export const experiences: IExperiences[] = [
         marginTop: 50,
         imageDescription: 'Proceso de bordado',
       },
-      'Ese año se completó un stock inicial de veintidós modelos de camisetas bordadas. Tambien diseñamos un empaque biodegradable, fabricado a partir del maiz',
+      'Ese año conseguimos fabricar un stock inicial de 22 modelos de camisetas bordadas. Cada diseño fue muy trabajado por que quisimos diferenciarnos de cualquier propuesta que pudiese parecer acartonada.',
+      'Quisimos trabajar un pocisionamiento moderno y sustentable. Diseñamos un hermoso empaque completamente biodegradable y fabricado a partir del maiz',
 
       {
         type: 'video',

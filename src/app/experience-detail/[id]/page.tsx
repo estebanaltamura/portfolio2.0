@@ -148,6 +148,13 @@ const ExperienceDetail = () => {
         {details &&
           details.map((detail, index) => {
             if (typeof detail === 'string') {
+              console.log(
+                details[index - 1],
+                typeof details[index - 1],
+                detail.slice(0, 3) === '<b>' &&
+                  typeof details[index - 1] === 'string' &&
+                  (details[index - 1] as string).slice(0, 3) === '<b>'
+              );
               return (
                 <Typography
                   key={index}
@@ -159,10 +166,14 @@ const ExperienceDetail = () => {
                     lineHeight: '25px',
                     marginTop:
                       index === 0
-                        ? '40px'
-                        : detail.slice(0, 3) === '<b>'
-                        ? '25px'
-                        : '10px',
+                        ? '50px'
+                        : detail.slice(0, 3) !== '<b>'
+                        ? '10px'
+                        : detail.slice(0, 3) === '<b>' &&
+                          typeof details[index - 1] === 'string' &&
+                          (details[index - 1] as string).slice(0, 3) === '<b>'
+                        ? '5px'
+                        : '50px',
                   }}
                 >
                   {detail.slice(0, 3) === '<b>' ? detail.slice(3) : detail}
