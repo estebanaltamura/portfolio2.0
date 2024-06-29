@@ -166,14 +166,14 @@ const ExperienceDetail = () => {
                     lineHeight: '25px',
                     marginTop:
                       index === 0
-                        ? '50px'
+                        ? '40px'
                         : detail.slice(0, 3) !== '<b>'
                         ? '10px'
                         : detail.slice(0, 3) === '<b>' &&
                           typeof details[index - 1] === 'string' &&
                           (details[index - 1] as string).slice(0, 3) === '<b>'
                         ? '5px'
-                        : '65px',
+                        : '40px',
                   }}
                 >
                   {detail.slice(0, 3) === '<b>' ? detail.slice(3) : detail}
