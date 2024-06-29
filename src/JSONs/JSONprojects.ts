@@ -607,7 +607,8 @@ export const experiences: IExperiences[] = [
       {
         type: 'image',
         src: '/images/lonely/lonelyGrid.jpg',
-        width: '450px',
+        mobileVersionSrc: '/images/lonely/lonelyGridMobile.png',
+        width: '100%',
         marginBottom: 20,
         marginTop: 50,
         imageDescription: 'Screen del instagram de lonely hoy dia (2024)',
@@ -617,7 +618,8 @@ export const experiences: IExperiences[] = [
       'Desarrollamos e implementamos una estrategia diferente en redes sociales, que fue muy exitosa en ventas, posicionamiento y seguidores, llevando la cuenta de 250 mil seguidores a 350 mil seguidores. La decisión para ese cambio de estrategia se basó en una colección de pruebas A/B y sus conclusiones.',
       {
         type: 'video',
-        src: 'https://player.vimeo.com/video/969517674?title=0&byline=0&portrait=0&badge=0',
+
+        src: '/videos/lonely/lanzamientoTemporadaInvierno.mp4',
         height: '650px',
         marginBottom: 20,
         marginTop: 55,
