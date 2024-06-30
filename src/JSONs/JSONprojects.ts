@@ -351,7 +351,7 @@ export const experiences: IExperiences[] = [
     details: [
       'En este proyecto me desempeño como referente tecnológico para la rama de software factory de Koi ventures. Desde mi entrada a Koi ventures, estuve trabajando en un proyecto para el principal banco de Argentina, el cual es una plataforma para que empresas puedan contactarse con otras empresas para generar relaciones comerciales en base a sus necesidades.',
       'Trabajo como líder de equipo, nexo con el cliente y como principal desarrollador front end del proyecto. Las tecnologías aplicadas son Next, Typescript, Node y Firebase (autenticación, base de datos no relacional y hosting). El equipo estuvo conformado hasta marzo por tres desarrolladores (incluido yo), y a partir de marzo de 2024, se sumó un diseñador.',
-      'El proyecto comenzó con mi entrada en noviembre del 2023, tuvo como primer hito la entrega del mvp en marzo del 2024. Actualmente estamos en proceso de entregar la versión final, con un objetivo de entrega en agosto de 2024.',
+      'Buenos negocios tuvo como primer hito la entrega del mvp en marzo del 2024. Actualmente estamos en proceso de entregar la versión final, con un objetivo de entrega en agosto de 2024.',
       {
         type: 'image',
         src: '/images/buenosNegocios/buenosNegociosHome.jpg',
@@ -387,10 +387,6 @@ export const experiences: IExperiences[] = [
         imageDescription:
           'Pagina de resultados de busqueda de la web buenos negocios',
       },
-
-      'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
-
-      'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
     ],
   },
   {
