@@ -77,7 +77,6 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({
           sx={{
             display: 'flex',
             position: 'absolute',
-
             top: '34px',
             right: '15px',
           }}

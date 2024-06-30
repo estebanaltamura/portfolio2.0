@@ -352,7 +352,34 @@ export const experiences: IExperiences[] = [
       'Me desempeño como referente tecnológico, desarrollador frontend y realizo algunas tareas de nexo con el cliente para la rama de software factory de la empresa.',
       {
         type: 'image',
-        src: '/buenosNegocios.jpg',
+        src: '/images/buenosNegocios/buenosNegociosCompanyProfile.jpg',
+        width: '100%',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription:
+          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+      },
+      {
+        type: 'image',
+        src: '/images/buenosNegocios/buenosNegociosEditProfile.jpg',
+        width: '100%',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription:
+          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+      },
+      {
+        type: 'image',
+        src: '/images/buenosNegocios/buenosNegociosHome.jpg',
+        width: '100%',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription:
+          'Home de la web buenos negocios. Proyecto para el principal banco de argentina',
+      },
+      {
+        type: 'image',
+        src: '/images/buenosNegocios/buenosNegociosSearchResults.jpg',
         width: '100%',
         marginBottom: 15,
         marginTop: 40,
@@ -361,18 +388,6 @@ export const experiences: IExperiences[] = [
       },
 
       'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
-
-      {
-        type: 'carousel',
-        srcImages: ['/buenosNegocios.jpg', '/favicon.png'],
-        width: '400px',
-        height: '300px',
-        marginBottom: 20,
-        marginTop: 20,
-        imageDescription: ['imagen 1', 'imagen 2'],
-        widthImageDescription: '80%',
-        interval: 2500,
-      },
 
       'Puntualmente trabajo en un equipo de desarrollo que esta dedicado a desarrollar una plataforma de negocios B2B para un importante banco de Argentina.',
     ],
