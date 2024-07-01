@@ -16,7 +16,7 @@ const Projects = () => {
         width: '100%',
         maxWidth: '467px',
         height: 'fit-content',
-        maxHeight: isDesktop ? 'fit-content' : '580px',
+        maxHeight: isDesktop ? 'fit-content' : '495px',
         marginTop: '70px',
         padding: '10px 16px 24px',
         alignItems: 'center',
