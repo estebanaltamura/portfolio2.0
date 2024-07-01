@@ -297,7 +297,7 @@ export const projectsData = [
   },
 ];
 
-export interface IExperiences {
+export interface IProjects {
   id: string;
   name: string;
   period: string;
@@ -341,10 +341,18 @@ export interface IExperiences {
 
 // implementar que sea string o un objeto que tiene el src de la imagen, marginTop, marginBottom, comentario de la foto
 
-export const experiences: IExperiences[] = [
+export const projects: IProjects[] = [
   {
-    id: 'koi-ventures',
-    name: 'Koi ventures',
+    id: 'buenos-negocios',
+    name: 'Buenos negocios',
+    period: '2023 - Actualidad',
+    role: 'Referente tecnologico',
+    logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
+    details: ['Descripcion proyecto chat'],
+  },
+  {
+    id: 'buenos-negocios',
+    name: 'Buenos negocios',
     period: '2023 - Actualidad',
     role: 'Referente tecnologico',
     logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
@@ -391,7 +399,418 @@ export const experiences: IExperiences[] = [
   },
   {
     id: 'actas-italianas-express',
+    name: 'Actas Italianas Express',
+    period: '2022 - Actualidad',
+    role: 'Desarrollador Front-end',
+    logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
+    details: [
+      'Soy founder de Actas italianas express, un servicio de gestión rápida de actas italianas necesarias para la tramitación de la ciudanía italiana por parte de nuestros clientes.',
+      'Nuestro servicio busca y gestiona en origen la documentación, generando mayor tasa de respuesta por parte de las comunas y con una velocidad de respuesta superior.',
+      'Mi rol es principalmente el desarrollo y mantenimiento de la plataforma online, servicios back oficce para la administracion de leads y desarrollo de provedores de servicios ad-hoc en Italia.',
+      'La pagina y los servicios de back office fueron desarollados en React, typescript y se uso firebase como motor de base de datos no relacional',
+      {
+        type: 'image',
+        src: '/images/actasItalianasExpress/actasItalianasExpressHome.jpg',
+        width: '100%',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription: 'Home de la web actas italianas express',
+      },
 
+      {
+        type: 'image',
+        src: '/images/actasItalianasExpress/actasItalianasExpressContacto.jpg',
+        width: '100%',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription:
+          'Pagina de contacto de la web actas italianas express',
+      },
+    ],
+  },
+  {
+    id: 'plumarii',
+    name: 'Plumarii',
+    period: '2020 - 2022',
+    role: 'Desarrollador Front-End & Co-founder',
+    logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
+    details: [
+      '<b>2020',
+      '<b>Comienzos',
+      'Junto con mi socia de Lonely (un proyecto de indumentaria en Argentina de 2016 a 2022), pensamos en la posibilidad de hacer un emprendimiento de indumentaria en un mercado más sólido que el argentino.',
+      {
+        type: 'image',
+        src: '/images/plumarii/logo_plumarii.png',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 30,
+        imageDescription: '',
+      },
+
+      'Por el tamaño del mercado, los tipos de sociedades disponibles que permiten la apertura simple y a distancia, y por las características de la logística (tecnologizada, integrada a nivel nacional y económica), elegimos Estados Unidos.',
+
+      'En esta etapa generamos un plan sobre cómo, por etapas, íbamos a validar y desarrollar cada instancia hasta el lanzamiento, sin descuidar nuestro emprendimiento local.',
+      {
+        type: 'image',
+        src: '/images/plumarii/plumariiLabel.jpg',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Etiqueta de Plumarii',
+      },
+      'Nuestra idea inicial como producto principal de nuestra futura cartera de productos fue fabricar camisetas bordadas con diseños muy bien trabajados. A pesar de los tiempos particulares debido a la pandemia, pudimos avanzar mucho más de lo que esperábamos.',
+      '<b>Diseño y fabricación del stock inicial',
+      'A partir de la red de proveedores de Lonely (un proyecto de indumentaria en Argentina de 2016 a 2022), logramos encontrar los proveedores correctos para la fabricación de camisetas y su posterior bordado.',
+      {
+        type: 'image',
+        src: '/images/plumarii/embroideryProccess.jpg',
+        width: '100%',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Proceso de bordado',
+      },
+      'Ese año conseguimos fabricar un stock inicial de 22 modelos de camisetas bordadas. Cada diseño fue muy trabajado por que quisimos diferenciarnos de cualquier propuesta que pudiese parecer acartonada.',
+      'Quisimos trabajar un posicionamiento moderno y sustentable. Diseñamos un hermoso empaque completamente biodegradable y fabricado a partir del maiz.',
+
+      {
+        type: 'video',
+        src: '/videos/plumarii/plumariiPackages.mp4',
+        height: '650px',
+        marginBottom: 40,
+        marginTop: 50,
+        imageDescription: 'Packaging biodegradable a base de maiz',
+        widthImageDescription: '300px',
+      },
+      '<b>2021',
+      '<b>Contenido',
+      'Con las restricciones para la circulación y la actividad impuestas por la pandemia más liberadas, nos propusimos generar contenido que alimentara nuestras futuras redes y tienda. Hicimos cuatro sesiones de fotos (estudio, exteriores y dos pisos diferentes).',
+      {
+        type: 'image',
+        src: '/images/plumarii/gridContent.jpg',
+        width: '100%',
+        marginBottom: 20,
+        marginTop: 50,
+        imageDescription: 'Grilla outfits Plumarii',
+      },
+
+      {
+        type: 'video',
+        src: '/videos/plumarii/content.mp4',
+        height: '650px',
+        marginBottom: 20,
+        marginTop: 50,
+        imageDescription: 'Reel Plumarii',
+        widthImageDescription: '300px',
+      },
+
+      '<b>Redes Sociales',
+      'Ya con contenido y decisiones sobre la imagen de marca, empezamos a armar el Instagram.',
+      {
+        type: 'link',
+        href: 'https://www.instagram.com/plumariiok/',
+        text: 'Link al instagram de Plumarii',
+        marginBottom: 0,
+        marginTop: 40,
+      },
+      {
+        type: 'image',
+        src: '/images/plumarii/instagram.jpg',
+        mobileVersionSrc: '/images/plumarii/instagramMobile.jpg',
+        width: '100%',
+        marginBottom: 10,
+        marginTop: 10,
+        imageDescription: 'Instagram de Plumarii',
+      },
+      '<b>Depósito automatizado',
+      'Como condición previa para que nuestro emprendimiento fuera factible, necesitábamos un depósito automatizado que despachara paquetes a precios competitivos a todo el país. Mediante un plugin, integramos su sistema con nuestra tienda online.',
+      'Con configuraciones previas, cada vez que se realizara una venta, el depósito despacharía de forma automática la venta en un máximo de veinticuatro horas sin requerir autorización adicional por cada venta.',
+      {
+        type: 'image',
+        src: '/images/plumarii/fulfillmentServices.png',
+        width: '100%',
+        marginBottom: 10,
+        marginTop: 50,
+        imageDescription: 'Empresas de logística automatizada',
+        widthImageDescription: '100%',
+      },
+      '<b>Viaje',
+
+      'En septiembre de 2021 realizamos un viaje de veinte días a Miami. En ese viaje, pudimos visitar el depósito, abrir cuentas bancarias corporativas, solucionar temas de la estructura jurídica y conseguir proveedores de hoodies, camisetas, leggings, beanies, medias, y también servicios de bordado, customización de prendas y etiquetas.',
+      {
+        type: 'image',
+        src: '/images/plumarii/travelByMiami.jpg',
+        width: '100%',
+        marginBottom: 10,
+        marginTop: 50,
+        imageDescription: 'Viaje lleno de aprendizaje y multiples compromisos',
+      },
+      '<b>Tienda',
+      'Luego de regresar del viaje, abrimos una tienda en Shopify. Nuestra empresa, siendo nosotros socios extranjeros, estaba imposibilitada de tener varios medios de pago americanos. La elección de Shopify fue porque ofrecían los principales medios de pago americanos integrados y la posibilidad de agregar el plugin necesario para la integración con el depósito.',
+      'Shopify tiene sus propios templates, los cuales usamos. El problema es que ninguno nos servía realmente por completo. Por eso customicé muchísimo nuestra tienda con HTML, CSS y JavaScript, incluyendo diseño de checkout, botones, hovers, distancias no estéticas en los templates, tamaños de fuentes y muchas cosas más.',
+      {
+        type: 'image',
+        src: '/images/plumarii/ecommerce1.jpg',
+        width: '300px',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Tienda Plumarii 1',
+      },
+      {
+        type: 'image',
+        src: '/images/plumarii/ecommerce2.jpg',
+        width: '300px',
+        marginBottom: 30,
+        marginTop: 40,
+        imageDescription: 'Tienda Plumarii 2',
+      },
+      {
+        type: 'image',
+        src: '/images/plumarii/ecommerce3.jpg',
+        width: '300px',
+        marginBottom: 30,
+        marginTop: 40,
+        imageDescription: 'Tienda Plumarii 3',
+      },
+      '<b>2022',
+      '<b>Marketing digital',
+      'A partir del dos de enero de 2022, comenzamos a hacer pruebas de marketing digital. Utilizando Business Manager de Facebook, realizamos publicidades en la red Instagram. Probamos todo tipo de contenido, como fotos y videos de modelos posando con nuestra ropa de diversas formas.',
+      {
+        type: 'image',
+        src: '/images/plumarii/vibeAd.jpg',
+        width: '365px',
+        marginBottom: 20,
+        marginTop: 50,
+        imageDescription: 'Facebook ads',
+      },
+      {
+        type: 'video',
+        src: '/videos/plumarii/camiAd.mp4',
+        height: '650px',
+        marginBottom: 40,
+        marginTop: 40,
+        imageDescription: 'Reel Plumarii',
+        widthImageDescription: '300px',
+      },
+
+      'Uno de nuestros logros fue haber encontrado un tipo de contenido cuyo resultado medido en métricas de la publicidad nos hizo alcanzar los estándares de precio por clic, CTR y costo de adquisición promedio en Estados Unidos.',
+      'El mercado americano es súper competitivo, por lo que es muy complicado estar a la altura. Nosotros lo logramos y, a nivel profesional, fue uno de nuestros mayores logros. También probamos colaboraciones con influencers americanas, enviándoles productos nuestros a cambio de posteos o stories.',
+      '<b>Cierre',
+      'A pesar de haber logrado un costo por adquisición al nivel del mercado, necesitábamos refinar aún más la propuesta y el marketing digital. Para que el negocio hubiese llegado a buen puerto, necesitábamos un año más y financiación.',
+      'Necesitábamos incrementar el valor del carrito promedio y bajar el costo de adquisición pagado en publicidad. A esto se sumó que mi socia de Lonely y este proyecto decidió en ese momento que en los próximos meses se mudaría a Barcelona, por lo que decidimos dejar el proyecto en ese punto.',
+    ],
+  },
+  {
+    id: 'lonely',
+    name: 'Lonely',
+    period: '2016 - 2022',
+    role: 'Co-founder, finanzas & marketing',
+    logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
+    details: [
+      '<b>2016',
+      '<b>Comienzos',
+      'junto con mi socia, una amiga de toda la vida, fundamos nuestro primer emprendimiento, Lonely. Comenzamos como un emprendimiento de garaje, impulsado por una página de Facebook recién iniciada y un Instagram, que en ese momento era una red incipiente. Al principio, publicamos outfits y recibimos clientas en el piso de mi socia. No teníamos un ecommerce, ni showrooms aún.',
+      '<b>2018',
+      '<b>Expansión El año del salto cuantitativo y cualitativo',
+      'Diseñe e implementé un ecommerce programado en React con Mercado Pago y Mercado Envíos integrados (ambos productos de MercadoLibre, la principal plataforma de ecommerce y cobros de Argentina). ',
+      {
+        type: 'image',
+        src: '/images/lonely/lonelyEcommerce.jpg',
+        width: '365px',
+        marginBottom: 30,
+        marginTop: 50,
+        imageDescription: 'Screen de la tienda online',
+      },
+      'Integré nuestro Instagram con la cuenta de empresa de Facebook, para poder publicitar mediante Facebook Ads en Instagram. ',
+      {
+        type: 'video',
+        src: '/videos/lonely/campanaVestidos.mp4',
+        height: '650px',
+        marginBottom: 40,
+        marginTop: 50,
+        imageDescription: 'Campaña publicitaria vestidos',
+        widthImageDescription: '300px',
+      },
+      'Otro beneficio de la integración con Facebook fue poder usar el sistema de catálogo de Facebook. A partir de esa integración, en cada publicación de Instagram podíamos etiquetar cada prenda y el outfit completo, llevando cada etiqueta a un artículo específico en nuestra tienda. ',
+
+      {
+        type: 'image',
+        src: '/images/lonely/instagramsTags.jpg',
+        width: '365px',
+        marginBottom: 35,
+        marginTop: 50,
+        imageDescription:
+          'Ejemplo del uso de plug ins para taguear productos usando el catalogo de Facebook',
+        widthImageDescription: '340px',
+      },
+      'Abrimos tres showrooms en Buenos Aires y nuestro Instagram pasó de alrededor de 50 mil seguidores a más de 250 mil seguidores.',
+      {
+        type: 'image',
+        src: '/images/lonely/lonelyGrid.jpg',
+        mobileVersionSrc: '/images/lonely/lonelyGridMobile.png',
+        width: '100%',
+        marginBottom: 20,
+        marginTop: 50,
+        imageDescription: 'Screen del instagram de lonely hoy dia (2024)',
+      },
+
+      '<b>2019',
+      '<b>Cambio de estrategia de redes sociales ',
+      'Desarrollamos e implementamos una estrategia diferente en redes sociales, que fue muy exitosa en ventas, posicionamiento y seguidores, llevando la cuenta de 250 mil seguidores a 350 mil seguidores. La decisión para ese cambio de estrategia se basó en una colección de pruebas A/B y sus conclusiones.',
+      {
+        type: 'video',
+
+        src: '/videos/lonely/lanzamientoTemporadaInvierno.mp4',
+        height: '650px',
+        marginBottom: 20,
+        marginTop: 55,
+        imageDescription: 'Lanzamiento temporada de invierno',
+        widthImageDescription: '300px',
+      },
+
+      '<b>2020 Pandemia',
+      'A comienzos de 2020, el consumo en Argentina estaba cayendo. En marzo, la pandemia nos sorprendió como a todo el mundo. Teníamos tres showrooms abiertos y empleados a los que responder, pero para sorpresa de todos, las ventas se dispararon. Pudimos cerrar los showrooms físicos, re absorber al personal centralizando todo en nuestra ubicación de despacho centralizada.',
+      {
+        type: 'image',
+        src: '/images/lonely/lonelyImage.jpg',
+        width: '450px',
+        marginBottom: 35,
+        marginTop: 50,
+        imageDescription: 'Campaña publicitaria básicos',
+      },
+
+      'A partir de ese año, toda nuestra operación fue centralizada, a excepción de un showroom (el original).',
+      '<b>2022 Cierre',
+      'Después de muchos años trabajando juntos y varios emprendimientos, mi socia se fue a vivir a Barcelona. Decidimos juntos que no era lógico seguirlo a distancia o que yo continuara solo por mi cuenta. Lonely fue una gran experiencia de aprendizaje. Hasta ese momento, no había hecho un emprendimiento tan exitoso, tan complejo y trabajando tanto en equipo.',
+    ],
+  },
+  {
+    id: 'infinity-tech',
+    name: 'Infinity tech',
+    period: '2010 - 2016',
+    role: 'Owner',
+    logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
+    details: [
+      'Como importador de productos electrónicos y vendedor independiente en MercadoLibre, manejé diversos aspectos del negocio, incluyendo:',
+      '-Investigación y selección de productos electrónicos de alta demanda para importar y vender en MercadoLibre.',
+      '-Creación y gestión de listados de productos en MercadoLibre, incluyendo fotografías, descripciones detalladas y optimización de palabras clave.',
+      '-Atención al cliente, resolución de consultas y problemas relacionados con los productos y envíos.',
+      '-Análisis de ventas y tendencias del mercado para adaptar y mejorar constantemente la estrategia comercial.',
+      'A través de esta experiencia adquirí conocimientos autodidactas en múltiples áreas, dado que fue un emprendimiento autogestionado. Este proyecto me convirtió en un profesional más versátil y adaptable, ya que me enfrenté a desafíos permanentemente.',
+    ],
+  },
+  {
+    id: 'telefonica-de-argentina',
+    name: 'Telefonica',
+    period: '2008 - 2009',
+    role: 'Responsable de registros',
+    logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
+    details: [
+      'Como responsable de registros en Telefónica Argentina, me dediqué a:',
+      '· Ingreso de órdenes de trabajo en la base de datos de la empresa.',
+      '· Revisión de las órdenes de trabajo recibidas y asignación a los técnicos instaladores correspondientes.',
+      '· Seguimiento del progreso de las instalaciones y comunicación con los técnicos y otros departamentos para garantizar la satisfacción del cliente y la eficiencia en el proceso.',
+      '· Negociación en casa central acerca de ordenes a considerar para el pago del periodo y plazo de pago',
+      'Esta experiencia me proporcionó habilidades clave en resolución de problemas, gestión de información y atención al detalle.',
+    ],
+  },
+];
+
+//////////////////////////////////////////////////////////////////////////
+
+export interface IExperiences {
+  id: string;
+  name: string;
+  period: string;
+  role: string;
+  logoImgSrc: string;
+  details: (
+    | string
+    | {
+        type: 'link';
+        href: string;
+        text: string;
+        width?: string;
+        height?: string;
+        marginBottom: number;
+        marginTop: number;
+      }
+    | {
+        type: 'image' | 'video';
+        src: string;
+        mobileVersionSrc?: string;
+        width?: string;
+        height?: string;
+        marginBottom: number;
+        marginTop: number;
+        imageDescription: string;
+        widthImageDescription?: string;
+      }
+    | {
+        type: 'carousel';
+        srcImages: string[];
+        width?: string;
+        height?: string;
+        marginBottom?: number;
+        marginTop?: number;
+        imageDescription?: string[];
+        widthImageDescription?: string;
+        interval?: number;
+      }
+  )[];
+}
+
+// implementar que sea string o un objeto que tiene el src de la imagen, marginTop, marginBottom, comentario de la foto
+
+export const experiences: IExperiences[] = [
+  {
+    id: 'buenos-negocios',
+    name: 'Buenos negocios',
+    period: '2023 - Actualidad',
+    role: 'Referente tecnologico',
+    logoImgSrc: 'https://i.postimg.cc/G21DmtNd/next-png.png',
+    details: [
+      'En este proyecto me desempeño como referente tecnológico para la rama de software factory de Koi ventures. Desde mi entrada a Koi ventures, estuve trabajando en un proyecto para el principal banco de Argentina, el cual es una plataforma para que empresas puedan contactarse con otras empresas para generar relaciones comerciales en base a sus necesidades.',
+      'Trabajo como líder de equipo, nexo con el cliente y como principal desarrollador front end del proyecto. Las tecnologías aplicadas son Next, Typescript, Node y Firebase (autenticación, base de datos no relacional y hosting). El equipo estuvo conformado hasta marzo por tres desarrolladores (incluido yo), y a partir de marzo de 2024, se sumó un diseñador.',
+      'Buenos negocios tuvo como primer hito la entrega del mvp en marzo del 2024. Actualmente estamos en proceso de entregar la versión final, con un objetivo de entrega en agosto de 2024.',
+      {
+        type: 'image',
+        src: '/images/buenosNegocios/buenosNegociosHome.jpg',
+        width: '100%',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription: 'Home de la web buenos negocios',
+      },
+
+      {
+        type: 'image',
+        src: '/images/buenosNegocios/buenosNegociosCompanyProfile.jpg',
+        width: '100%',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription: 'Pagina perfil empresa de la web buenos negocios',
+      },
+      {
+        type: 'image',
+        src: '/images/buenosNegocios/buenosNegociosEditProfile.jpg',
+        width: '100%',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription: 'Pagina editar perfil de la web buenos negocios',
+      },
+
+      {
+        type: 'image',
+        src: '/images/buenosNegocios/buenosNegociosSearchResults.jpg',
+        width: '100%',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription:
+          'Pagina de resultados de busqueda de la web buenos negocios',
+      },
+    ],
+  },
+  {
+    id: 'actas-italianas-express',
     name: 'Actas Italianas Express',
     period: '2022 - Actualidad',
     role: 'Desarrollador Front-end',

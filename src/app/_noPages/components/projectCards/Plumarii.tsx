@@ -6,7 +6,7 @@ const Plumarii = () => {
   const router = useRouter();
 
   const clickHandler = () => {
-    router.push('/');
+    router.push('/project-detail/plumarii');
   };
 
   return (

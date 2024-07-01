@@ -6,7 +6,7 @@ const ActasItalianas = () => {
   const router = useRouter();
 
   const clickHandler = () => {
-    router.push('/');
+    router.push('/project-detail/actas-italianas-express');
   };
 
   return (

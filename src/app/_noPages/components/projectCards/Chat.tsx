@@ -6,7 +6,7 @@ const Chat = () => {
   const router = useRouter();
 
   const clickHandler = () => {
-    router.push('/');
+    router.push('/project-detail/chat');
   };
 
   return (
