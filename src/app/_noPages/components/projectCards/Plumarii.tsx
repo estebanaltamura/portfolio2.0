@@ -10,22 +10,36 @@ const Plumarii = () => {
   };
 
   return (
-    <img
-      onClick={clickHandler}
-      src={
-        isDesktop
-          ? '/cardCovers/plumarii/plumariiCoverDesktop.png'
-          : '/cardCovers/plumarii/plumariiCoverMobile.png'
-      }
-      alt=''
-      style={{
+    <Box
+      sx={{
+        display: 'flex',
+        position: 'relative',
+        justifyContent: 'center',
+        alignItems: 'center',
         height: isDesktop ? '141px' : '183px',
-        width: isDesktop ? '457px' : '342px',
-        margin: '0',
-        borderRadius: '10px',
-        cursor: 'pointer',
+        width: isDesktop ? '473.5px' : '421px',
       }}
-    />
+    >
+      <Box sx={{ position: 'absolute', width: '200px' }}>
+        <img src='/logo.png' alt='' style={{ width: '100%' }} />
+      </Box>
+      <img
+        onClick={clickHandler}
+        src={
+          isDesktop
+            ? '/cardCovers/plumarii/plumariiCoverDesktop.png'
+            : '/cardCovers/plumarii/plumariiCoverMobile.png'
+        }
+        alt=''
+        style={{
+          height: isDesktop ? '141px' : '183px',
+          width: isDesktop ? '473.5px' : '421px',
+          margin: '0',
+          borderRadius: '10px',
+          cursor: 'pointer',
+        }}
+      />
+    </Box>
   );
 };
 

@@ -19,8 +19,8 @@ const BuenosNegocios = () => {
       }
       alt=''
       style={{
-        height: isDesktop ? '548px' : '183px',
-        width: isDesktop ? '457px' : '342px',
+        height: isDesktop ? '554px' : '183px',
+        width: isDesktop ? '473.5px' : '421px',
         margin: '0',
         borderRadius: '10px',
         cursor: 'pointer',

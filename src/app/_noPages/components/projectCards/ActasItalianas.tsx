@@ -20,7 +20,7 @@ const ActasItalianas = () => {
       alt=''
       style={{
         height: isDesktop ? '234px' : '183px',
-        width: isDesktop ? '457px' : '342px',
+        width: isDesktop ? '473.5px' : '421px',
         margin: '0',
         borderRadius: '10px',
         cursor: 'pointer',

@@ -13,11 +13,12 @@ const Projects = () => {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        width: 'fit-content',
+        width: '100%',
+        maxWidth: '467px',
         height: 'fit-content',
         maxHeight: isDesktop ? 'fit-content' : '580px',
         marginTop: '70px',
-        padding: '4px 16px 24px 20px',
+        padding: '10px 16px 24px',
         alignItems: 'center',
         borderRadius: '16px',
         border: '1px solid #494949',
@@ -88,9 +89,9 @@ const Projects = () => {
                 sx={{
                   display: 'flex',
                   flexDirection: 'column',
-                  width: '457px',
-                  marginRight: '20px',
-                  gap: '7px',
+                  width: '473.5px',
+                  marginRight: '5px',
+                  gap: '10px',
                 }}
               >
                 <ActasItalianas />
@@ -101,9 +102,9 @@ const Projects = () => {
                 sx={{
                   display: 'flex',
                   flexDirection: 'column',
-                  width: '457px',
-                  marginLeft: '20px',
-                  gap: '7px',
+                  width: '473.5px',
+                  marginLeft: '5px',
+                  gap: '10px',
                 }}
               >
                 <BuenosNegocios />
@@ -116,7 +117,7 @@ const Projects = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 width: '100%',
-                marginRight: '5px',
+                paddingRight: '8px',
                 gap: '10px',
               }}
             >

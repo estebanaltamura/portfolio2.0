@@ -400,6 +400,25 @@ export const experiences: IExperiences[] = [
       'Soy founder de Actas italianas express, un servicio de gestión rápida de actas italianas necesarias para la tramitación de la ciudanía italiana por parte de nuestros clientes.',
       'Nuestro servicio busca y gestiona en origen la documentación, generando mayor tasa de respuesta por parte de las comunas y con una velocidad de respuesta superior.',
       'Mi rol es principalmente el desarrollo y mantenimiento de la plataforma online, servicios back oficce para la administracion de leads y desarrollo de provedores de servicios ad-hoc en Italia.',
+      'La pagina y los servicios de back office fueron desarollados en React, typescript y se uso firebase como motor de base de datos no relacional',
+      {
+        type: 'image',
+        src: '/images/actasItalianasExpress/actasItalianasExpressHome.jpg',
+        width: '100%',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription: 'Home de la web actas italianas express',
+      },
+
+      {
+        type: 'image',
+        src: '/images/actasItalianasExpress/actasItalianasExpressContacto.jpg',
+        width: '100%',
+        marginBottom: 15,
+        marginTop: 40,
+        imageDescription:
+          'Pagina de contacto de la web actas italianas express',
+      },
     ],
   },
   {
