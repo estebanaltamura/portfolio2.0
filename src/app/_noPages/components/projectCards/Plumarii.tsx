@@ -17,7 +17,7 @@ const Plumarii = () => {
         justifyContent: 'center',
         alignItems: 'center',
         height: isDesktop ? '141px' : '183px',
-        width: isDesktop ? '473.5px' : '421px',
+        width: isDesktop ? '473.5px' : '100%',
       }}
     >
       <Box sx={{ position: 'absolute', width: '200px' }}>
@@ -33,7 +33,7 @@ const Plumarii = () => {
         alt=''
         style={{
           height: isDesktop ? '141px' : '183px',
-          width: isDesktop ? '473.5px' : '421px',
+          width: isDesktop ? '473.5px' : '100%',
           margin: '0',
           borderRadius: '10px',
           cursor: 'pointer',
