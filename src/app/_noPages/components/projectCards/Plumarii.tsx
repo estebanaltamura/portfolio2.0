@@ -16,7 +16,7 @@ const Plumarii = () => {
         position: 'relative',
         justifyContent: 'center',
         alignItems: 'center',
-        height: isDesktop ? '141px' : '183px',
+        height: isDesktop ? '141px' : '',
         width: isDesktop ? '473.5px' : '100%',
       }}
     >
