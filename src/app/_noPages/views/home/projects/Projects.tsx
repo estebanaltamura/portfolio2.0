@@ -26,6 +26,7 @@ const Projects = () => {
         overflow: 'hidden',
         '@media(min-width: 1200px)': {
           padding: '16px 32px 32px 32px',
+          maxWidth: '100%',
         },
       }}
     >
@@ -90,7 +91,7 @@ const Projects = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   width: '473.5px',
-                  marginRight: '5px',
+                  marginRight: '4px',
                   gap: '10px',
                 }}
               >
@@ -103,7 +104,7 @@ const Projects = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   width: '473.5px',
-                  marginLeft: '5px',
+                  marginLeft: '4px',
                   gap: '10px',
                 }}
               >
